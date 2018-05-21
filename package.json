@@ -1,0 +1,36 @@
+{
+  "name": "captfencoder",
+  "version": "0.2.0",
+  "description": "CTF编码解码全家桶",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/guyoung/CaptfEncoder",
+  "keywords": [],
+  "license": "",
+  "author": "guyoung",
+  "contributors": [],
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^2.0.0"
+  },
+  "build": {
+    "appId": "com.guyoung.captfencoder",
+    "productName": "CaptfEncoder",
+    "directories": {
+      "output": "../release"
+    },
+    "win": {
+      "icon": "../icon/app_ico.ico"
+    },
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "icon": "../icon/app_ico.icns"
+    },
+    "linux": {
+      "icon": "../icon/app_ico.ico",
+      "maintainer": "guyoung"
+    }
+  }
+}

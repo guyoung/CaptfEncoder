@@ -1,0 +1,13 @@
+{
+    "name": "CaptfEncoder",
+    "description": "CTF编码解码全家桶",
+    "versions": [
+        {
+            "version":  "0.2.0.180520",
+            "builddate": "2018-05-20", 
+            "changelog": [
+                "CaptfEncoder V0.2.0 发布"
+            ]
+        }
+    ]
+}
