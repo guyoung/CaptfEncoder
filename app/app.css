@@ -2,6 +2,8 @@
  * Applies styles for users in high contrast mode. Note that this only applies
  * to Microsoft browsers. Chrome can be included by checking for the `html[hc]`
  * attribute, however Chrome handles high contrast differently.
+ * @param target Which kind of high contrast setting to target. Defaults to `active`, can be
+ *    `white-on-black` or `black-on-white`.
  */
 /* Theme for the ripple elements.*/
 /* stylelint-disable material/no-prefixes */
@@ -10,6 +12,8 @@
  * Applies styles for users in high contrast mode. Note that this only applies
  * to Microsoft browsers. Chrome can be included by checking for the `html[hc]`
  * attribute, however Chrome handles high contrast differently.
+ * @param target Which kind of high contrast setting to target. Defaults to `active`, can be
+ *    `white-on-black` or `black-on-white`.
  */
 /* Theme for the ripple elements.*/
 /* stylelint-disable material/no-prefixes */
@@ -743,53 +747,33 @@ textarea.cdk-textarea-autosize-measuring {
 .mat-badge-small.mat-badge-below .mat-badge-content {
   bottom: -8px; }
 
-.mat-badge-small.mat-badge-before {
-  margin-left: 16px; }
-  .mat-badge-small.mat-badge-before .mat-badge-content {
-    left: -16px; }
+.mat-badge-small.mat-badge-before .mat-badge-content {
+  left: -16px; }
 
-[dir='rtl'] .mat-badge-small.mat-badge-before {
-  margin-left: 0;
-  margin-right: 16px; }
-  [dir='rtl'] .mat-badge-small.mat-badge-before .mat-badge-content {
-    left: auto;
-    right: -16px; }
+[dir='rtl'] .mat-badge-small.mat-badge-before .mat-badge-content {
+  left: auto;
+  right: -16px; }
 
-.mat-badge-small.mat-badge-after {
-  margin-right: 16px; }
-  .mat-badge-small.mat-badge-after .mat-badge-content {
-    right: -16px; }
+.mat-badge-small.mat-badge-after .mat-badge-content {
+  right: -16px; }
 
-[dir='rtl'] .mat-badge-small.mat-badge-after {
-  margin-right: 0;
-  margin-left: 16px; }
-  [dir='rtl'] .mat-badge-small.mat-badge-after .mat-badge-content {
-    right: auto;
-    left: -16px; }
+[dir='rtl'] .mat-badge-small.mat-badge-after .mat-badge-content {
+  right: auto;
+  left: -16px; }
 
-.mat-badge-small.mat-badge-overlap.mat-badge-before {
-  margin-left: 8px; }
-  .mat-badge-small.mat-badge-overlap.mat-badge-before .mat-badge-content {
-    left: -8px; }
+.mat-badge-small.mat-badge-overlap.mat-badge-before .mat-badge-content {
+  left: -8px; }
 
-[dir='rtl'] .mat-badge-small.mat-badge-overlap.mat-badge-before {
-  margin-left: 0;
-  margin-right: 8px; }
-  [dir='rtl'] .mat-badge-small.mat-badge-overlap.mat-badge-before .mat-badge-content {
-    left: auto;
-    right: -8px; }
+[dir='rtl'] .mat-badge-small.mat-badge-overlap.mat-badge-before .mat-badge-content {
+  left: auto;
+  right: -8px; }
 
-.mat-badge-small.mat-badge-overlap.mat-badge-after {
-  margin-right: 8px; }
-  .mat-badge-small.mat-badge-overlap.mat-badge-after .mat-badge-content {
-    right: -8px; }
+.mat-badge-small.mat-badge-overlap.mat-badge-after .mat-badge-content {
+  right: -8px; }
 
-[dir='rtl'] .mat-badge-small.mat-badge-overlap.mat-badge-after {
-  margin-right: 0;
-  margin-left: 16px; }
-  [dir='rtl'] .mat-badge-small.mat-badge-overlap.mat-badge-after .mat-badge-content {
-    right: auto;
-    left: -8px; }
+[dir='rtl'] .mat-badge-small.mat-badge-overlap.mat-badge-after .mat-badge-content {
+  right: auto;
+  left: -8px; }
 
 .mat-badge-medium .mat-badge-content {
   width: 22px;
@@ -806,53 +790,33 @@ textarea.cdk-textarea-autosize-measuring {
 .mat-badge-medium.mat-badge-below .mat-badge-content {
   bottom: -11px; }
 
-.mat-badge-medium.mat-badge-before {
-  margin-left: 22px; }
-  .mat-badge-medium.mat-badge-before .mat-badge-content {
-    left: -22px; }
+.mat-badge-medium.mat-badge-before .mat-badge-content {
+  left: -22px; }
 
-[dir='rtl'] .mat-badge-medium.mat-badge-before {
-  margin-left: 0;
-  margin-right: 22px; }
-  [dir='rtl'] .mat-badge-medium.mat-badge-before .mat-badge-content {
-    left: auto;
-    right: -22px; }
+[dir='rtl'] .mat-badge-medium.mat-badge-before .mat-badge-content {
+  left: auto;
+  right: -22px; }
 
-.mat-badge-medium.mat-badge-after {
-  margin-right: 22px; }
-  .mat-badge-medium.mat-badge-after .mat-badge-content {
-    right: -22px; }
+.mat-badge-medium.mat-badge-after .mat-badge-content {
+  right: -22px; }
 
-[dir='rtl'] .mat-badge-medium.mat-badge-after {
-  margin-right: 0;
-  margin-left: 22px; }
-  [dir='rtl'] .mat-badge-medium.mat-badge-after .mat-badge-content {
-    right: auto;
-    left: -22px; }
+[dir='rtl'] .mat-badge-medium.mat-badge-after .mat-badge-content {
+  right: auto;
+  left: -22px; }
 
-.mat-badge-medium.mat-badge-overlap.mat-badge-before {
-  margin-left: 11px; }
-  .mat-badge-medium.mat-badge-overlap.mat-badge-before .mat-badge-content {
-    left: -11px; }
+.mat-badge-medium.mat-badge-overlap.mat-badge-before .mat-badge-content {
+  left: -11px; }
 
-[dir='rtl'] .mat-badge-medium.mat-badge-overlap.mat-badge-before {
-  margin-left: 0;
-  margin-right: 11px; }
-  [dir='rtl'] .mat-badge-medium.mat-badge-overlap.mat-badge-before .mat-badge-content {
-    left: auto;
-    right: -11px; }
+[dir='rtl'] .mat-badge-medium.mat-badge-overlap.mat-badge-before .mat-badge-content {
+  left: auto;
+  right: -11px; }
 
-.mat-badge-medium.mat-badge-overlap.mat-badge-after {
-  margin-right: 11px; }
-  .mat-badge-medium.mat-badge-overlap.mat-badge-after .mat-badge-content {
-    right: -11px; }
+.mat-badge-medium.mat-badge-overlap.mat-badge-after .mat-badge-content {
+  right: -11px; }
 
-[dir='rtl'] .mat-badge-medium.mat-badge-overlap.mat-badge-after {
-  margin-right: 0;
-  margin-left: 22px; }
-  [dir='rtl'] .mat-badge-medium.mat-badge-overlap.mat-badge-after .mat-badge-content {
-    right: auto;
-    left: -11px; }
+[dir='rtl'] .mat-badge-medium.mat-badge-overlap.mat-badge-after .mat-badge-content {
+  right: auto;
+  left: -11px; }
 
 .mat-badge-large .mat-badge-content {
   width: 28px;
@@ -869,53 +833,33 @@ textarea.cdk-textarea-autosize-measuring {
 .mat-badge-large.mat-badge-below .mat-badge-content {
   bottom: -14px; }
 
-.mat-badge-large.mat-badge-before {
-  margin-left: 28px; }
-  .mat-badge-large.mat-badge-before .mat-badge-content {
-    left: -28px; }
+.mat-badge-large.mat-badge-before .mat-badge-content {
+  left: -28px; }
 
-[dir='rtl'] .mat-badge-large.mat-badge-before {
-  margin-left: 0;
-  margin-right: 28px; }
-  [dir='rtl'] .mat-badge-large.mat-badge-before .mat-badge-content {
-    left: auto;
-    right: -28px; }
+[dir='rtl'] .mat-badge-large.mat-badge-before .mat-badge-content {
+  left: auto;
+  right: -28px; }
 
-.mat-badge-large.mat-badge-after {
-  margin-right: 28px; }
-  .mat-badge-large.mat-badge-after .mat-badge-content {
-    right: -28px; }
+.mat-badge-large.mat-badge-after .mat-badge-content {
+  right: -28px; }
 
-[dir='rtl'] .mat-badge-large.mat-badge-after {
-  margin-right: 0;
-  margin-left: 28px; }
-  [dir='rtl'] .mat-badge-large.mat-badge-after .mat-badge-content {
-    right: auto;
-    left: -28px; }
+[dir='rtl'] .mat-badge-large.mat-badge-after .mat-badge-content {
+  right: auto;
+  left: -28px; }
 
-.mat-badge-large.mat-badge-overlap.mat-badge-before {
-  margin-left: 14px; }
-  .mat-badge-large.mat-badge-overlap.mat-badge-before .mat-badge-content {
-    left: -14px; }
+.mat-badge-large.mat-badge-overlap.mat-badge-before .mat-badge-content {
+  left: -14px; }
 
-[dir='rtl'] .mat-badge-large.mat-badge-overlap.mat-badge-before {
-  margin-left: 0;
-  margin-right: 14px; }
-  [dir='rtl'] .mat-badge-large.mat-badge-overlap.mat-badge-before .mat-badge-content {
-    left: auto;
-    right: -14px; }
+[dir='rtl'] .mat-badge-large.mat-badge-overlap.mat-badge-before .mat-badge-content {
+  left: auto;
+  right: -14px; }
 
-.mat-badge-large.mat-badge-overlap.mat-badge-after {
-  margin-right: 14px; }
-  .mat-badge-large.mat-badge-overlap.mat-badge-after .mat-badge-content {
-    right: -14px; }
+.mat-badge-large.mat-badge-overlap.mat-badge-after .mat-badge-content {
+  right: -14px; }
 
-[dir='rtl'] .mat-badge-large.mat-badge-overlap.mat-badge-after {
-  margin-right: 0;
-  margin-left: 28px; }
-  [dir='rtl'] .mat-badge-large.mat-badge-overlap.mat-badge-after .mat-badge-content {
-    right: auto;
-    left: -14px; }
+[dir='rtl'] .mat-badge-large.mat-badge-overlap.mat-badge-after .mat-badge-content {
+  right: auto;
+  left: -14px; }
 
 .mat-bottom-sheet-container {
   background: white;
@@ -1012,6 +956,9 @@ textarea.cdk-textarea-autosize-measuring {
 
 .mat-checkbox-checkmark-path {
   stroke: #fafafa !important; }
+  @media screen and (-ms-high-contrast: black-on-white) {
+    .mat-checkbox-checkmark-path {
+      stroke: #000 !important; } }
 
 .mat-checkbox-mixedmark {
   background-color: #fafafa; }
@@ -1033,6 +980,14 @@ textarea.cdk-textarea-autosize-measuring {
 
 .mat-checkbox-disabled .mat-checkbox-label {
   color: #b0b0b0; }
+
+@media screen and (-ms-high-contrast: active) {
+  .mat-checkbox-disabled {
+    opacity: 0.5; } }
+
+@media screen and (-ms-high-contrast: active) {
+  .mat-checkbox-background {
+    background: none; } }
 
 .mat-checkbox:not(.mat-checkbox-disabled).mat-primary .mat-checkbox-ripple .mat-ripple-element {
   background-color: rgba(63, 81, 181, 0.26); }
@@ -1082,6 +1037,12 @@ textarea.cdk-textarea-autosize-measuring {
 .mat-table {
   background: white; }
 
+.mat-table thead, .mat-table tbody, .mat-table tfoot,
+mat-header-row, mat-row, mat-footer-row,
+[mat-header-row], [mat-row], [mat-footer-row],
+.mat-table-sticky {
+  background: inherit; }
+
 mat-row, mat-header-row, mat-footer-row,
 th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   border-bottom-color: rgba(0, 0, 0, 0.12); }
@@ -1096,8 +1057,8 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   border-top-color: rgba(0, 0, 0, 0.54); }
 
 .mat-datepicker-toggle,
-.mat-datepicker-popup .mat-calendar-next-button,
-.mat-datepicker-popup .mat-calendar-previous-button {
+.mat-datepicker-content .mat-calendar-next-button,
+.mat-datepicker-content .mat-calendar-previous-button {
   color: rgba(0, 0, 0, 0.54); }
 
 .mat-calendar-table-header {
@@ -1227,7 +1188,8 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   .mat-form-field.mat-form-field-invalid .mat-form-field-label .mat-form-field-required-marker {
     color: #f44336; }
 
-.mat-form-field.mat-form-field-invalid .mat-form-field-ripple {
+.mat-form-field.mat-form-field-invalid .mat-form-field-ripple,
+.mat-form-field.mat-form-field-invalid .mat-form-field-ripple.mat-accent {
   background-color: #f44336; }
 
 .mat-error {
