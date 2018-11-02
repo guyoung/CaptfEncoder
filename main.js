@@ -38,7 +38,7 @@ function createWindow() {
     "web-preferences": {
       "web-security": false
     },
-    icon: __dirname + "/app.ico"
+    icon: __dirname + "/app_ico.ico"
   });
 
   mainWindow.loadURL(

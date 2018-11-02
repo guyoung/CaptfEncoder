@@ -1,7 +1,7 @@
-CTF编码全家桶
+CaptfEncoder
 ================================
 
-
+CaptfEncoder是一款跨平台网络安全工具套件，提供网络安全相关编码转换、古典密码、密码学、特殊编码等工具，并聚合各类在线工具。
 
 ## 使用
 
@@ -16,18 +16,25 @@ CTF编码全家桶
  * npm install
  * npm start
 
+## 支持操作系统
+
+ * Windows
+ * Linux
+ * MacOS
+ * Other...(Support Node.js)
+
 ## 功能介绍
 
  * 编码转换
-   * Ascii 编码
-   * Web 常用编码
-   * Hex 编码
-   * Unicode 编码
+   * Ascii Encoding
+   * Web Encoding
+   * Hex Encoding
+   * Unicode Encoding
    * Base64（Base16、Base32、Base58）
-   * Url 编码
-   * Html Entity 编码
-   * Escape 编码
-   * Quoted-printable 编码
+   * Url Encoding
+   * Html Entity Encoding
+   * Escape Encoding
+   * Quoted-printable（可打印字符引用编码）
    * Morse Code（莫尔斯电码）
    * Tap Code（敲击码）
  * 古典密码
@@ -52,7 +59,7 @@ CTF编码全家桶
    * Four-Square（四方密码）
    * Straddle Checkerboard （跨棋盘密码）
  * 密码学
-   * 常用 Hash
+   * Hash
    * MD5（MD2、MD4、RIPEMD)
    * SHA（SHA1、SHA256、SHA512、SHA224、SHA384）
    * AES
@@ -61,15 +68,33 @@ CTF编码全家桶
    * 3DES（TripleDES）
    * RC4
    * Rabbit
-   * Blowfish   
- * 图像编码
-   * Base64 图像编码
+   * Blowfish 
  * 其他编码
    * JSFuck
    * Jother
- * 其他工具
+   * Brainfuck
+   * Ip Encoding
+   * Base64 Image Encoding 
+ * 实用工具
+   * Base Converter（进制转换）
    * Mime Type
+   * IP Subnet Calculator（IP子网计算）
+   * Ping
+   * Nslookup
    * RegExp Tester（正则表达式）
+ * 聚合工具
+   * GeoIP Lookup
+   * Whois Lookup
+   * Reverse IP Lookup（反向IP查询）
+   * DNS Lookup
+   * Sub Domains Lookup（子域名查询）
+   * Port Scan（子域名查询）
+   * Censys Lookup
+   * Shodan Honeypot Lookup
+   * Wappalyzer Lookup
+   * WhatCms Lookup
+   * Factordb（素数分解）
+
 
 ## 项目地址
 

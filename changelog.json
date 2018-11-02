@@ -1,0 +1,16 @@
+[
+  {
+    "version": "1.1.0",
+    "versionNumber": 10100,
+    "builddate": "2018-11-04",
+    "description": "CaptfEncoder V1.1.0 发布",
+    "changes": []
+  },
+  {
+    "version": "1.0.0",
+    "versionNumber": 10000,
+    "builddate": "2018-10-19",
+    "description": "CaptfEncoder V1.0.0 发布",
+    "changes": []
+  }
+]

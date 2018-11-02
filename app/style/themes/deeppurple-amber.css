@@ -2,6 +2,8 @@
  * Applies styles for users in high contrast mode. Note that this only applies
  * to Microsoft browsers. Chrome can be included by checking for the `html[hc]`
  * attribute, however Chrome handles high contrast differently.
+ * @param target Which kind of high contrast setting to target. Defaults to `active`, can be
+ *    `white-on-black` or `black-on-white`.
  */
 /* Theme for the ripple elements.*/
 /* stylelint-disable material/no-prefixes */
@@ -122,53 +124,33 @@
 .mat-badge-small.mat-badge-below .mat-badge-content {
   bottom: -8px; }
 
-.mat-badge-small.mat-badge-before {
-  margin-left: 16px; }
-  .mat-badge-small.mat-badge-before .mat-badge-content {
-    left: -16px; }
+.mat-badge-small.mat-badge-before .mat-badge-content {
+  left: -16px; }
 
-[dir='rtl'] .mat-badge-small.mat-badge-before {
-  margin-left: 0;
-  margin-right: 16px; }
-  [dir='rtl'] .mat-badge-small.mat-badge-before .mat-badge-content {
-    left: auto;
-    right: -16px; }
+[dir='rtl'] .mat-badge-small.mat-badge-before .mat-badge-content {
+  left: auto;
+  right: -16px; }
 
-.mat-badge-small.mat-badge-after {
-  margin-right: 16px; }
-  .mat-badge-small.mat-badge-after .mat-badge-content {
-    right: -16px; }
+.mat-badge-small.mat-badge-after .mat-badge-content {
+  right: -16px; }
 
-[dir='rtl'] .mat-badge-small.mat-badge-after {
-  margin-right: 0;
-  margin-left: 16px; }
-  [dir='rtl'] .mat-badge-small.mat-badge-after .mat-badge-content {
-    right: auto;
-    left: -16px; }
+[dir='rtl'] .mat-badge-small.mat-badge-after .mat-badge-content {
+  right: auto;
+  left: -16px; }
 
-.mat-badge-small.mat-badge-overlap.mat-badge-before {
-  margin-left: 8px; }
-  .mat-badge-small.mat-badge-overlap.mat-badge-before .mat-badge-content {
-    left: -8px; }
+.mat-badge-small.mat-badge-overlap.mat-badge-before .mat-badge-content {
+  left: -8px; }
 
-[dir='rtl'] .mat-badge-small.mat-badge-overlap.mat-badge-before {
-  margin-left: 0;
-  margin-right: 8px; }
-  [dir='rtl'] .mat-badge-small.mat-badge-overlap.mat-badge-before .mat-badge-content {
-    left: auto;
-    right: -8px; }
+[dir='rtl'] .mat-badge-small.mat-badge-overlap.mat-badge-before .mat-badge-content {
+  left: auto;
+  right: -8px; }
 
-.mat-badge-small.mat-badge-overlap.mat-badge-after {
-  margin-right: 8px; }
-  .mat-badge-small.mat-badge-overlap.mat-badge-after .mat-badge-content {
-    right: -8px; }
+.mat-badge-small.mat-badge-overlap.mat-badge-after .mat-badge-content {
+  right: -8px; }
 
-[dir='rtl'] .mat-badge-small.mat-badge-overlap.mat-badge-after {
-  margin-right: 0;
-  margin-left: 16px; }
-  [dir='rtl'] .mat-badge-small.mat-badge-overlap.mat-badge-after .mat-badge-content {
-    right: auto;
-    left: -8px; }
+[dir='rtl'] .mat-badge-small.mat-badge-overlap.mat-badge-after .mat-badge-content {
+  right: auto;
+  left: -8px; }
 
 .mat-badge-medium .mat-badge-content {
   width: 22px;
@@ -185,53 +167,33 @@
 .mat-badge-medium.mat-badge-below .mat-badge-content {
   bottom: -11px; }
 
-.mat-badge-medium.mat-badge-before {
-  margin-left: 22px; }
-  .mat-badge-medium.mat-badge-before .mat-badge-content {
-    left: -22px; }
+.mat-badge-medium.mat-badge-before .mat-badge-content {
+  left: -22px; }
 
-[dir='rtl'] .mat-badge-medium.mat-badge-before {
-  margin-left: 0;
-  margin-right: 22px; }
-  [dir='rtl'] .mat-badge-medium.mat-badge-before .mat-badge-content {
-    left: auto;
-    right: -22px; }
+[dir='rtl'] .mat-badge-medium.mat-badge-before .mat-badge-content {
+  left: auto;
+  right: -22px; }
 
-.mat-badge-medium.mat-badge-after {
-  margin-right: 22px; }
-  .mat-badge-medium.mat-badge-after .mat-badge-content {
-    right: -22px; }
+.mat-badge-medium.mat-badge-after .mat-badge-content {
+  right: -22px; }
 
-[dir='rtl'] .mat-badge-medium.mat-badge-after {
-  margin-right: 0;
-  margin-left: 22px; }
-  [dir='rtl'] .mat-badge-medium.mat-badge-after .mat-badge-content {
-    right: auto;
-    left: -22px; }
+[dir='rtl'] .mat-badge-medium.mat-badge-after .mat-badge-content {
+  right: auto;
+  left: -22px; }
 
-.mat-badge-medium.mat-badge-overlap.mat-badge-before {
-  margin-left: 11px; }
-  .mat-badge-medium.mat-badge-overlap.mat-badge-before .mat-badge-content {
-    left: -11px; }
+.mat-badge-medium.mat-badge-overlap.mat-badge-before .mat-badge-content {
+  left: -11px; }
 
-[dir='rtl'] .mat-badge-medium.mat-badge-overlap.mat-badge-before {
-  margin-left: 0;
-  margin-right: 11px; }
-  [dir='rtl'] .mat-badge-medium.mat-badge-overlap.mat-badge-before .mat-badge-content {
-    left: auto;
-    right: -11px; }
+[dir='rtl'] .mat-badge-medium.mat-badge-overlap.mat-badge-before .mat-badge-content {
+  left: auto;
+  right: -11px; }
 
-.mat-badge-medium.mat-badge-overlap.mat-badge-after {
-  margin-right: 11px; }
-  .mat-badge-medium.mat-badge-overlap.mat-badge-after .mat-badge-content {
-    right: -11px; }
+.mat-badge-medium.mat-badge-overlap.mat-badge-after .mat-badge-content {
+  right: -11px; }
 
-[dir='rtl'] .mat-badge-medium.mat-badge-overlap.mat-badge-after {
-  margin-right: 0;
-  margin-left: 22px; }
-  [dir='rtl'] .mat-badge-medium.mat-badge-overlap.mat-badge-after .mat-badge-content {
-    right: auto;
-    left: -11px; }
+[dir='rtl'] .mat-badge-medium.mat-badge-overlap.mat-badge-after .mat-badge-content {
+  right: auto;
+  left: -11px; }
 
 .mat-badge-large .mat-badge-content {
   width: 28px;
@@ -248,53 +210,33 @@
 .mat-badge-large.mat-badge-below .mat-badge-content {
   bottom: -14px; }
 
-.mat-badge-large.mat-badge-before {
-  margin-left: 28px; }
-  .mat-badge-large.mat-badge-before .mat-badge-content {
-    left: -28px; }
+.mat-badge-large.mat-badge-before .mat-badge-content {
+  left: -28px; }
 
-[dir='rtl'] .mat-badge-large.mat-badge-before {
-  margin-left: 0;
-  margin-right: 28px; }
-  [dir='rtl'] .mat-badge-large.mat-badge-before .mat-badge-content {
-    left: auto;
-    right: -28px; }
+[dir='rtl'] .mat-badge-large.mat-badge-before .mat-badge-content {
+  left: auto;
+  right: -28px; }
 
-.mat-badge-large.mat-badge-after {
-  margin-right: 28px; }
-  .mat-badge-large.mat-badge-after .mat-badge-content {
-    right: -28px; }
+.mat-badge-large.mat-badge-after .mat-badge-content {
+  right: -28px; }
 
-[dir='rtl'] .mat-badge-large.mat-badge-after {
-  margin-right: 0;
-  margin-left: 28px; }
-  [dir='rtl'] .mat-badge-large.mat-badge-after .mat-badge-content {
-    right: auto;
-    left: -28px; }
+[dir='rtl'] .mat-badge-large.mat-badge-after .mat-badge-content {
+  right: auto;
+  left: -28px; }
 
-.mat-badge-large.mat-badge-overlap.mat-badge-before {
-  margin-left: 14px; }
-  .mat-badge-large.mat-badge-overlap.mat-badge-before .mat-badge-content {
-    left: -14px; }
+.mat-badge-large.mat-badge-overlap.mat-badge-before .mat-badge-content {
+  left: -14px; }
 
-[dir='rtl'] .mat-badge-large.mat-badge-overlap.mat-badge-before {
-  margin-left: 0;
-  margin-right: 14px; }
-  [dir='rtl'] .mat-badge-large.mat-badge-overlap.mat-badge-before .mat-badge-content {
-    left: auto;
-    right: -14px; }
+[dir='rtl'] .mat-badge-large.mat-badge-overlap.mat-badge-before .mat-badge-content {
+  left: auto;
+  right: -14px; }
 
-.mat-badge-large.mat-badge-overlap.mat-badge-after {
-  margin-right: 14px; }
-  .mat-badge-large.mat-badge-overlap.mat-badge-after .mat-badge-content {
-    right: -14px; }
+.mat-badge-large.mat-badge-overlap.mat-badge-after .mat-badge-content {
+  right: -14px; }
 
-[dir='rtl'] .mat-badge-large.mat-badge-overlap.mat-badge-after {
-  margin-right: 0;
-  margin-left: 28px; }
-  [dir='rtl'] .mat-badge-large.mat-badge-overlap.mat-badge-after .mat-badge-content {
-    right: auto;
-    left: -14px; }
+[dir='rtl'] .mat-badge-large.mat-badge-overlap.mat-badge-after .mat-badge-content {
+  right: auto;
+  left: -14px; }
 
 .mat-bottom-sheet-container {
   background: white;
@@ -391,6 +333,9 @@
 
 .mat-checkbox-checkmark-path {
   stroke: #fafafa !important; }
+  @media screen and (-ms-high-contrast: black-on-white) {
+    .mat-checkbox-checkmark-path {
+      stroke: #000 !important; } }
 
 .mat-checkbox-mixedmark {
   background-color: #fafafa; }
@@ -412,6 +357,14 @@
 
 .mat-checkbox-disabled .mat-checkbox-label {
   color: #b0b0b0; }
+
+@media screen and (-ms-high-contrast: active) {
+  .mat-checkbox-disabled {
+    opacity: 0.5; } }
+
+@media screen and (-ms-high-contrast: active) {
+  .mat-checkbox-background {
+    background: none; } }
 
 .mat-checkbox:not(.mat-checkbox-disabled).mat-primary .mat-checkbox-ripple .mat-ripple-element {
   background-color: rgba(103, 58, 183, 0.26); }
@@ -461,6 +414,12 @@
 .mat-table {
   background: white; }
 
+.mat-table thead, .mat-table tbody, .mat-table tfoot,
+mat-header-row, mat-row, mat-footer-row,
+[mat-header-row], [mat-row], [mat-footer-row],
+.mat-table-sticky {
+  background: inherit; }
+
 mat-row, mat-header-row, mat-footer-row,
 th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   border-bottom-color: rgba(0, 0, 0, 0.12); }
@@ -475,8 +434,8 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   border-top-color: rgba(0, 0, 0, 0.54); }
 
 .mat-datepicker-toggle,
-.mat-datepicker-popup .mat-calendar-next-button,
-.mat-datepicker-popup .mat-calendar-previous-button {
+.mat-datepicker-content .mat-calendar-next-button,
+.mat-datepicker-content .mat-calendar-previous-button {
   color: rgba(0, 0, 0, 0.54); }
 
 .mat-calendar-table-header {
@@ -561,6 +520,11 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:not([aria-disabled='true']).cdk-keyboard-focused, .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:not([aria-disabled='true']).cdk-program-focused, .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:not([aria-disabled='true']):hover {
   background: rgba(0, 0, 0, 0.04); }
 
+@media (hover: none) {
+  .mat-expansion-panel:not(.mat-expanded):not([aria-disabled='true'])
+.mat-expansion-panel-header:hover {
+    background: white; } }
+
 .mat-expansion-panel-header-title {
   color: rgba(0, 0, 0, 0.87); }
 
@@ -606,7 +570,8 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   .mat-form-field.mat-form-field-invalid .mat-form-field-label .mat-form-field-required-marker {
     color: #f44336; }
 
-.mat-form-field.mat-form-field-invalid .mat-form-field-ripple {
+.mat-form-field.mat-form-field-invalid .mat-form-field-ripple,
+.mat-form-field.mat-form-field-invalid .mat-form-field-ripple.mat-accent {
   background-color: #f44336; }
 
 .mat-error {
@@ -800,15 +765,6 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .mat-radio-outer-circle {
   border-color: rgba(0, 0, 0, 0.54); }
 
-.mat-radio-disabled .mat-radio-outer-circle {
-  border-color: rgba(0, 0, 0, 0.38); }
-
-.mat-radio-disabled .mat-radio-ripple .mat-ripple-element, .mat-radio-disabled .mat-radio-inner-circle {
-  background-color: rgba(0, 0, 0, 0.38); }
-
-.mat-radio-disabled .mat-radio-label-content {
-  color: rgba(0, 0, 0, 0.38); }
-
 .mat-radio-button.mat-primary.mat-radio-checked .mat-radio-outer-circle {
   border-color: #673ab7; }
 
@@ -835,6 +791,17 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 
 .mat-radio-button.mat-warn .mat-radio-ripple .mat-ripple-element {
   background-color: rgba(244, 67, 54, 0.26); }
+
+.mat-radio-button.mat-radio-disabled.mat-radio-checked .mat-radio-outer-circle,
+.mat-radio-button.mat-radio-disabled .mat-radio-outer-circle {
+  border-color: rgba(0, 0, 0, 0.38); }
+
+.mat-radio-button.mat-radio-disabled .mat-radio-ripple .mat-ripple-element,
+.mat-radio-button.mat-radio-disabled .mat-radio-inner-circle {
+  background-color: rgba(0, 0, 0, 0.38); }
+
+.mat-radio-button.mat-radio-disabled .mat-radio-label-content {
+  color: rgba(0, 0, 0, 0.38); }
 
 .mat-select-content, .mat-select-panel-done-animating {
   background: white; }
@@ -1030,6 +997,9 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .mat-stepper-horizontal-line {
   border-top-color: rgba(0, 0, 0, 0.12); }
 
+.mat-sort-header-arrow {
+  color: #757575; }
+
 .mat-tab-nav-bar,
 .mat-tab-header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
@@ -1055,9 +1025,11 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   border-bottom: none;
   border-top: none; }
 
-.mat-tab-group.mat-primary .mat-tab-label:not(.mat-tab-disabled):focus,
-.mat-tab-group.mat-primary .mat-tab-link:not(.mat-tab-disabled):focus, .mat-tab-nav-bar.mat-primary .mat-tab-label:not(.mat-tab-disabled):focus,
-.mat-tab-nav-bar.mat-primary .mat-tab-link:not(.mat-tab-disabled):focus {
+.mat-tab-group.mat-primary .mat-tab-label.cdk-keyboard-focused:not(.mat-tab-disabled), .mat-tab-group.mat-primary .mat-tab-label.cdk-program-focused:not(.mat-tab-disabled),
+.mat-tab-group.mat-primary .mat-tab-link.cdk-keyboard-focused:not(.mat-tab-disabled),
+.mat-tab-group.mat-primary .mat-tab-link.cdk-program-focused:not(.mat-tab-disabled), .mat-tab-nav-bar.mat-primary .mat-tab-label.cdk-keyboard-focused:not(.mat-tab-disabled), .mat-tab-nav-bar.mat-primary .mat-tab-label.cdk-program-focused:not(.mat-tab-disabled),
+.mat-tab-nav-bar.mat-primary .mat-tab-link.cdk-keyboard-focused:not(.mat-tab-disabled),
+.mat-tab-nav-bar.mat-primary .mat-tab-link.cdk-program-focused:not(.mat-tab-disabled) {
   background-color: rgba(209, 196, 233, 0.3); }
 
 .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
@@ -1066,9 +1038,11 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .mat-tab-group.mat-primary.mat-background-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary.mat-background-primary .mat-ink-bar {
   background-color: white; }
 
-.mat-tab-group.mat-accent .mat-tab-label:not(.mat-tab-disabled):focus,
-.mat-tab-group.mat-accent .mat-tab-link:not(.mat-tab-disabled):focus, .mat-tab-nav-bar.mat-accent .mat-tab-label:not(.mat-tab-disabled):focus,
-.mat-tab-nav-bar.mat-accent .mat-tab-link:not(.mat-tab-disabled):focus {
+.mat-tab-group.mat-accent .mat-tab-label.cdk-keyboard-focused:not(.mat-tab-disabled), .mat-tab-group.mat-accent .mat-tab-label.cdk-program-focused:not(.mat-tab-disabled),
+.mat-tab-group.mat-accent .mat-tab-link.cdk-keyboard-focused:not(.mat-tab-disabled),
+.mat-tab-group.mat-accent .mat-tab-link.cdk-program-focused:not(.mat-tab-disabled), .mat-tab-nav-bar.mat-accent .mat-tab-label.cdk-keyboard-focused:not(.mat-tab-disabled), .mat-tab-nav-bar.mat-accent .mat-tab-label.cdk-program-focused:not(.mat-tab-disabled),
+.mat-tab-nav-bar.mat-accent .mat-tab-link.cdk-keyboard-focused:not(.mat-tab-disabled),
+.mat-tab-nav-bar.mat-accent .mat-tab-link.cdk-program-focused:not(.mat-tab-disabled) {
   background-color: rgba(255, 229, 127, 0.3); }
 
 .mat-tab-group.mat-accent .mat-ink-bar, .mat-tab-nav-bar.mat-accent .mat-ink-bar {
@@ -1077,9 +1051,11 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .mat-tab-group.mat-accent.mat-background-accent .mat-ink-bar, .mat-tab-nav-bar.mat-accent.mat-background-accent .mat-ink-bar {
   background-color: rgba(0, 0, 0, 0.87); }
 
-.mat-tab-group.mat-warn .mat-tab-label:not(.mat-tab-disabled):focus,
-.mat-tab-group.mat-warn .mat-tab-link:not(.mat-tab-disabled):focus, .mat-tab-nav-bar.mat-warn .mat-tab-label:not(.mat-tab-disabled):focus,
-.mat-tab-nav-bar.mat-warn .mat-tab-link:not(.mat-tab-disabled):focus {
+.mat-tab-group.mat-warn .mat-tab-label.cdk-keyboard-focused:not(.mat-tab-disabled), .mat-tab-group.mat-warn .mat-tab-label.cdk-program-focused:not(.mat-tab-disabled),
+.mat-tab-group.mat-warn .mat-tab-link.cdk-keyboard-focused:not(.mat-tab-disabled),
+.mat-tab-group.mat-warn .mat-tab-link.cdk-program-focused:not(.mat-tab-disabled), .mat-tab-nav-bar.mat-warn .mat-tab-label.cdk-keyboard-focused:not(.mat-tab-disabled), .mat-tab-nav-bar.mat-warn .mat-tab-label.cdk-program-focused:not(.mat-tab-disabled),
+.mat-tab-nav-bar.mat-warn .mat-tab-link.cdk-keyboard-focused:not(.mat-tab-disabled),
+.mat-tab-nav-bar.mat-warn .mat-tab-link.cdk-program-focused:not(.mat-tab-disabled) {
   background-color: rgba(255, 205, 210, 0.3); }
 
 .mat-tab-group.mat-warn .mat-ink-bar, .mat-tab-nav-bar.mat-warn .mat-ink-bar {
@@ -1088,9 +1064,11 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .mat-tab-group.mat-warn.mat-background-warn .mat-ink-bar, .mat-tab-nav-bar.mat-warn.mat-background-warn .mat-ink-bar {
   background-color: white; }
 
-.mat-tab-group.mat-background-primary .mat-tab-label:not(.mat-tab-disabled):focus,
-.mat-tab-group.mat-background-primary .mat-tab-link:not(.mat-tab-disabled):focus, .mat-tab-nav-bar.mat-background-primary .mat-tab-label:not(.mat-tab-disabled):focus,
-.mat-tab-nav-bar.mat-background-primary .mat-tab-link:not(.mat-tab-disabled):focus {
+.mat-tab-group.mat-background-primary .mat-tab-label.cdk-keyboard-focused:not(.mat-tab-disabled), .mat-tab-group.mat-background-primary .mat-tab-label.cdk-program-focused:not(.mat-tab-disabled),
+.mat-tab-group.mat-background-primary .mat-tab-link.cdk-keyboard-focused:not(.mat-tab-disabled),
+.mat-tab-group.mat-background-primary .mat-tab-link.cdk-program-focused:not(.mat-tab-disabled), .mat-tab-nav-bar.mat-background-primary .mat-tab-label.cdk-keyboard-focused:not(.mat-tab-disabled), .mat-tab-nav-bar.mat-background-primary .mat-tab-label.cdk-program-focused:not(.mat-tab-disabled),
+.mat-tab-nav-bar.mat-background-primary .mat-tab-link.cdk-keyboard-focused:not(.mat-tab-disabled),
+.mat-tab-nav-bar.mat-background-primary .mat-tab-link.cdk-program-focused:not(.mat-tab-disabled) {
   background-color: rgba(209, 196, 233, 0.3); }
 
 .mat-tab-group.mat-background-primary .mat-tab-header, .mat-tab-group.mat-background-primary .mat-tab-links, .mat-tab-nav-bar.mat-background-primary .mat-tab-header, .mat-tab-nav-bar.mat-background-primary .mat-tab-links {
@@ -1110,9 +1088,11 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .mat-tab-group.mat-background-primary .mat-ripple-element, .mat-tab-nav-bar.mat-background-primary .mat-ripple-element {
   background-color: rgba(255, 255, 255, 0.12); }
 
-.mat-tab-group.mat-background-accent .mat-tab-label:not(.mat-tab-disabled):focus,
-.mat-tab-group.mat-background-accent .mat-tab-link:not(.mat-tab-disabled):focus, .mat-tab-nav-bar.mat-background-accent .mat-tab-label:not(.mat-tab-disabled):focus,
-.mat-tab-nav-bar.mat-background-accent .mat-tab-link:not(.mat-tab-disabled):focus {
+.mat-tab-group.mat-background-accent .mat-tab-label.cdk-keyboard-focused:not(.mat-tab-disabled), .mat-tab-group.mat-background-accent .mat-tab-label.cdk-program-focused:not(.mat-tab-disabled),
+.mat-tab-group.mat-background-accent .mat-tab-link.cdk-keyboard-focused:not(.mat-tab-disabled),
+.mat-tab-group.mat-background-accent .mat-tab-link.cdk-program-focused:not(.mat-tab-disabled), .mat-tab-nav-bar.mat-background-accent .mat-tab-label.cdk-keyboard-focused:not(.mat-tab-disabled), .mat-tab-nav-bar.mat-background-accent .mat-tab-label.cdk-program-focused:not(.mat-tab-disabled),
+.mat-tab-nav-bar.mat-background-accent .mat-tab-link.cdk-keyboard-focused:not(.mat-tab-disabled),
+.mat-tab-nav-bar.mat-background-accent .mat-tab-link.cdk-program-focused:not(.mat-tab-disabled) {
   background-color: rgba(255, 229, 127, 0.3); }
 
 .mat-tab-group.mat-background-accent .mat-tab-header, .mat-tab-group.mat-background-accent .mat-tab-links, .mat-tab-nav-bar.mat-background-accent .mat-tab-header, .mat-tab-nav-bar.mat-background-accent .mat-tab-links {
@@ -1132,9 +1112,11 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .mat-tab-group.mat-background-accent .mat-ripple-element, .mat-tab-nav-bar.mat-background-accent .mat-ripple-element {
   background-color: rgba(0, 0, 0, 0.12); }
 
-.mat-tab-group.mat-background-warn .mat-tab-label:not(.mat-tab-disabled):focus,
-.mat-tab-group.mat-background-warn .mat-tab-link:not(.mat-tab-disabled):focus, .mat-tab-nav-bar.mat-background-warn .mat-tab-label:not(.mat-tab-disabled):focus,
-.mat-tab-nav-bar.mat-background-warn .mat-tab-link:not(.mat-tab-disabled):focus {
+.mat-tab-group.mat-background-warn .mat-tab-label.cdk-keyboard-focused:not(.mat-tab-disabled), .mat-tab-group.mat-background-warn .mat-tab-label.cdk-program-focused:not(.mat-tab-disabled),
+.mat-tab-group.mat-background-warn .mat-tab-link.cdk-keyboard-focused:not(.mat-tab-disabled),
+.mat-tab-group.mat-background-warn .mat-tab-link.cdk-program-focused:not(.mat-tab-disabled), .mat-tab-nav-bar.mat-background-warn .mat-tab-label.cdk-keyboard-focused:not(.mat-tab-disabled), .mat-tab-nav-bar.mat-background-warn .mat-tab-label.cdk-program-focused:not(.mat-tab-disabled),
+.mat-tab-nav-bar.mat-background-warn .mat-tab-link.cdk-keyboard-focused:not(.mat-tab-disabled),
+.mat-tab-nav-bar.mat-background-warn .mat-tab-link.cdk-program-focused:not(.mat-tab-disabled) {
   background-color: rgba(255, 205, 210, 0.3); }
 
 .mat-tab-group.mat-background-warn .mat-tab-header, .mat-tab-group.mat-background-warn .mat-tab-links, .mat-tab-nav-bar.mat-background-warn .mat-tab-header, .mat-tab-nav-bar.mat-background-warn .mat-tab-links {
