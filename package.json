@@ -1,6 +1,6 @@
 {
   "name": "captfencoder",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "CaptfEncoder 跨平台网络安全工具套件",
   "main": "main.js",
   "scripts": {
@@ -19,17 +19,17 @@
     "appId": "com.guyoung.captfencoder",
     "productName": "CaptfEncoder",
     "directories": {
-      "output": "../release"
+      "output": "../release/"
     },
     "win": {
-      "icon": "../icon/app_ico.ico"
+      "icon": "../icons/app_ico.ico"
     },
     "mac": {
       "category": "public.app-category.developer-tools",
-      "icon": "../icon/app_ico.icns"
+      "icon": "../icons/app_ico.icns"
     },
     "linux": {
-      "icon": "../icon/app_ico.ico",
+      "icon": "../icons/",
       "maintainer": "guyoung"
     }
   }

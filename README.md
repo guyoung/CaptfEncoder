@@ -9,7 +9,7 @@ CaptfEncoder是一款跨平台网络安全工具套件，提供网络安全相�
 
  * 百度网盘 <https://pan.baidu.com/s/1q2N1w44bvYIXLe5gCI5oKA> 密码：k5b9
 
-### 法法二 使用Electron运行
+### 方法二 使用Electron运行
 
  * git clone https://github.com/guyoung/CaptfEncoder.git
  * cd CaptfEncoder
@@ -37,6 +37,7 @@ CaptfEncoder是一款跨平台网络安全工具套件，提供网络安全相�
    * Quoted-printable（可打印字符引用编码）
    * Morse Code（莫尔斯电码）
    * Tap Code（敲击码）
+   * Punycode
  * 古典密码
    * Rail-fence（栅栏密码）
    * Atbash（埃特巴什码）
@@ -61,11 +62,15 @@ CaptfEncoder是一款跨平台网络安全工具套件，提供网络安全相�
  * 密码学
    * Hash
    * MD5（MD2、MD4、RIPEMD)
-   * SHA（SHA1、SHA256、SHA512、SHA224、SHA384）
+   * SHA（SHA1、SHA256、SHA512、SHA224、SHA384、SHA3）
+   * HMAC
+   * Bcrypt
+   * Scrypt
    * AES
    * RSA
    * DES
    * 3DES（TripleDES）
+   * RC2
    * RC4
    * Rabbit
    * Blowfish 
@@ -75,13 +80,18 @@ CaptfEncoder是一款跨平台网络安全工具套件，提供网络安全相�
    * Brainfuck
    * Ip Encoding
    * Base64 Image Encoding 
+   * QR Code
  * 实用工具
    * Base Converter（进制转换）
    * Mime Type
+   * File Type
+   * File Hash
    * IP Subnet Calculator（IP子网计算）
    * Ping
    * Nslookup
    * RegExp Tester（正则表达式）
+   * Image Exif
+   * Gif Image
  * 聚合工具
    * GeoIP Lookup
    * Whois Lookup
