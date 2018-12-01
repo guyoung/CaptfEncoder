@@ -22,14 +22,14 @@
       "output": "../release/"
     },
     "win": {
-      "icon": "../icons/app_ico.ico"
+      "icon": "icons/app_ico.ico"
     },
     "mac": {
       "category": "public.app-category.developer-tools",
-      "icon": "../icons/app_ico.icns"
+      "icon": "icons/app_ico.icns"
     },
     "linux": {
-      "icon": "../icons/",
+      "icon": "icons/",
       "maintainer": "guyoung"
     }
   }
