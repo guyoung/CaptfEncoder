@@ -1,5 +1,9 @@
 CaptfEncoder
 ================================
+[![GitHub release](https://img.shields.io/github/release/guyoung/CaptfEncoder.svg)](https://github.com/guyoung/CaptfEncoder/releases/latest)
+
+![CaptfEncoder Screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/screenshot/captfencoder-screenshot-1.png)
+
 
 CaptfEncoder是一款跨平台网络安全工具套件，提供网络安全相关编码转换、古典密码、密码学、特殊编码等工具，并聚合各类在线工具。
 
