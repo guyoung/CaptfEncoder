@@ -13,7 +13,7 @@
   "contributors": [],
   "dependencies": {},
   "devDependencies": {
-    "electron": "^6.1.0"
+    "electron": "^6.1.1"
   },
   "build": {
     "appId": "com.guyoung.captfencoder",
