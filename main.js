@@ -35,10 +35,13 @@ function createWindow() {
     height: 700,
     title: "CaptfEncoder",
     titleBarStyle: "hidden-inset",
-    "web-preferences": {
-      "web-security": false
+    webPreferences: {
+      javascript: true,
+      plugins: true,
+      nodeIntegration: true, // 是否集成 Nodejs
+      webSecurity: false
     },
-    icon: __dirname + "/app_ico.ico"
+    icon: __dirname + "/icons/app_ico.ico"
   });
 
   mainWindow.loadURL(

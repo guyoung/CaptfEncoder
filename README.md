@@ -42,6 +42,8 @@ CaptfEncoder是一款跨平台网络安全工具套件，提供网络安全相�
    * Morse Code（莫尔斯电码）
    * Tap Code（敲击码）
    * Punycode
+   * Bubble Babble
+
  * 古典密码
    * Rail-fence（栅栏密码）
    * Atbash（埃特巴什码）
@@ -78,6 +80,7 @@ CaptfEncoder是一款跨平台网络安全工具套件，提供网络安全相�
    * RC4
    * Rabbit
    * Blowfish 
+   * 国密 SM3
  * 其他编码
    * JSFuck
    * Jother
@@ -92,10 +95,13 @@ CaptfEncoder是一款跨平台网络安全工具套件，提供网络安全相�
    * File Hash
    * IP Subnet Calculator（IP子网计算）
    * Ping
-   * Nslookup
+   * Nslookup 
    * RegExp Tester（正则表达式）
+   * RegExp Creator
    * Image Exif
    * Gif Image
+   * Http Request
+   * Restful Client
  * 聚合工具
    * GeoIP Lookup
    * Whois Lookup
@@ -110,16 +116,17 @@ CaptfEncoder是一款跨平台网络安全工具套件，提供网络安全相�
    * Factordb（素数分解）
 
 
-## 项目地址
+## 项目网站
 
  * <https://github.com/guyoung/CaptfEncoder>
 
-## 微信小程序版
+## 下载软件
 
-![微信小程序](https://mmbiz.qpic.cn/mmbiz_png/5IMiaY073fa43CXaux9JiaP0Jy0Jkncw4sbH8w3uWhAsEicibeVWae3sF82vzOajmwZTAvGkiaCL7eQGibFLB1VAspxg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)
+ * 百度网盘 <https://pan.baidu.com/s/1q2N1w44bvYIXLe5gCI5oKA> 密码：k5b9
+
 
 ------------------------------------------------
 
-**Guyoung Studio**
+**关注微信公众号，获取软件最新消息**
 
 ![微信公众号](https://mmbiz.qlogo.cn/mmbiz_jpg/5IMiaY073fa7zxH6f5q5EticlwZPsYQtUnpYHspNiczmNyjtCXnR7LAmvpstK4EycfzIQkciboLh1qtWRcCibEPuDhA/0?wx_fmt=jpeg)
