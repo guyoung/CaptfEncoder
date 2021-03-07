@@ -19,7 +19,7 @@
     "appId": "com.guyoung.captfencoder",
     "productName": "CaptfEncoder",
     "directories": {
-      "output": "../release/"
+      "output": "./release/"
     },
     "win": {
       "icon": "icons/app_ico.ico"

@@ -7,18 +7,18 @@ CaptfEncoder
 
 CaptfEncoder是一款跨平台网络安全工具套件，提供网络安全相关编码转换、古典密码、密码学、特殊编码等工具，并聚合各类在线工具。
 
-## 使用
 
-### 方法一 直接下载可执行程序
-
- * 百度网盘 <https://pan.baidu.com/s/1q2N1w44bvYIXLe5gCI5oKA> 密码：k5b9
-
-### 方法二 使用Electron运行
+## 使用Electron运行
 
  * git clone https://github.com/guyoung/CaptfEncoder.git
  * cd CaptfEncoder
  * npm install
  * npm start
+
+## 使用Electron打包
+ * cd CaptfEncoder
+ * npm install electron-builder
+ * electron-builder --mac(win) 根据自己的系统决定
 
 ## 支持操作系统
 
@@ -119,10 +119,6 @@ CaptfEncoder是一款跨平台网络安全工具套件，提供网络安全相�
 ## 项目网站
 
  * <https://github.com/guyoung/CaptfEncoder>
-
-## 下载软件
-
- * 百度网盘 <https://pan.baidu.com/s/1q2N1w44bvYIXLe5gCI5oKA> 密码：k5b9
 
 
 ------------------------------------------------
