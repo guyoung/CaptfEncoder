@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.other.image-qrcode",
+  "description": "QRCode（二维码）",
+   "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

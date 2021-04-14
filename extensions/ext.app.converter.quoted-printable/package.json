@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.converter.quoted-printable",
+  "description": "Quoted-printable 编码",
+   "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

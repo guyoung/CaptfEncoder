@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.classical.rot13",
+  "description": "ROT13",
+   "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

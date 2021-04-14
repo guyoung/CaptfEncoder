@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.classical.rail-fence",
+  "description": "Rail-fence（栅栏密码）",
+   "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

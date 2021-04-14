@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.other.image-base64",
+  "description": "图片Base64编码",
+   "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.home",
+  "description": "首页", 
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

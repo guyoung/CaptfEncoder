@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.converter.html-entity",
+  "description": "Html Entity 编码",
+   "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

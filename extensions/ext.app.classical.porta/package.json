@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.classical.porta",
+  "description": "Porta（Porta 密码）",
+   "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

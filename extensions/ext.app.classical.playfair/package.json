@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.classical.playfair",
+  "description": "Playfair（普莱菲尔密码）",
+   "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

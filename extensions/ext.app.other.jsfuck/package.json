@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.other.jsfuck",
+  "description": "JSFuck 编码",
+   "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}
