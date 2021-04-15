@@ -59,7 +59,7 @@ module.exports = {
                     handler = 'ext.app.classical.rot47.encode'
                 }              
 
-                return hander;
+                return handler;
             }
         },
         decodeHandler(options) {
@@ -76,7 +76,7 @@ module.exports = {
                     handler = 'ext.app.classical.rot47.decode'
                 }              
 
-                return hander;
+                return handler;
             }            
         },
     }

@@ -58,6 +58,7 @@ module.exports = {
 `,
     methods: {
         encodeHandler(options) {
+            console.log('encodeHandler');
             if (options && options.enctype) {
                 let handler = 'ext.app.converter.base64.encode';
 
@@ -81,9 +82,9 @@ module.exports = {
                 }              
                 else if (options.enctype == 'base91') {
                     handler = 'ext.app.converter.base91.encode'
-                }  
+                }                
 
-                return hander;
+                return handler;
             }
         },
         decodeHandler(options) {
@@ -112,7 +113,7 @@ module.exports = {
                     handler = 'ext.app.converter.base91.decode'
                 }             
 
-                return hander;
+                return handler;
             }            
         },
     }

@@ -92,7 +92,7 @@ module.exports = {
                     options.length=320
                 }              
 
-                return hander;
+                return handler;
             }
         }
     }

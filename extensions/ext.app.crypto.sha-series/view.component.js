@@ -78,7 +78,7 @@ module.exports = {
                 }  
                     
 
-                return hander;
+                return handler;
             }
         }
     }
