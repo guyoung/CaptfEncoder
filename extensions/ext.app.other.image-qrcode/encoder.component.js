@@ -15,14 +15,9 @@ module.exports = {
        
     </v-row>
     <v-row>
-        <v-col>
-            <v-textarea
-                class="textarea"
-                v-model="input"
-                rows="10"
-                solo                        
-                height="100%"
-            ></v-textarea>
+        <v-col>           
+            <ext-editor v-model="input"  label="Input">
+            </ext-editor>
         </v-col>
         <v-col>
             <v-card class="mx-auto">

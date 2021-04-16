@@ -14,27 +14,27 @@ module.exports = {
     template: `           
 <v-container fluid class="ma-3">      
     <v-row dense>
-        <v-textarea outlined  rows="2" label="Input" v-model="input">
+        <v-textarea outlined  rows="2" label="Input" spellcheck="false" v-model="input">
         </v-textarea>
     </v-row>
     <v-row dense>
-        <v-textarea outlined  rows="2" label="MD5 32" :value="md5_32" readonly>
+        <v-textarea outlined  rows="2" label="MD5 32" spellcheck="false" :value="md5_32" readonly>
         </v-textarea>
     </v-row>
     <v-row dense>
-        <v-textarea outlined  rows="2" label="MD5 16" :value="md5_16" readonly>
+        <v-textarea outlined  rows="2" label="MD5 16" spellcheck="false" :value="md5_16" readonly>
         </v-textarea>
     </v-row>
     <v-row dense>
-        <v-textarea outlined  rows="2" label="SHA-1" :value="sha1" readonly>
+        <v-textarea outlined  rows="2" label="SHA-1" spellcheck="false" :value="sha1" readonly>
         </v-textarea>
     </v-row>
     <v-row dense>
-        <v-textarea outlined  rows="2" label="SHA-256" :value="sha256" readonly>
+        <v-textarea outlined  rows="2" label="SHA-256" spellcheck="false" :value="sha256" readonly>
         </v-textarea>
     </v-row>
     <v-row dense>
-        <v-textarea outlined  rows="2" label="SHA-512" :value="sha512" readonly>
+        <v-textarea outlined  rows="2" label="SHA-512" spellcheck="false" :value="sha512" readonly>
         </v-textarea>
     </v-row>
 </v-container> 

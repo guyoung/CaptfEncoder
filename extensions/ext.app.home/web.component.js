@@ -15,31 +15,31 @@ module.exports = {
     template: `           
 <v-container fluid class="ma-3">      
     <v-row dense>
-        <v-textarea outlined  rows="2" label="Input" v-model="input">
+        <v-textarea outlined  rows="2" label="Input" spellcheck="false" v-model="input">
         </v-textarea>
     </v-row>
     <v-row dense>
-        <v-textarea outlined  rows="2" label="Hex" :value="hex" readonly>
+        <v-textarea outlined  rows="2" label="Hex" spellcheck="false" :value="hex" readonly>
         </v-textarea>
     </v-row>
     <v-row dense>
-        <v-textarea outlined  rows="2" label="Unicode" :value="unicode" readonly>
+        <v-textarea outlined  rows="2" label="Unicode" spellcheck="false" :value="unicode" readonly>
         </v-textarea>
     </v-row>
     <v-row dense>
-        <v-textarea outlined  rows="2" label="Base64" :value="base64" readonly>
+        <v-textarea outlined  rows="2" label="Base64" spellcheck="false" :value="base64" readonly>
         </v-textarea>
     </v-row>
     <v-row dense>
-        <v-textarea outlined  rows="2" label="Html entity" :value="html" readonly>
+        <v-textarea outlined  rows="2" label="Html entity" spellcheck="false" :value="html" readonly>
         </v-textarea>
     </v-row>
     <v-row dense>
-        <v-textarea outlined  rows="2" label="Url" :value="url" readonly>
+        <v-textarea outlined  rows="2" label="Url" spellcheck="false" :value="url" readonly>
         </v-textarea>
     </v-row>
     <v-row dense>
-        <v-textarea outlined  rows="2" label="Sql" :value="sql" readonly>
+        <v-textarea outlined  rows="2" label="Sql" spellcheck="false" :value="sql" readonly>
         </v-textarea>
     </v-row>
 </v-container> 

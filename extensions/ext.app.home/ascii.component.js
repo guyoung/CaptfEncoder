@@ -13,23 +13,23 @@ module.exports = {
     template: `           
 <v-container fluid class="ma-3">      
     <v-row dense>
-        <v-textarea outlined  rows="2" label="Text" v-model="text" @input="invokeText">
+        <v-textarea outlined  rows="2" label="Text" spellcheck="false" v-model="text" @input="invokeText">
         </v-textarea>
     </v-row>
     <v-row dense>
-        <v-textarea outlined  rows="2" label="Bin" v-model="bin" @input="invokeBin">
+        <v-textarea outlined  rows="2" label="Bin" spellcheck="false" v-model="bin" @input="invokeBin">
         </v-textarea>
     </v-row>
     <v-row dense>
-        <v-textarea outlined  rows="2" label="Oct" v-model="oct" @input="invokeOct">
+        <v-textarea outlined  rows="2" label="Oct" spellcheck="false" v-model="oct" @input="invokeOct">
         </v-textarea>
     </v-row>
     <v-row dense>
-        <v-textarea outlined  rows="2" label="Dec" v-model="dec" @input="invokeDec">
+        <v-textarea outlined  rows="2" label="Dec" spellcheck="false" v-model="dec" @input="invokeDec">
         </v-textarea>
     </v-row>
     <v-row dense>
-        <v-textarea outlined  rows="2" label="Hex" v-model="hex" @input="invokeHex">
+        <v-textarea outlined  rows="2" label="Hex" spellcheck="false" v-model="hex" @input="invokeHex">
         </v-textarea>
     </v-row>   
 </v-container> 

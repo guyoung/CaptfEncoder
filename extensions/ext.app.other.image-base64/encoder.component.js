@@ -20,13 +20,8 @@ module.exports = {
     </v-row>
     <v-row>
         <v-col>
-            <v-textarea
-                class="textarea"
-                :value="output"
-                rows="10"
-                solo                                    
-                height="100%"
-            ></v-textarea>
+            <ext-editor v-model="output" readonly>
+            </ext-editor>
         </v-col>
     </v-row>  
 </v-container>

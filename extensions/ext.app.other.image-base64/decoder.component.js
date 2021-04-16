@@ -15,13 +15,8 @@ module.exports = {
     </v-row>
     <v-row>
         <v-col>
-            <v-textarea
-                class="textarea"
-                v-model="input"
-                rows="10"
-                solo                        
-                height="100%"
-            ></v-textarea>
+            <ext-editor v-model="input" label="Input">
+            </ext-editor>
         </v-col>
         <v-col>
             <v-card class="mx-auto">
@@ -29,10 +24,9 @@ module.exports = {
             </v-card>
         </v-col>
     </v-row>
-</v-container> 
-
-          
+</v-container>           
 `,
+   
     methods: {
         async saveFile() {
             const result = await this.$extInvoke('ext.app.other.image-base64.decode', this.input);

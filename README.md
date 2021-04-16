@@ -101,6 +101,8 @@ CaptfEncoder是一款可扩展跨平台网络安全工具套件，提供网络�
  * 实用工具  
    * 图片Exif
    * Hash类型识别
+   * File Type
+   * File Hash
 
 
 ## 项目网站

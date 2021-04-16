@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.misc.file-type",
+  "description": "File type",
+   "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

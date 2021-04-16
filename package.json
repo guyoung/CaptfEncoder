@@ -5,6 +5,9 @@
   "main": "./main/index.js",
   "author": "",
   "license": "",
+  "scripts": {
+    "start": "electron ."
+  },
   "devDependencies": {
     "electron": "^12.0.2"
   },
