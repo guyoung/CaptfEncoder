@@ -11,22 +11,26 @@
     "url": ""
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "base-x": "^3.0.8",
     "bcryptjs": "^2.4.3",
     "bignumber.js": "^9.0.1",
     "bubble_babble": "^0.2.0",
+    "change-case": "^4.1.2",
+    "cheerio": "^1.0.0-rc.6",
     "crc": "^3.8.0",
     "crypto-js": "^4.0.0",
     "egoroof-blowfish": "^2.2.2",
+    "encoding": "^0.1.13",
     "he": "^1.2.0",
     "ip": "^1.1.5",
     "is": "^3.3.0",
     "jimp": "^0.16.1",
     "js-base64": "^3.6.0",
-    "jsencrypt": "^3.1.0",
     "jsfuck": "^0.4.0",
     "mime-types": "^2.1.30",
     "node-forge": "^0.10.0",
+    "nodejs-jsencrypt": "^3.0.0-rc.1",
     "python-shell": "^3.0.0",
     "qrcode": "^1.4.4",
     "qrcode-reader": "^1.0.4",
@@ -36,6 +40,7 @@
     "underscore": "^1.12.1",
     "underscore.string": "^3.3.5",
     "urlencode": "^1.1.0",
-    "utf7": "^1.0.2"
+    "utf7": "^1.0.2",
+    "whois": "^2.13.3"
   }
 }

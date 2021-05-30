@@ -7,16 +7,16 @@ module.exports = async function (input, options = {}) {
     try {
         let output = '';
 
-        if (input) {
+        if (input && input.data) {
             const image = await createBase64Image(input);           
 
-            output = JSON.stringify(image._exif, null, 4);
-
-            return {
-                success: true,
-                output: output,
-            };
+            output = JSON.stringify(image._exif, null, 4);           
         }
+
+        return {
+            success: true,
+            output: output,
+        };
     }
     catch (err) {
         return {

@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.provider.factordb",
+  "description": "Factordb 大数分解",
+   "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

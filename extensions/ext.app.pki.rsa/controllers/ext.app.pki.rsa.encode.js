@@ -1,4 +1,4 @@
-const jsencrypt = require("jsencrypt");
+const jsencrypt = require("nodejs-jsencrypt");
 
 const defaultValue = require('../../ext.common/default-value');
 

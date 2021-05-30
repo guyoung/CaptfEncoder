@@ -32,6 +32,22 @@
 				"text": "杂项",
 				"desc": "杂项"
 			}
+			,
+			{
+				"key": "ext.app.provider",
+				"text": "第三方工具（需联网）",
+				"desc": "第三方工具（需联网）"
+			},
+			{
+				"key": "ext.apppro.provider",
+				"text": "第三方工具（需联网）",
+				"desc": "第三方工具（需联网）"
+			},
+			{
+				"key": "ext.apppro.misc",
+				"text": "杂项",
+				"desc": "杂项"
+			}
 		]
 	},
 	"ui": {

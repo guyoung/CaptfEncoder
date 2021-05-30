@@ -59,7 +59,7 @@ module.exports = {
                 <template v-slot:append-outer>
                     <v-btn elevation="2" @click="openFile" text >Select...</v-btn>
                 </template>
-            </v-text-field>
+            </v-text-field>            
         </v-toolbar>
     </v-row>
     <v-row>

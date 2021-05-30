@@ -5,10 +5,10 @@ const options = {
     },
     schema: {
         fields: [{
-            type: "text",
+            type: "textarea",
             label: "Key",
             key: "key",
-            cols: 3
+            cols: 6
         },{
             type: "select",
             label: "Public/Private Key",
@@ -35,7 +35,7 @@ module.exports = {
     },
     template: `
 <ext-tab-encoder
-    title="RSA" 
+    title="RSA 加解密" 
     :options="options.value" 
     :schema="options.schema"
     encode="ext.app.pki.rsa.encode" 

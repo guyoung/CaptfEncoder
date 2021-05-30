@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.misc.image-gif-extractor",
+  "description": "Gif extractor",
+   "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

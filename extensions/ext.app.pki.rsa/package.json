@@ -1,6 +1,6 @@
 {
   "name": "ext.app.pki.rsa",
-  "description": "RSA",
+  "description": "RSA 加解密",
   "version": "1.0.0",
   "author": "guyoung",
   "url": "",
