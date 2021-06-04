@@ -16,11 +16,11 @@
 
 Captfencoder is an extensible cross platform network security tool suite, providing network security related code conversion, classical cryptography, cryptography, asymmetric encryption, special coding, miscellaneous tools, and aggregating all kinds of online tools.
 
-![CaptfEncoder Screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/screenshot/captfencoder-screenshot-1.png)
+![CaptfEncoder Screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-screenshot-1.png)
 
 CaptfEncoder all functions provided are based on plugin framewrok，All plugins are in the program extensions directory.
 
-![CaptfEncoder Extensions Screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/screenshot/captfencoder-screenshot-2.png)
+![CaptfEncoder Extensions Screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-screenshot-2.png)
 
 ## Use
 
@@ -72,7 +72,7 @@ CaptfEncoder all functions provided are based on plugin framewrok，All plugins 
    * Autokey cipher
    * Beaufort cipher
    * Running Key cipher
-   * Porta（Porta 密码）
+   * Porta cipher
    * Affine cipher
    * Baconian cipher
    * ADFGX  cipher

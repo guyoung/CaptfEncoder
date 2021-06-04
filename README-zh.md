@@ -16,11 +16,11 @@
 
 CaptfEncoder 是一款可扩展跨平台网络安全工具套件，提供网络安全相关编码转换、古典密码、密码学、非对称加密、特殊编码、杂项等工具，并聚合各类在线工具。
 
-![CaptfEncoder Screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/screenshot/captfencoder-screenshot-1.png)
+![CaptfEncoder Screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-screenshot-1.png)
 
 CaptfEncoder 提供功能都是基于插件机制实现的，所有插件都在程序 extensions目录下。
 
-![CaptfEncoder Extensions Screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/screenshot/captfencoder-screenshot-2.png)
+![CaptfEncoder Extensions Screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-screenshot-2.png)
 
 ## 使用
 
@@ -71,7 +71,7 @@ CaptfEncoder 提供功能都是基于插件机制实现的，所有插件都在�
    * Autokey（自动密钥密码）
    * Beaufort（博福特密码）
    * Running Key（滚动密钥密码）
-   * Porta（Porta 密码）
+   * Porta 密码
    * Affine（仿射密码）
    * Baconian（培根密码）
    * ADFGX 密码
