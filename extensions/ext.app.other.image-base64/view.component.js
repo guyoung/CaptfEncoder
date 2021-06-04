@@ -6,7 +6,7 @@ module.exports = {
     name: 'ext.app.other.image-base64.view.component',
     data() {
         return {
-            tab: null,           
+            tab: null,
         }
     },
     components: {
@@ -14,11 +14,11 @@ module.exports = {
         decoder,
     },
     template: `
-<ext-tab title="图片Base64编码">
+<ext-tab :title="$t('message.title')">
     <v-container fluid>
         <v-tabs v-model="tab">
-            <v-tab>编码</v-tab>
-            <v-tab>解码</v-tab>
+            <v-tab>{{$t('message.encode_text')}}</v-tab>
+            <v-tab>{{$t('message.decode_text')}}</v-tab>
         </v-tabs>
         <v-tabs-items v-model="tab">
             <v-tab-item>               
@@ -32,7 +32,5 @@ module.exports = {
     </v-container>
 </ext-tab>
 `,
-    methods: {
-        
-    }
+    i18n: require('./i18n')
 }

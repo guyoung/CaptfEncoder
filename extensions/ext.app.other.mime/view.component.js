@@ -1,27 +1,20 @@
-const options = {
-   
-}
-
-
 module.exports = {
     name: 'ext.app.other.mime.view.component',
     data() {
         return {
-            options: options || {}
+            options: {}
         }
     },
     template: `
 <ext-tab-encoder
-    title="MIME" 
+    :title="$t('message.title')"
     :options="options.value" 
     :schema="options.schema"
     encode="ext.app.other.mime.encode" 
     decode="ext.app.other.mime.decode"
-    encodeText="编码"
-    decodeText="解码">      
+    :encodeText="$t('message.encode_text')"
+    :decodeText="$t('message.decode_text')">      
 </ext-tab-encoder>
 `,
-    methods: {
-
-    }
+    i18n: require('./i18n')
 }

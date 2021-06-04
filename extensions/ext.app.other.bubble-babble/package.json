@@ -1,7 +1,10 @@
 {
   "name": "ext.app.other.bubble-babble",
-  "description": "Bubble babble 编码",
-   "version": "1.0.0",
+  "description": "Bubble babble encoding",
+  "description_lang": {
+    "zh": "Bubble babble 编码"
+  },
+  "version": "1.0.0",
   "author": "guyoung",
   "url": "",
   "dependencies": {

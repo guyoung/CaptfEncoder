@@ -1,13 +1,14 @@
 
 
-module.exports =  {
+module.exports = {
     name: 'ext.app.crypto.sha1.view.component',
-    
+
     template: `
 <ext-tab-encoder 
-    title="SHA1" 
+    :title="$t('message.title')" 
     encode="ext.app.crypto.sha1.encode"
-    encodeText="加密">
+    :encodeText="$t('message.encode_text')">
 </ext-tab-encoder>
 `,
+    i18n: require('./i18n')
 }

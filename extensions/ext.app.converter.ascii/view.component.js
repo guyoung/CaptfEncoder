@@ -1,45 +1,58 @@
-const options = {
-    value: {
-        base: 10,
-    },
-    schema: {
-        fields: [{
-            type: "select",
-            label: "进制",
-            key: "base",
-            items: [{
-                text: "二进制（Bin）",
-                value: 2
-            },{
-                text: "八进制（Oct）",
-                value: 8
-            },{
-                text: "十进制（Dec）",
-                value: 10
-            },{
-                text: "十六进制（Hex）",
-                value: 16
-            }],
-            cols: 2
-        }]
-
-    }
-}
-
-module.exports =  {
+module.exports = {
     name: 'ext.app.converter.ascii.view.component',
-    data: () => ({
-        options: options || {}
-    }),
+    data() {
+        return {
+            options: {
+                value: {
+                    base: 10,
+                },
+                schema: {
+                    fields: [{
+                        type: "select",
+                        label: () => {
+                            return this.$t("message.base")
+                        },
+                        key: "base",
+                        items: [{
+                            text: ()=> {
+                                return this.$t("message.binary");
+                            },
+                            value: 2
+                        }, {
+                            text: ()=> {
+                                return this.$t("message.octal");
+                            },
+                            value: 8
+                        }, {
+                            text: ()=> {
+                                return this.$t("message.decimal");
+                            },
+                            value: 10
+                        }, {
+                            text: ()=> {
+                                return this.$t("message.hexadecimal");
+                            },
+                            value: 16
+                        }],
+                        cols: 2
+                    }]
+
+                }
+            }
+
+        }
+    },
     template: `
 <ext-tab-encoder 
-    title="ASCII 编码" 
+    :title="$t('message.title')"    
     :options="options.value" 
     :schema="options.schema"
     encode="ext.app.converter.ascii.encode" 
     decode="ext.app.converter.ascii.decode"
-    encodeText="编码"
-    decodeText="解码">
+    :encodeText="$t('message.encode_text')"
+    :decodeText="$t('message.decode_text')"
+   >
 </ext-tab-encoder>
 `,
+    i18n: require('./i18n')
 }

@@ -1,40 +1,42 @@
-const options = {
-    value: {
-        multKey: 1,
-        addKey: 0,
-    },
-    schema: {
-        fields: [{
-            type: "number",
-            label: "a(mult key)",
-            key: "multKey",
-            cols: 1
-        }, {
-            type: "number",
-            label: "b(add key)",
-            key: "addKey",
-            cols: 1
-        }]
-    }
-}
-
-
 module.exports = {
     name: 'ext.app.classical.affine.view.component',
     data() {
         return {
-            options: options || {}
+            options: {
+                value: {
+                    multKey: 1,
+                    addKey: 0,
+                },
+                schema: {
+                    fields: [{
+                        type: "number",
+                        label: () => {
+                            return this.$t("message.mult_key")
+                        },
+                        key: "multKey",
+                        cols: 1
+                    }, {
+                        type: "number",
+                        label: () => {
+                            return this.$t("message.add_key")
+                        },
+                        key: "addKey",
+                        cols: 1
+                    }]
+                }
+            }
         }
     },
     template: `
 <ext-tab-encoder
-    title="Affine（仿射密码）" 
+    :title="$t('message.title')" 
     :options="options.value" 
     :schema="options.schema"
     encode="ext.app.classical.affine.encode" 
     decode="ext.app.classical.affine.decode"
-    encodeText="加密"
-    decodeText="解密">   
+    :encodeText="$t('message.encode_text')"
+    :decodeText="$t('message.decode_text')">   
 </ext-tab-encoder>
 `,
+    i18n: require('./i18n')
 }

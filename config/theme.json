@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Theme_1",
+    "desc": "Theme 1(default)",
+    "light": {
+      "primary": "#1976D2",
+      "secondary": "#424242",
+      "accent": "#82B1FF",
+      "error": "#FF5252",
+      "info": "#2196F3",
+      "success": "#4CAF50",
+      "warning": "#FB8C00"
+    },
+    "dark": {
+      "primary": "#2196F3",
+      "secondary": "#424242",
+      "accent": "#FF4081",
+      "error": "#FF5252",
+      "info": "#2196F3",
+      "success": "#4CAF50",
+      "warning": "#FB8C00"
+    }
+  },
+  {
+    "name": "Theme_2",
+    "desc": "Theme 2",
+    "light": {
+      "primary": "#22daff",
+      "accent": "#ff6b99",
+      "secondary": "#26ff8c",
+      "success": "#a5d64c",
+      "info": "#ff53d0",
+      "warning": "#ff8e00",
+      "error": "#ff5252"
+    },
+    "dark": {
+      "primary": "#21CFF3",
+      "accent": "#FF4081",
+      "secondary": "#21dc79",
+      "success": "#86af3f",
+      "info": "#f34fc6",
+      "warning": "#FB8C00",
+      "error": "#FF5252"
+    }
+  },
+  {
+    "name": "Theme_3",
+    "desc": "Theme 3",
+    "light": {
+      "primary": "#ffa450",
+      "accent": "#a1e754",
+      "secondary": "#92de4e",
+      "success": "#6dff74",
+      "info": "#7365ff",
+      "warning": "#2e8ac0",
+      "error": "#ff5e3c"
+    },
+    "dark": {
+      "primary": "#E65100",
+      "accent": "#7CB342",
+      "secondary": "#689F38",
+      "success": "#4CAF50",
+      "info": "#6156d8",
+      "warning": "#1565C0",
+      "error": "#FF7043"
+    }
+  },
+  {
+    "name": "Theme_4",
+    "desc": "Theme 4",
+    "light": {
+      "primary": "#6ae240",
+      "accent": "#ffe063",
+      "secondary": "#7ea4b6",
+      "success": "#ffea70",
+      "info": "#229eff",
+      "warning": "#e239ff",
+      "error": "#e82424"
+    },
+    "dark": {
+      "primary": "#33691E",
+      "accent": "#FFCA28",
+      "secondary": "#607D8B",
+      "success": "#FFEB3B",
+      "info": "#2196F3",
+      "warning": "#9C27B0",
+      "error": "#B71C1C"
+    }
+  }
+]

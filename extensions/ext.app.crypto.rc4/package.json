@@ -1,7 +1,7 @@
 {
   "name": "ext.app.crypto.rc4",
   "description": "RC4",
-   "version": "1.0.0",
+  "version": "1.0.0",
   "author": "guyoung",
   "url": "",
   "dependencies": {

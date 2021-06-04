@@ -1,7 +1,10 @@
 {
   "name": "ext.app.converter.sql",
-  "description": "Sql 编码",
-   "version": "1.0.0",
+  "description": "Sql encoding",
+  "description_lang": {
+    "zh": "Sql 编码"
+  },
+  "version": "1.0.0",
   "author": "guyoung",
   "url": "",
   "dependencies": {

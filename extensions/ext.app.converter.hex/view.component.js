@@ -1,64 +1,88 @@
-const options = {
-    value: {
-        delimiter: "",
-    },
-    schema: {
-        fields: [{
-            type: "select",
-            label: "Delimiter",
-            key: "delimiter",
-            items: [{
-                text: "空格 Space",
-                value: " "
-            },{
-                text: "逗号 ,",
-                value: ","
-            },{
-                text: "分号 ;",
-                value: ";"
-            },{
-                text: "冒号 :",
-                value: ":"
-            },{
-                text: "换行 \n",
-                value: "\n"
-            },{
-                text: "回车换行 \r\n",
-                value: "\r\n"
-            },{
-                text: "反斜杠 \\",
-                value: "\\"
-            },{
-                text: "0x",
-                value: "0x"
-            },{
-                text: "\\x",
-                value: "\\x"
-            },{
-                text: "无 None",
-                value: ""
-            }],
-            cols: 3
 
-        }]
 
-    }
-}
-
-module.exports =  {
+module.exports = {
     name: 'ext.app.converter.hex.view.component',
-    data: () => ({
-        options: options || {}
-    }),
+    data() {
+        return {
+            options: {
+                value: {
+                    delimiter: "",
+                },
+                schema: {
+                    fields: [{
+                        type: "select",
+                        label: () => {
+                            return this.$t("message.delimiter")
+                        },
+                        key: "delimiter",
+                        items: [{
+                            text: ()=> {
+                                return this.$t("message.space");
+                            },
+                            value: " "
+                        }, {
+                            text: ()=> {
+                                return this.$t("message.comma");
+                            },
+                            value: ","
+                        }, {
+                            text: ()=> {
+                                return this.$t("message.semicolon");
+                            },
+                            value: ";"
+                        }, {
+                            text: ()=> {
+                                return this.$t("message.colon");
+                            },
+                            value: ":"
+                        }, {
+                            text: ()=> {
+                                return this.$t("message.lf");
+                            },
+                            value: "\n"
+                        }, {
+                            text: ()=> {
+                                return this.$t("message.crlf");
+                            },
+                            value: "\r\n"
+                        }, {
+                            text: ()=> {
+                                return this.$t("message.backslash");
+                            },
+                            value: "\\"
+                        }, {
+                            text: "0x",
+                            value: "0x"
+                        }, {
+                            text: "\\x",
+                            value: "\\x"
+                        }, {
+                            text: ()=> {
+                                return this.$t("message.none");
+                            },
+                            value: ""
+                        }],
+                        cols: 3
+
+                    }]
+
+                }
+            }
+        }
+    },
     template: `
 <ext-tab-encoder 
-    title="HEX 编码" 
+    :title="$t('message.title')"    
     :options="options.value" 
     :schema="options.schema"
     encode="ext.app.converter.hex.encode" 
     decode="ext.app.converter.hex.decode"
-    encodeText="编码"
-    decodeText="解码">
+    :encodeText="$t('message.encode_text')"
+    :decodeText="$t('message.decode_text')"
+   >
 </ext-tab-encoder>
 `,
+    i18n: require('./i18n'),
+    
+    
 }

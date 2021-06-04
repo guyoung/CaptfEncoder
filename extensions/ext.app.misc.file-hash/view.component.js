@@ -5,20 +5,18 @@ module.exports = {
     name: 'ext.app.misc.file-type.view.component',
     data() {
         return {
-            tab: null,           
+            tab: null,
         }
     },
     components: {
-        getter,       
+        getter,
     },
     template: `
-<ext-tab title="File hash">
+<ext-tab :title="$t('message.title')" >
     <v-container fluid>
         <getter />          
     </v-container>
 </ext-tab>
 `,
-    methods: {
-        
-    }
+    i18n: require('./i18n'),   
 }

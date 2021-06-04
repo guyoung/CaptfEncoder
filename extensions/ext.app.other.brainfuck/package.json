@@ -1,7 +1,10 @@
 {
   "name": "ext.app.other.brainfuck",
-  "description": "Brainfuck 编码",
-   "version": "1.0.0",
+  "description": "Brainfuck encoding",
+  "description_lang": {
+    "zh": "Brainfuck 编码"
+  },
+  "version": "1.0.0",
   "author": "guyoung",
   "url": "",
   "dependencies": {

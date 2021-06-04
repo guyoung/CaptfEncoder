@@ -5,20 +5,18 @@ module.exports = {
     name: 'ext.app.provider.factordb.view.component',
     data() {
         return {
-            tab: null,           
+            tab: null,
         }
     },
     components: {
-        getter,       
+        getter,
     },
     template: `
-<ext-tab title="Factordb 大数分解">
+<ext-tab :title="$t('message.title')">
     <v-container fluid>
         <getter />          
     </v-container>
 </ext-tab>
 `,
-    methods: {
-        
-    }
+    i18n: require('./i18n')
 }

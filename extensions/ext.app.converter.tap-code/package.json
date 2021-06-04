@@ -1,6 +1,9 @@
 {
   "name": "ext.app.converter.tap-code",
-  "description": "Tap code（敲击码）",
+  "description": "Tap code",
+  "description_lang": {
+    "zh": "Tap code（敲击码）"
+  },
    "version": "1.0.0",
   "author": "guyoung",
   "url": "",

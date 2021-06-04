@@ -2,11 +2,12 @@ module.exports = {
     name: 'ext.app.other.brainfuck.view.component',
     template: `
 <ext-tab-encoder
-    title="Brainfuck 编码" 
+    :title="$t('message.title')"
     encode="ext.app.other.brainfuck.encode" 
     decode="ext.app.other.brainfuck.decode"
-    encodeText="编码"
-    decodeText="解码">
+    :encodeText="$t('message.encode_text')"
+    :decodeText="$t('message.decode_text')">
 </ext-tab-encoder>
-`,   
+`,
+    i18n: require('./i18n')
 }

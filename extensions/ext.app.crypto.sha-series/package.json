@@ -1,7 +1,10 @@
 {
   "name": "ext.app.crypto.sha-series",
-  "description": "SHA 系列",
-   "version": "1.0.0",
+  "description": "SHA series",
+  "description_lang": {
+    "zh": "SHA 系列"
+  },
+  "version": "1.0.0",
   "author": "guyoung",
   "url": "",
   "dependencies": {

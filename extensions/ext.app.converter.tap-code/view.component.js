@@ -1,26 +1,15 @@
-const options = {
-    value: {
-
-    },
-    schema: {
-      
-    }
-}
 
 module.exports = {
     name: 'ext.app.converter.tap-code.view.component',
-    data: () => ({
-        options: options || {}
-    }),
     template: `
 <ext-tab-encoder 
-    title="Tap code（敲击码）" 
-    :options="options.value" 
-    :schema="options.schema"
+    :title="$t('message.title')" 
     encode="ext.app.converter.tap-code.encode" 
     decode="ext.app.converter.tap-code.decode"
-    encodeText="编码"
-    decodeText="解码">
+    :encodeText="$t('message.encode_text')"
+    :decodeText="$t('message.decode_text')"
+>
 </ext-tab-encoder>
 `,
+    i18n: require('./i18n')
 }

@@ -2,7 +2,7 @@
 module.exports = {
     name: 'decoder',
     data() {
-        return {           
+        return {
             input: '',
             output: ''
         }
@@ -11,11 +11,11 @@ module.exports = {
 <v-container fluid class="ma-2">  
     <v-row class="mx-2">
         <v-spacer></v-spacer>
-        <v-btn elevation="2" @click="saveFile" text >Save as...</v-btn>       
+        <v-btn elevation="2" @click="saveFile" text >{{$t("message.save_as")}}</v-btn>       
     </v-row>
     <v-row>
         <v-col>
-            <ext-editor v-model="input" label="Input">
+            <ext-editor v-model="input" :label="$t('message.input')">
             </ext-editor>
         </v-col>
         <v-col>
@@ -26,17 +26,17 @@ module.exports = {
     </v-row>
 </v-container>           
 `,
-   
+    i18n: require('./i18n'),
     methods: {
         async saveFile() {
             const result = await this.$extInvoke('ext.app.other.image-base64.decode', this.input);
 
-            if (result.success) {
-                const fileData =  result.output;
+            if (result && result.success) {
+                const fileData = result.output;
 
-                await this.$saveImageFile(fileData.data, fileData.extension, 'Save as');
-            }          
+                await this.$saveImageFile(fileData.data, fileData.extension, this.$t('message.dialog_save_as'));
+            } 
         }
-       
+
     }
 }

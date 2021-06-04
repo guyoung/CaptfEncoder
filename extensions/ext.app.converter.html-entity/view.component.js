@@ -1,52 +1,56 @@
-const options = {
-    value: {
-        encodeEverything: false,
-        useNamedReferences: true,
-        decimal: true
-    },
-    schema: {
-        fields: [{
-            type: "checkbox",
-            label: "Encode Everything",
-            key: "encodeEverything",
-            cols: 3
-
-        }, {
-            type: "checkbox",
-            label: "Use Named References",
-            key: "useNamedReferences",
-            cols: 3
-
-        }, {
-            type: "checkbox",
-            label: "Decimal",
-            key: "decimal",
-            cols: 3
-
-        }]
-
-    }
-}
-
-
-
 module.exports = {
     name: 'ext.app.converter.html-entity.view.component',
     data() {
         return {
-            options: options || {}
+            options: {
+                value: {
+                    encodeEverything: false,
+                    useNamedReferences: true,
+                    decimal: true
+                },
+                schema: {
+                    fields: [{
+                        type: "checkbox",
+                        label: () => {
+                            return this.$t("message.encode_everything")
+                        },
+                        key: "encodeEverything",
+                        cols: 3
+
+                    }, {
+                        type: "checkbox",
+                        label: () => {
+                            return this.$t("message.use_named_references")
+                        },
+                        key: "useNamedReferences",
+                        cols: 3
+
+                    }, {
+                        type: "checkbox",
+                        label: () => {
+                            return this.$t("message.decimal")
+                        },
+                        key: "decimal",
+                        cols: 3
+
+                    }]
+
+                }
+            }
         }
     },
     template: `
 <ext-tab-encoder 
-    title="Html Entity 编码" 
+    :title="$t('message.title')"  
     :options="options.value" 
     :schema="options.schema"
     encode="ext.app.converter.html-entity.encode" 
     decode="ext.app.converter.html-entity.decode"
-    encodeText="编码"
-    decodeText="解码">
+    :encodeText="$t('message.encode_text')"
+    :decodeText="$t('message.decode_text')"
+>
 </ext-tab-encoder>
 `,
+    i18n: require('./i18n')
 
 }

@@ -1,62 +1,64 @@
-const options = {
-    value: {
-        enctype: "crc32"       
-    },
-    schema: {
-        fields: [{
-            type: "select",
-            label: "Type",
-            key: "enctype",
-            items: [{
-                text: "CRC8",
-                value: "crc8"
-            }, {
-                text: "CRC16",
-                value: "crc16"
-            }, {
-                text: "CRC32",
-                value: "crc32"
-            }],
-            cols: 2
-
-        }]
-
-    }
-}
-
-
 module.exports = {
     name: 'ext.app.other.crc.view.component',
-    data: () => ({
-        options: options || {}
-    }),
+    data() {
+        return {
+            options: {
+                value: {
+                    enctype: "crc32"
+                },
+                schema: {
+                    fields: [{
+                        type: "select",
+                        label: () => {
+                            return this.$t("message.type")
+                        },
+                        key: "enctype",
+                        items: [{
+                            text: "CRC8",
+                            value: "crc8"
+                        }, {
+                            text: "CRC16",
+                            value: "crc16"
+                        }, {
+                            text: "CRC32",
+                            value: "crc32"
+                        }],
+                        cols: 2
+
+                    }]
+
+                }
+            }
+        }
+    },
     template: `
 <ext-tab-encoder
-    title="CRC 编码" 
+    :title="$t('message.title')" 
     :options="options.value" 
     :schema="options.schema"
     :encode="encodeHandler"   
-    encodeText="编码"
+    :encodeText="$t('message.encode_text')"
  >
 </ext-tab-encoder>
 `,
+    i18n: require('./i18n'),
     methods: {
-        encodeHandler(options) {
-            if (options && options.enctype) {    
-                let hander;
+        encodeHandler(options) {           
+            if (options && options.enctype) {
+               
+                let handler;
 
                 if (options.enctype == 'crc8') {
                     handler = 'ext.app.other.crc8.encode'
                 }
                 else if (options.enctype == 'crc16') {
                     handler = 'ext.app.other.crc16.encode'
-                }   
+                }
                 else if (options.enctype == 'crc32') {
-                    handler = 'ext.app.other.crc32.encode'
-                    options.digits=16
-                }              
-              
-                return hander;
+                    handler = 'ext.app.other.crc32.encode'                  
+                }
+               
+                return handler;
             }
         }
     }

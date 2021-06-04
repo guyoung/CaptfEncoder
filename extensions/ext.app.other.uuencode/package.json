@@ -1,7 +1,10 @@
 {
   "name": "ext.app.other.uuencode",
-  "description": "UUencode 编码",
-   "version": "1.0.0",
+  "description": "UUencode encoding",
+  "description_lang": {
+    "zh": "UUencode 编码"
+  },
+  "version": "1.0.0",
   "author": "guyoung",
   "url": "",
   "dependencies": {

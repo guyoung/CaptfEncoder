@@ -1,34 +1,34 @@
-const options = {
-    value: {
-        keyword: 'fortification',
-    },
-    schema: {
-        fields: [{
-            type: "text",
-            label: "Keyword",
-            key: "keyword",
-            cols: 3
-        }]
-    }
-}
-
-
 module.exports = {
     name: 'ext.app.classical.autokey.view.component',
     data() {
         return {
-            options: options || {}
+            options: {
+                value: {
+                    keyword: 'fortification',
+                },
+                schema: {
+                    fields: [{
+                        type: "text",
+                        label: () => {
+                            return this.$t("message.keyword")
+                        },
+                        key: "keyword",
+                        cols: 3
+                    }]
+                }
+            }
         }
     },
     template: `
 <ext-tab-encoder
-    title="Autokey （自动密钥密码）" 
+    :title="$t('message.title')" 
     :options="options.value" 
     :schema="options.schema"
     encode="ext.app.classical.autokey.encode" 
     decode="ext.app.classical.autokey.decode"
-    encodeText="加密"
-    decodeText="解密">   
+    :encodeText="$t('message.encode_text')"
+    :decodeText="$t('message.decode_text')">   
 </ext-tab-encoder>
 `,
+    i18n: require('./i18n')
 }

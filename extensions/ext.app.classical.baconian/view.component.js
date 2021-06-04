@@ -1,34 +1,34 @@
-const options = {
-    value: {
-        alphabet: "ABCDEFGHIKLMNOPQRSTUWXYZ",
-    },
-    schema: {
-        fields: [{
-            type: "text",
-            label: "Alphabet",
-            key: "alphabet",
-            cols: 4
-        }]
-    }
-}
-
-
 module.exports = {
     name: 'ext.app.classical.baconian.view.component',
     data() {
         return {
-            options: options || {}
+            options: {
+                value: {
+                    alphabet: "ABCDEFGHIKLMNOPQRSTUWXYZ",
+                },
+                schema: {
+                    fields: [{
+                        type: "text",
+                        label: () => {
+                            return this.$t("message.alphabet")
+                        },
+                        key: "alphabet",
+                        cols: 4
+                    }]
+                }
+            }
         }
     },
     template: `
 <ext-tab-encoder
-    title="Baconian （培根密码）" 
+    :title="$t('message.title')"    
     :options="options.value" 
     :schema="options.schema"
     encode="ext.app.classical.baconian.encode" 
     decode="ext.app.classical.baconian.decode"
-    encodeText="加密"
-    decodeText="解密">   
+    :encodeText="$t('message.encode_text')"
+    :decodeText="$t('message.decode_text')">   
 </ext-tab-encoder>
 `,
+    i18n: require('./i18n')
 }

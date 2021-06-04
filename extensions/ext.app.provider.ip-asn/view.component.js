@@ -12,13 +12,11 @@ module.exports = {
         getter,       
     },
     template: `
-<ext-tab title="IP ASN">
+<ext-tab :title="$t('message.title')">
     <v-container fluid>
         <getter />          
     </v-container>
 </ext-tab>
 `,
-    methods: {
-        
-    }
+i18n: require('./i18n')
 }

@@ -2,11 +2,12 @@ module.exports = {
     name: 'ext.app.other.uuencode.view.component',
     template: `
 <ext-tab-encoder
-    title="UUencode 编码" 
+    :title="$t('message.title')"
     encode="ext.app.other.uuencode.encode" 
     decode="ext.app.other.uuencode.decode"
-    encodeText="编码"
-    decodeText="解码">
+    :encodeText="$t('message.encode_text')"
+    :decodeText="$t('message.decode_text')">
 </ext-tab-encoder>
-`,   
+`,
+    i18n: require('./i18n')
 }

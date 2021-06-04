@@ -1,7 +1,10 @@
 {
   "name": "ext.app.classical.vigenere",
-  "description": "Vigenère （维吉尼亚密码）",
-   "version": "1.0.0",
+  "description": "Vigenère cipher",
+  "description_lang": {
+    "zh": "Vigenère（维吉尼亚密码）"
+  },
+  "version": "1.0.0",
   "author": "guyoung",
   "url": "",
   "dependencies": {

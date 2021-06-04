@@ -13,9 +13,9 @@ module.exports = {
     <ext-loading absolute :show="loading"></ext-loading>
     <v-row height="40" >
         <v-toolbar flat >
-            <v-text-field type="text" :value="image" outline readonly label="Image">
+            <v-text-field type="text" :value="image" outline readonly :label="$t('message.image')">
                 <template v-slot:append-outer>
-                    <v-btn elevation="2" @click="openFile" text >Select...</v-btn>
+                    <v-btn elevation="2" @click="openFile" text >{{$t("message.select")}}</v-btn>
                 </template>
             </v-text-field>
         </v-toolbar>
@@ -32,13 +32,14 @@ module.exports = {
             outlined
             tile
           >
-            <v-img :src="item"></v-img>
+            <v-img :src="item" @click="saveFile(item)"></v-img>
           </v-card>
         </v-col>
     </v-row>    
 </v-container>
           
 `,
+    i18n: require('./i18n'),
     methods: {
         async openFile() {
             const dialogFilters = [{
@@ -47,21 +48,24 @@ module.exports = {
                 name: 'All Files', extensions: ['*']
             }];
 
-            const fileData = await this.$openImageFile('Open file', dialogFilters);
+            const fileData = await this.$openImageFile(this.$t('message.dialog_open_file'), dialogFilters);
 
             if (fileData) {
                 this.loading = true;
 
                 this.image = fileData.file;
-      
+
                 const result = await this.$extInvoke('ext.app.misc.image-gif-extractor.get', fileData);
 
-                if (result.success) {
+                if (result && result.success) {
                     this.output = result.output;
                 }
                 else {
                     this.output = '';
-                    this.$store.dispatch("showSnackbar", result.message);
+                    if (result && result.message) {
+                        this.$store.dispatch("showSnackbar", result.message);
+                    }
+
                 }
 
                 this.loading = false;
@@ -73,6 +77,16 @@ module.exports = {
             }
 
         },
+
+        async saveFile(item) {
+            const result = await this.$extInvoke('ext.app.other.image-base64.decode', item);
+
+            if (result.success) {
+                const fileData = result.output;
+
+                await this.$saveImageFile(fileData.data, fileData.extension, this.$t('message.dialog_save_as'));
+            }
+        }
 
     }
 }

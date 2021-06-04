@@ -1,7 +1,10 @@
 {
   "name": "ext.app.classical.rot-series",
-  "description": "ROT 系列密码",
-   "version": "1.0.0",
+  "description": "ROT series cipher",
+  "description_lang": {
+    "zh": "ROT 系列密码"
+  },
+  "version": "1.0.0",
   "author": "guyoung",
   "url": "",
   "dependencies": {

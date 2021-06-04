@@ -1,7 +1,10 @@
 {
   "name": "ext.app.classical.simple-substitution",
-  "description": "Simple Substitution（简单替换密码）",
-   "version": "1.0.0",
+  "description": "Simple Substitution cipher",
+  "description_lang": {
+    "zh": "Simple Substitution（简单替换密码）"
+  },
+  "version": "1.0.0",
   "author": "guyoung",
   "url": "",
   "dependencies": {

@@ -1,75 +1,91 @@
-CaptfEncoder
-================================
+<div align="center">
+
+[![CaptfEncoder Logo](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-log-1.png)](https://github.com/guyoung/CaptfEncoder)
+
+<h1 align="center">CaptfEncoder</h1>
+
 [![GitHub release](https://img.shields.io/github/release/guyoung/CaptfEncoder.svg)](https://github.com/guyoung/CaptfEncoder/releases/latest)
+
+
+[English](https://github.com/guyoung/CaptfEncoder/blob/master/README.md) | [中文](https://github.com/guyoung/CaptfEncoder/blob/master/README-zh.md)
+
+
+</div>
+
+---
+
+Captfencoder is an extensible cross platform network security tool suite, providing network security related code conversion, classical cryptography, cryptography, asymmetric encryption, special coding, miscellaneous tools, and aggregating all kinds of online tools.
 
 ![CaptfEncoder Screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/screenshot/captfencoder-screenshot-1.png)
 
+CaptfEncoder all functions provided are based on plugin framewrok，All plugins are in the program extensions directory.
+
 ![CaptfEncoder Extensions Screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/screenshot/captfencoder-screenshot-2.png)
 
+## Use
 
-CaptfEncoder是一款可扩展跨平台网络安全工具套件，提供网络安全相关编码转换、古典密码、密码学、非对称加密、特殊编码、杂项等工具，并聚合各类在线工具。
+### Method always downloads the executable
 
-## 使用
+ * <https://github.com/guyoung/CaptfEncoder/releases>
+ * Baidu network disk https://pan.baidu.com/s/1q2N1w44bvYIXLe5gCI5oKA  Password: k5b9
 
-### 方法一 直接下载可执行程序
-
- * 百度网盘 <https://pan.baidu.com/s/1q2N1w44bvYIXLe5gCI5oKA> 密码：k5b9
-
-### 方法二 使用Electron运行
+### Method 2 uses electron operatio
 
  * git clone https://github.com/guyoung/CaptfEncoder.git
  * cd CaptfEncoder
  * npm install
  * npm start
 
-## 支持操作系统
+## Method 2 uses electron operatio
 
  * Windows
  * Linux
  * MacOS
  * Other...(Support Node.js)
 
-## 功能介绍
+## Function introduction
 
- * 编码转换
-   * Ascii Encoding
-   * Web Encoding
-   * Hex Encoding
-   * Unicode Encoding
-   * Base64、Base Serial
-   * Url Encoding
-   * Html Entity Encoding
-   * Escape Encoding
-   * Quoted-printable（可打印字符引用编码）
-   * Morse Code（莫尔斯电码）
-   * Tap Code（敲击码）
+ * Converter
+   * Ascii encoding
+   * Base64、Base encoding
+   * Escape encoding
+   * Hex encoding
+   * Html entity encoding
+   * Morse code
+   * Quoted-printable encoding
+   * Shellcode encoding
+   * Sql encoding 
+   * Tap Code
+   * Unicode encoding 
+   * Url encoding 
 
- * 古典密码
-   * Rail-fence（栅栏密码）
-   * Atbash（埃特巴什码）
-   * Caesar（凯撒密码）
-   * ROT13、ROT Serial
-   * Simple Substitution（简单替换密码）
-   * Hill（希尔密码）
-   * Polybius Square （波利比奥斯方阵密码）
-   * Playfair（普莱菲尔密码）
-   * Vigenère（维吉尼亚密码）
-   * Autokey（自动密钥密码）
-   * Beaufort（博福特密码）
-   * Running Key（滚动密钥密码）
+ * Classical cipher
+   * Rail-fence cipher
+   * Atbash cipher
+   * Caesar cipher
+   * ROT13、ROT series cipher
+   * Simple Substitution cipher
+   * Hill cipher
+   * Polybius Square cipher
+   * Playfair cipher
+   * Vigenère cipher
+   * Autokey cipher
+   * Beaufort cipher
+   * Running Key cipher
    * Porta（Porta 密码）
-   * Affine（仿射密码）
-   * Baconian（培根密码）
-   * ADFGX（ADFGX 密码）
-   * ADFGVX（ADFGVX 密码）
-   * Bifid（双密码）
-   * Four-Square（四方密码）
-   * Straddle Checkerboard （跨棋盘密码）
-   * Gronsfeld （格罗斯费尔德密码）
- * 密码学
+   * Affine cipher
+   * Baconian cipher
+   * ADFGX  cipher
+   * ADFGVX cipher
+   * Bifid cipher
+   * Four-Square cipher
+   * Straddle Checkerboard cipher
+   * Gronsfeld cipher
+
+ * Cryptology
    * Hash
-   * MD5、MD Serial
-   * SHA1、SHA Serial
+   * MD5、MD series
+   * SHA1、SHA series
    * HMAC
    * Bcrypt
    * Scrypt
@@ -83,39 +99,51 @@ CaptfEncoder是一款可扩展跨平台网络安全工具套件，提供网络�
    * SM3
    * SM4
    * RIPEMD
- * 非对称加密
-   * RSA
- * 其他编码
-   * JSFuck
-   * Jother
-   * Brainfuck
-   * Ip Encoding
-   * Base64 Image Encoding 
+
+ * Public key cryptography
+   * RSA crypto
+   * RSA generate key
+
+ * Other encoding
+   * JSFuck encoding
+   * Jother encoding
+   * Brainfuck encoding
+   * Ip address encoding
+   * Base64 image encoding
    * QR Code
-   * Mime Type
-   * CRC
-   * Punycode
-   * Bubble Babble
-   * UUEncode
-   * XXEncode
- * 实用工具  
-   * 图片Exif
-   * Hash类型识别
-   * File Type
-   * File Hash
+   * Mime encoding
+   * CRC encoding 
+   * Punycode encoding
+   * Bubble Babble encoding 
+   * UUEncode encoding 
+   * XXEncode encoding 
+
+ * Misc  
+   * File hash
+   * File type
+   * Hash identification
+   * Image exif
+   * GIF frame extractor
+
+ * Others(online)
+   * Factordb
+   * IP ASN
+   * IP info
+   * IP Whois
+   * Whois
 
 
-## 项目网站
+## Project website
 
  * <https://github.com/guyoung/CaptfEncoder>
 
-## 下载软件
+## Download software
 
- * 百度网盘 <https://pan.baidu.com/s/1q2N1w44bvYIXLe5gCI5oKA> 密码：k5b9
-
+ * <https://github.com/guyoung/CaptfEncoder/releases>
+ * Baidu network disk https://pan.baidu.com/s/1q2N1w44bvYIXLe5gCI5oKA  Password: k5b9
 
 ------------------------------------------------
 
-**关注微信公众号，获取软件最新消息**
+**WeChat official account for latest news**
 
-![微信公众号](https://mmbiz.qlogo.cn/mmbiz_jpg/5IMiaY073fa7zxH6f5q5EticlwZPsYQtUnpYHspNiczmNyjtCXnR7LAmvpstK4EycfzIQkciboLh1qtWRcCibEPuDhA/0?wx_fmt=jpeg)
+![WeChat official account](https://mmbiz.qlogo.cn/mmbiz_jpg/5IMiaY073fa7zxH6f5q5EticlwZPsYQtUnpYHspNiczmNyjtCXnR7LAmvpstK4EycfzIQkciboLh1qtWRcCibEPuDhA/0?wx_fmt=jpeg)

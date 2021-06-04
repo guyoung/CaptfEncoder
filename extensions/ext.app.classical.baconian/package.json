@@ -1,7 +1,10 @@
 {
   "name": "ext.app.classical.baconian",
-  "description": "Baconian （培根密码）",
-   "version": "1.0.0",
+  "description": "Baconian cipher",
+  "description_lang": {
+    "zh": "Baconian（培根密码）"
+  },
+  "version": "1.0.0",
   "author": "guyoung",
   "url": "",
   "dependencies": {

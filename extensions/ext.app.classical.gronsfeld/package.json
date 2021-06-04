@@ -1,6 +1,9 @@
 {
   "name": "ext.app.classical.gronsfeld",
-  "description": "Gronsfeld （格罗斯费尔德密码）",
+  "description": "Gronsfeld cipher",
+  "description_lang": {
+    "zh": "Gronsfeld（格罗斯费尔德密码）"
+  },
   "version": "1.0.0",
   "author": "guyoung",
   "url": "",

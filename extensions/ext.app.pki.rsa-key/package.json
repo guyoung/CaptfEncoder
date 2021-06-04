@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.pki.rsa-key",
+  "description": "RSA generate key",
+  "description_lang": {
+    "zh": "RSA 生成密钥"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

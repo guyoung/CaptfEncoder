@@ -7,9 +7,9 @@ module.exports = async function (input, options = {}) {
     try {
         let output = '';
 
-        if (input && input.data) {
-            const image = await createBase64Image(input);           
-
+        if (input) {            
+            const image = await createBase64Image(input);       
+            
             output = JSON.stringify(image._exif, null, 4);           
         }
 
@@ -19,6 +19,7 @@ module.exports = async function (input, options = {}) {
         };
     }
     catch (err) {
+        console.log(err)
         return {
             success: false,
             output: '',

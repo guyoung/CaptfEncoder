@@ -2,11 +2,13 @@ module.exports = {
     name: 'ext.app.converter.escape.view.component',
     template: `
 <ext-tab-encoder
-    title="Escape 编码" 
+    :title="$t('message.title')"   
     encode="ext.app.converter.escape.encode" 
     decode="ext.app.converter.escape.decode"
-    encodeText="编码"
-    decodeText="解码">
+    :encodeText="$t('message.encode_text')"
+    :decodeText="$t('message.decode_text')"
+>
 </ext-tab-encoder>
-`,   
+`,
+    i18n: require('./i18n')
 }

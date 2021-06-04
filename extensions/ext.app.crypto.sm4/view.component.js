@@ -1,47 +1,32 @@
-const options = {
-    value: {
-        key: '',
-        outputMode: 'BASE64'
-    },
-    schema: {
-        fields: [{
-            type: "text",
-            label: "Key",
-            key: "key",
-            cols: 3
-        },{
-            type: "select",
-            label: "Output Mode",
-            key: "outputMode",
-            items: [{
-                text: "BASE64",
-                value: "BASE64"
-            },{
-                text: "HEX",
-                value: "HEX"
-            }],
-            cols: 3
-
-        }]
-    }
-}
-
 module.exports = {
-    name: 'ext.app.crypto.des.view.component',
+    name: 'ext.app.crypto.sm4.view.component',
     data() {
         return {
-            options: options || {}
+            options: {
+                value: {
+                    key: '0123456789abcdeffedcba9876543210',
+                },
+                schema: {
+                    fields: [{
+                        type: "text",
+                        label: "Key",
+                        key: "key",
+                        cols: 3
+                    }]
+                }
+            }
         }
     },
     template: `
 <ext-tab-encoder
-    title="DES" 
+    :title="$t('message.title')" 
     :options="options.value" 
     :schema="options.schema"
-    encode="ext.app.crypto.des.encode" 
-    decode="ext.app.crypto.des.decode"
-    encodeText="加密"
-    decodeText="解密">
+    encode="ext.app.crypto.sm4.encode" 
+    decode="ext.app.crypto.sm4.decode"
+    :encodeText="$t('message.encode_text')"
+    :decodeText="$t('message.decode_text')">
 </ext-tab-encoder>
-`,   
+`,
+    i18n: require('./i18n')
 }

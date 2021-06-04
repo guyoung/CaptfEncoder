@@ -1,5 +1,20 @@
 [
   {
+    "version": "2.1.0",
+    "versionNumber": 20100,
+    "builddate": "2021-06-03",
+    "description": "CaptfEncoder v2.1.0 发布",
+    "changes": [
+      "[ADD] Factordb",
+      "[ADD] IP ASN",
+      "[ADD] IP info",
+      "[ADD] IP Whois",
+      "[ADD] Whois",
+	    "[ADD] RSA generate key",
+	    "[UP]  RSA crypto" 	  
+    ]
+  },
+  {
     "version": "2.0.1",
     "versionNumber": 20001,
     "builddate": "2021-04-14",

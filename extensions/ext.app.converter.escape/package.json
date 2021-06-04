@@ -1,7 +1,10 @@
 {
   "name": "ext.app.converter.escape",
-  "description": "Escape 编码",
-   "version": "1.0.0",
+  "description": "Escape encoding",
+  "description_lang": {
+    "zh": "Escape 编码"
+  },
+  "version": "1.0.0",
   "author": "guyoung",
   "url": "",
   "dependencies": {

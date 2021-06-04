@@ -1,7 +1,10 @@
 {
   "name": "ext.app.misc.file-hash",
   "description": "File hash",
-   "version": "1.0.0",
+  "description_lang": {
+    "zh": "文件 hash"
+  },
+  "version": "1.0.0",
   "author": "guyoung",
   "url": "",
   "dependencies": {

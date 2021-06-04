@@ -1,7 +1,10 @@
 {
   "name": "ext.app.misc.image-exif",
-  "description": "图片Exif",
-   "version": "1.0.0",
+  "description": "Image exif",
+  "description_lang": {
+    "zh": "图片 Exif"
+  },
+  "version": "1.0.0",
   "author": "guyoung",
   "url": "",
   "dependencies": {

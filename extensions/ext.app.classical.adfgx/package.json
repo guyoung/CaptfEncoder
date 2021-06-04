@@ -1,7 +1,10 @@
 {
   "name": "ext.app.classical.adfgx",
-  "description": "ADFGX 密码",
-   "version": "1.0.0",
+  "description": "ADFGX cipher",
+  "description_lang": {
+    "zh": "ADFGX 密码"
+  },
+  "version": "1.0.0",
   "author": "guyoung",
   "url": "",
   "dependencies": {
