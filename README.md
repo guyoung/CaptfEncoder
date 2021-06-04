@@ -29,14 +29,14 @@ CaptfEncoder all functions provided are based on plugin framewrok，All plugins 
  * <https://github.com/guyoung/CaptfEncoder/releases>
  * Baidu network disk https://pan.baidu.com/s/1q2N1w44bvYIXLe5gCI5oKA  Password: k5b9
 
-### Method 2 uses electron operatio
+### Method 2 uses electron operation
 
  * git clone https://github.com/guyoung/CaptfEncoder.git
  * cd CaptfEncoder
  * npm install
  * npm start
 
-## Method 2 uses electron operatio
+## Support operating system
 
  * Windows
  * Linux
