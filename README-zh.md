@@ -26,6 +26,7 @@ CaptfEncoder 提供功能都是基于插件机制实现的，所有插件都在�
 
 ### 方法一 直接下载可执行程序
 
+ * <https://github.com/guyoung/CaptfEncoder/releases>
  * 百度网盘 <https://pan.baidu.com/s/1q2N1w44bvYIXLe5gCI5oKA> 密码：k5b9
 
 ### 方法二 使用Electron运行
@@ -138,6 +139,7 @@ CaptfEncoder 提供功能都是基于插件机制实现的，所有插件都在�
 
 ## 下载软件
 
+ * <https://github.com/guyoung/CaptfEncoder/releases>
  * 百度网盘 <https://pan.baidu.com/s/1q2N1w44bvYIXLe5gCI5oKA> 密码：k5b9
 
 
