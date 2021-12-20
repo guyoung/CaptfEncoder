@@ -14,123 +14,127 @@
 
 ---
 
-CaptfEncoder 是一款可扩展跨平台网络安全工具套件，提供网络安全相关编码转换、古典密码、密码学、非对称加密、特殊编码、杂项等工具，并聚合各类在线工具。
+CaptfEncoder 是一款跨平台网络安全工具套件，提供网络安全相关编码转换、古典密码、密码学、公钥加密、聚合查询、杂项等多种实用工具。
 
-![CaptfEncoder Screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-screenshot-1.png)
+CaptfEncoder V3 版本使用Rust开发，可执行程序体积小（Windows 6M左右，其他操作系统10M左右），速度更快、性能更优、功能更全。 
 
-CaptfEncoder 提供功能都是基于插件机制实现的，所有插件都在程序 extensions目录下。
 
-![CaptfEncoder Extensions Screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-screenshot-2.png)
-
-## 使用
-
-### 方法一 直接下载可执行程序
-
- * <https://github.com/guyoung/CaptfEncoder/releases>
- * 百度网盘 <https://pan.baidu.com/s/1q2N1w44bvYIXLe5gCI5oKA> 密码：k5b9
-
-### 方法二 使用Electron运行
-
- * git clone https://github.com/guyoung/CaptfEncoder.git
- * cd CaptfEncoder
- * npm install
- * npm start
+![CaptfEncoder screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-v3-screenshot-1.png)
 
 ## 支持操作系统
 
  * Windows
- * Linux
  * MacOS
- * Other...(支持 Node.js)
+ * Linux（Centos、Ubuntu等）
+
+
+
+Mac OS 运行截图
+
+![CaptfEncoder screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-v3-screenshot-2.png)
+
+
+Ubuntu 20 运行截图
+
+![CaptfEncoder screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-v3-screenshot-3.png)
+
+Centos 7 运行截图
+
+![CaptfEncoder screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-v3-screenshot-4.png)
+
+
+## 使用
+
+### 直接下载可执行程序
+
+ * <https://github.com/guyoung/CaptfEncoder/releases>
+ * 百度网盘 <https://pan.baidu.com/s/1q2N1w44bvYIXLe5gCI5oKA> 密码：k5b9
+ 
 
 ## 功能介绍
 
  * 编码转换
    * Ascii 编码
-   * Base64、Base 系列编码
-   * Escape 编码
    * Hex 编码
+   * Base64 编码
+   * Base16 编码
+   * Base32 编码
+   * Base系列编码(Base58,Base62,Base62,Base85,Base91)
+   * Url 编码  
    * Html entity 编码
-   * 莫尔斯电码
-   * Quoted-printable（可打印字符引用编码）
    * Shellcode 编码 
-   * Sql 编码 
-   * Tap Code（敲击码）
    * Unicode 编码   
-   * Url 编码   
+   * 莫尔斯电码 
 
  * 古典密码
-   * Rail-fence（栅栏密码）
-   * Atbash（埃特巴什码）
-   * Caesar（凯撒密码）
-   * ROT13、ROT 系列密码
-   * Simple Substitution（简单替换密码）
-   * Hill（希尔密码）
-   * Polybius Square（波利比奥斯方阵密码）
-   * Playfair（普莱菲尔密码）
-   * Vigenère（维吉尼亚密码）
-   * Autokey（自动密钥密码）
-   * Beaufort（博福特密码）
-   * Running Key（滚动密钥密码）
-   * Porta 密码
-   * Affine（仿射密码）
-   * Baconian（培根密码）
    * ADFGX 密码
    * ADFGVX 密码
-   * Bifid（双密码）
-   * Four-Square（四方密码）
-   * Straddle Checkerboard（跨棋盘密码）
-   * Gronsfeld（格罗斯费尔德密码）
+   * Affine(仿射密码)
+   * Atbash(埃特巴什码)
+   * Autokey(自动密钥密码)
+   * Baconian(培根密码)
+   * Beaufort(博福特密码)
+   * Caesar(凯撒密码)
+   * Columnar Transposition(列移位密码)
+   * Four Square(四方密码)
+   * Fractionated Morse(分组摩尔斯替换密码)
+   * Hill(希尔密码)
+   * Playfair(普莱菲尔密码)
+   * Polybius Square(波利比奥斯方阵密码)
+   * Porta 密码
+   * Rail-fence(栅栏密码)
+   * ROT13 密码
+   * Running Key(滚动密钥密码)
+   * Scytale 密码
+   * Simple Substitution(简单替换密码)   
+   * Vigenere(维吉尼亚密码)  
 
- * 密码学
-   * Hash
-   * MD5、MD 系列
-   * SHA1、SHA 系列
+ * 密码学  
+   * MD5
+   * MD2
+   * MD4
+   * RIPEMD系列(RIPEMD-128,RIPEMD-160,RIPEMD-256,RIPEMD-320)
+   * SHA 1
+   * SHA 256
+   * SHA 系列(SHA 224,SHA384,SHA512,SHA3-224,SHA3-256,SHA3-384,SHA3-512)
+   * Whirlpool
    * HMAC
-   * Bcrypt
-   * Scrypt
-   * AES
+   * AES-128
    * DES
-   * 3DES（TripleDES）
-   * RC2
-   * RC4
-   * Rabbit
    * Blowfish 
+   * RC2
+   * RC4  
    * SM3
    * SM4
-   * RIPEMD
+   * Bcrypt
+   * Scrypt
 
- * 非对称加密
-   * RSA 加密
+ * 公钥加密
    * RSA 生成密钥
-
- * 其他编码
-   * JSFuck 编码
-   * Jother 编码
-   * Brainfuck 编码
-   * Ip 地址编码
-   * Base64 图片编码 
-   * QR Code（二维码）
-   * Mime 编码 
-   * CRC 编码 
-   * Punycode 编码 
-   * Bubble Babble 编码 
-   * UUEncode 编码 
-   * XXEncode 编码 
-
- * 实用工具  
-   * 文件 Hash
-   * 文件类型
-   * Hash 类型识别
-   * 图片Exif
-   * Gif 动画帧提取
-   
- * 第三方工具（需联网） 
+   * RSA 加解密 
+ 
+  * 聚合查询(需联网) 
    * Factordb
-   * IP ASN
+   * Whois
+   * crt.sh
+   * DNS Lookup
+   * DNS Dumpster
+   * GeoPing
    * IP info
    * IP Whois
-   * Whois
+   * IP ASN
+   * BGP View
+   * Censys 
+
+ * 杂项
+  * 文件 Hash
+  * 文件类型
+  * 图片Exif
+  * Base64 图片编码/解码
+  * QR Code(二维码)编码/解码
+  * 网络 CIDR 计算
+  * Ping
+  * 端口扫描    
 
 
 ## 项目网站

@@ -6,10 +6,18 @@ module.exports = async function (input, options = {}) {
         let output = '';
 
         if (input && input.length > 0) {
+            console.log(input)
             const results = await pythonExecute('ext.app.misc.hash-identification/python/get.py', [input], 'python3');
+           
+            if (results) {
 
-            if (results && results.length > 1) {
-                const data = JSON.parse(results[1]);
+                let data;
+
+                if (results.length >1) {
+                    data = JSON.parse(results[1]);
+                } else if(results.length >=1) {
+                    data = JSON.parse(results[0]);
+                }         
 
                 if (data) {                   
                     data.forEach((item,index)=>{                      
@@ -18,7 +26,6 @@ module.exports = async function (input, options = {}) {
 
                 }
             }
-
         }
 
         return {

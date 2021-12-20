@@ -14,7 +14,7 @@
 
 ---
 
-Captfencoder is an extensible cross platform network security tool suite, providing network security related code conversion, classical cryptography, cryptography, asymmetric encryption, special coding, miscellaneous tools, and aggregating all kinds of online tools.
+Captfencoder is a rapid  cross platform network security tool suite, providing network security related code conversion, classical cryptography, cryptography, asymmetric encryption, miscellaneous tools, and aggregating all kinds of online tools.
 
 ![CaptfEncoder Screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-screenshot-1.png)
 
@@ -22,115 +22,120 @@ CaptfEncoder all functions provided are based on plugin framewrok，All plugins 
 
 ![CaptfEncoder Extensions Screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-screenshot-2.png)
 
-## Use
-
-### Method always downloads the executable
-
- * <https://github.com/guyoung/CaptfEncoder/releases>
- * Baidu network disk https://pan.baidu.com/s/1q2N1w44bvYIXLe5gCI5oKA  Password: k5b9
-
-### Method 2 uses electron operation
-
- * git clone https://github.com/guyoung/CaptfEncoder.git
- * cd CaptfEncoder
- * npm install
- * npm start
-
 ## Support operating system
 
  * Windows
- * Linux
+ * Linux(Centos,Ubuntu...)
  * MacOS
- * Other...(Support Node.js)
+
+Mac OS screenshot
+
+![CaptfEncoder screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-v3-screenshot-2.png)
+
+Ubuntu 20 screenshot
+
+![CaptfEncoder screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-v3-screenshot-3.png)
+
+Centos 7 screenshot
+
+![CaptfEncoder screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-v3-screenshot-4.png)
+
+## Use
+
+### downloads the executable
+
+ * <https://github.com/guyoung/CaptfEncoder/releases>
+ * Baidu network disk https://pan.baidu.com/s/1q2N1w44bvYIXLe5gCI5oKA  Password: k5b9
 
 ## Function introduction
 
  * Converter
    * Ascii encoding
-   * Base64、Base encoding
-   * Escape encoding
    * Hex encoding
-   * Html entity encoding
-   * Morse code
-   * Quoted-printable encoding
-   * Shellcode encoding
-   * Sql encoding 
-   * Tap Code
-   * Unicode encoding 
+   * Base64 encoding
+   * Base16 encoding
+   * Base32 encoding
+   * Base series(Base58,Base62,Base62,Base85,Base91)
    * Url encoding 
+   * Html entity encoding
+   * Shellcode encoding
+   * Unicode encoding 
+   * Morse code
+
 
  * Classical cipher
-   * Rail-fence cipher
-   * Atbash cipher
-   * Caesar cipher
-   * ROT13、ROT series cipher
-   * Simple Substitution cipher
-   * Hill cipher
-   * Polybius Square cipher
-   * Playfair cipher
-   * Vigenère cipher
-   * Autokey cipher
-   * Beaufort cipher
-   * Running Key cipher
-   * Porta cipher
-   * Affine cipher
-   * Baconian cipher
-   * ADFGX  cipher
+   * ADFGX cipher
    * ADFGVX cipher
-   * Bifid cipher
-   * Four-Square cipher
-   * Straddle Checkerboard cipher
-   * Gronsfeld cipher
+   * Affine cipher
+   * Atbash cipher
+   * Autokey cipher
+   * Baconian cipher
+   * Beaufort cipher
+   * Caesar cipher
+   * Columnar Transposition cipher
+   * Four Square cipher
+   * Fractionated Morse cipher
+   * Hill cipher
+   * Playfair cipher
+   * Polybius Square cipher
+   * Porta cipher
+   * Rail-fence cipher
+   * ROT13 cipher
+   * Running Key cipher
+   * Scytale cipher
+   * Simple Substitution cipher
+   * Vigenere cipher
 
  * Cryptology
-   * Hash
-   * MD5、MD series
-   * SHA1、SHA series
+   * MD5
+   * MD2
+   * MD4
+   * RIPEMD series(RIPEMD-128、RIPEMD-160、RIPEMD-256、RIPEMD-320)
+   * SHA1
+   * SHA256
+   、SHA series(SHA 224,SHA384,SHA512,SHA3-224,SHA3-256,SHA3-384,SHA3-512)
    * HMAC
-   * Bcrypt
-   * Scrypt
-   * AES
+   * AES-128
    * DES
-   * 3DES（TripleDES）
+   * Blowfish 
    * RC2
    * RC4
-   * Rabbit
-   * Blowfish 
    * SM3
    * SM4
-   * RIPEMD
+   * Bcrypt
+   * Scrypt
 
  * Public key cryptography
-   * RSA crypto
    * RSA generate key
+   * RSA encrypt
 
- * Other encoding
-   * JSFuck encoding
-   * Jother encoding
-   * Brainfuck encoding
-   * Ip address encoding
-   * Base64 image encoding
-   * QR Code
-   * Mime encoding
-   * CRC encoding 
-   * Punycode encoding
-   * Bubble Babble encoding 
-   * UUEncode encoding 
-   * XXEncode encoding 
-
- * Misc  
-   * File hash
-   * File type
-   * Hash identification
-   * Image exif
-   * GIF frame extractor
-
- * Others(online)
+ * Query(Online) 
+   * Factordb
+   * Whois
+   * crt.sh
+   * DNS Lookup
+   * DNS Dumpster
+   * GeoPing
+   * IP info
+   * IP Whois
+   * IP ASN
+   * BGP View
+   * Censys 
    * Factordb
    * IP ASN
    * IP info
    * IP Whois
    * Whois
+
+ * Misc  
+   * File hash
+   * File type
+   * Image exif
+   * Base64 image encode/decode
+   * Qrcode encode/decode
+   * CIDR calculator
+   * Ping
+   * Port scan
 
 
 ## Project website
