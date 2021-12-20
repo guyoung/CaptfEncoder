@@ -16,11 +16,9 @@
 
 Captfencoder is a rapid  cross platform network security tool suite, providing network security related code conversion, classical cryptography, cryptography, asymmetric encryption, miscellaneous tools, and aggregating all kinds of online tools.
 
-![CaptfEncoder Screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-screenshot-1.png)
+![CaptfEncoder Screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-v3-screenshot-1.png)
 
 CaptfEncoder all functions provided are based on plugin framewrok，All plugins are in the program extensions directory.
-
-![CaptfEncoder Extensions Screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-screenshot-2.png)
 
 ## Support operating system
 
