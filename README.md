@@ -18,7 +18,7 @@ Captfencoder is a rapid  cross platform network security tool suite, providing n
 
 ![CaptfEncoder Screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-v3-screenshot-1.png)
 
-CaptfEncoder all functions provided are based on plugin framewrok，All plugins are in the program extensions directory.
+CaptfEncoder V3 develop by Rust, executable file that are smaller (around 6M for and 10M,for other operating systems), faster, better performance, and more comprehensive.  
 
 ## Support operating system
 
