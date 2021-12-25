@@ -1,0 +1,46 @@
+<div class="content-page">
+    <mat-card>
+        <mat-card-header>
+            <mat-toolbar class="toolbar">
+                <span>Hex Encoding</span>
+                <span class="toolbar-spacer"></span>
+                <mat-button-toggle-group [(ngModel)]="flagForButtonToggle" (change)="handleText()">
+                    <mat-button-toggle value="ENCODE" class="toolbar-button-toggle" color="primary">
+                    Encode
+                    </mat-button-toggle>
+                    <mat-button-toggle value="DECODE" class="toolbar-button-toggle" color="accent">
+                    Decode
+                    </mat-button-toggle>
+                </mat-button-toggle-group>
+            </mat-toolbar>
+        </mat-card-header>
+        <mat-card-content>
+
+            <div class="option-row">
+                <mat-form-field style="width: 120px">
+                    <mat-select [(ngModel)]="optDelimiter" (ngModelChange)="handleText()" name="optDelimiter" placeholder="Delimiter">
+                        <mat-option value=" ">空格 Space </mat-option>
+                        <mat-option value=",">逗号 , </mat-option>
+                        <mat-option value=";">分号 ;</mat-option>
+                        <mat-option value=":">冒号 :</mat-option>
+                        <mat-option value="\n">换行 \n</mat-option>
+                        <mat-option value="\r\n">回车换行 \r\n</mat-option>
+                        <mat-option value="\">反斜杠 \</mat-option>
+                        <mat-option value="0x">0x</mat-option>
+                        <mat-option value="\x">\x</mat-option>
+                        <mat-option value="">无 None</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="tow-cols">
+                <div>
+                    <app-text-editor class="app-text-editor" #txtText1 (onValueChanged)="handleText()" value=""></app-text-editor>
+                </div>
+                <div>
+                    <app-text-editor class="app-text-editor" #txtText2 syncMenu="true" (onValueSynced)="syncText()" value=""></app-text-editor>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+</div>

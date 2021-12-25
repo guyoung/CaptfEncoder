@@ -1,0 +1,85 @@
+.update-page {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .mat-card {
+    height: 100%;
+  }
+  
+  .toolbar {
+    height: 40px;
+  }
+  .toolbar-spacer {
+    flex: 1 1 auto;
+  }
+  .toolbar-button {
+    margin: 0px 5px !important;
+  }
+  
+  
+  
+  .mat-card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+  }
+  
+  .row1 {   
+      width: 100%;
+      display: flex;
+      flex-direction: row;        
+      background-color: #202340
+  }
+  .row2 {       
+      width: 100%;
+      display: flex;
+      flex-direction: column;   
+      justify-content:flex-end;
+      height: 150px;  
+      background-color: #ffffff
+  }
+  
+  .left {
+      padding: 25px 25px;
+  }
+  .logo {    
+      width: 160px;
+      height: 160px;
+      display: block;
+      background-image: url(style/assets/app_ico_256.png);
+      background-size: cover;
+  }
+  
+  .right {   
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+  }
+  
+  .product-name {
+      font-size: 2em;
+      font-weight: bold;
+  }
+  
+  .product-description {
+      margin-top: 16px;
+      font-size: 1.5em;    
+  }
+  
+  .product-version {
+      margin-top: 12px;
+      font-size: 1em;    
+  }
+  
+  .weapp {
+      width: 600px;
+      height: 150px;
+      display: block;
+      background-image: url(style/assets/ctf-img1-150.png);
+      background-size: cover;
+  }

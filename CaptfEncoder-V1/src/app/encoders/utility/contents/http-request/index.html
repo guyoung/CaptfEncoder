@@ -1,0 +1,23 @@
+<div class="content-page">
+    <mat-card>
+        <mat-card-header>
+            <mat-toolbar class="toolbar">
+                <span>Http Request</span>
+                <span class="toolbar-spacer"></span>
+            </mat-toolbar>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="option-row">
+                <mat-form-field style="margin-left:10px; width: 400px">
+                    <input matInput type="url" [(ngModel)]="optUrl" name="optUrl" placeholder="Url">
+                </mat-form-field>
+                <button mat-button class="option-row-button" (click)="Go()" [disabled]="working">Go</button>
+            </div>
+            <div>
+                <mat-form-field class="app_form_field">
+                    <textarea matInput [(ngModel)]="txtText2" name="txtText2"></textarea>
+                </mat-form-field>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

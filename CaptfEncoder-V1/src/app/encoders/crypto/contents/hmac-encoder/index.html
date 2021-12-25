@@ -1,0 +1,62 @@
+<div class="content-page">
+    <mat-card>
+        <mat-card-header>
+            <mat-toolbar class="toolbar">
+                <span>HMAC</span>
+                <span class="toolbar-spacer"></span>
+                <mat-button-toggle-group [(ngModel)]="flagForButtonToggle" (change)="handleText()">
+                    <mat-button-toggle value="ENCODE" class="toolbar-button-toggle" color="primary">
+                        Encode
+                    </mat-button-toggle>                 
+                </mat-button-toggle-group>
+            </mat-toolbar>
+        </mat-card-header>
+        <mat-card-content>
+
+            <div class="option-row">
+                <mat-form-field style="width: 160px">
+                    <mat-select [(ngModel)]="optPattern" (ngModelChange)="handleText()" name="optPattern" placeholder="Pattern">
+                        <mat-option value="hmac-md5">HMAC MD5</mat-option>
+                        <mat-option value="hmac-sha1">HMAC SHA1</mat-option>
+                        <mat-option value="hmac-sha256">HMAC SHA256</mat-option>
+                        <mat-option value="hmac-sha224">HMAC SHA224</mat-option>
+                        <mat-option value="hmac-sha512">HMAC SHA512</mat-option>
+                        <mat-option value="hmac-sha384">HMAC SHA384</mat-option>
+                        <mat-option value="hmac-sha3">HMAC SHA3</mat-option>
+                        <mat-option value="hmac-ripemd160">HMAC RIPEMD 160</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field style="width: 160px; margin-left:20px">
+                    <input
+                      matInput
+                      type="text"
+                      [(ngModel)]="optPassphrase"
+                      (ngModelChange)="handleText()"
+                      name="optPassphrase"
+                      placeholder="Passphrase"
+                    />
+                  </mat-form-field>
+                  <mat-form-field style="width: 80px; margin-left:20px">
+                    <mat-select
+                      [(ngModel)]="optOutput"
+                      (ngModelChange)="handleText()"
+                      name="optOutput"
+                      placeholder="Output"
+                    >
+                      <mat-option value="BASE64">Base64</mat-option>
+                      <mat-option value="HEX">Hex</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </div>
+            <div class="tow-cols">
+                <div>
+                    <app-text-editor class="app-text-editor" #txtText1 (onValueChanged)="handleText()" value=""></app-text-editor>
+                </div>
+                <div>
+                    <app-text-editor class="app-text-editor" #txtText2 syncMenu="true" (onValueSynced)="syncText()" [(saveAsBinFileMenu)]="binFile" value=""></app-text-editor>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+</div>

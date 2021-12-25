@@ -1,0 +1,68 @@
+@import '../node_modules/@angular/material/theming';
+
+@import './master/default/app-component-theme';
+
+
+@mixin ng-site-theme($theme) {
+    $primary: map-get($theme, primary);
+    $accent: map-get($theme, accent);
+    $warn: map-get($theme, warn);
+    $background: map-get($theme, background);
+    $foreground: map-get($theme, foreground); 
+  
+    ng-app {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      background: mat-color($background, background);
+    }
+
+    .loading{
+      width: 100%;
+      height: 100%;      
+
+      .spinner {
+        width: 60px;
+        height: 60px;
+        margin: 100px auto;
+        background: mat-color($primary);
+        -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+        animation: rotateplane 1.2s infinite ease-in-out;
+      }
+    
+      @-webkit-keyframes rotateplane {
+        0% {
+          -webkit-transform: perspective(120px);
+        }
+        50% {
+          -webkit-transform: perspective(120px) rotateY(180deg);
+        }
+        100% {
+          -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
+        }
+      }
+    
+      @keyframes rotateplane {
+        0% {
+          transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+          -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        }
+        50% {
+          transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+          -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        }
+        100% {
+          transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+          -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        }
+      }
+
+    } 
+    
+  
+    @include app-component-theme($theme);
+  }

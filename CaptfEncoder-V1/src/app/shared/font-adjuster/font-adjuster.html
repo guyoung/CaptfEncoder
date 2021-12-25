@@ -1,0 +1,7 @@
+<button mat-icon-button [mat-menu-trigger-for]="fontMenu" matTooltip="更换字体！">
+  <mat-icon>format_size</mat-icon>
+</button>
+
+<mat-menu class="font-adjuster-menu" #fontMenu="matMenu" x-position="before">
+    <mat-slider vertical min="8" max="32" step="1" invert thumbLabel [(ngModel)]="currentFont.fontSize" (ngModelChange)="changeFontSize()"></mat-slider>
+</mat-menu>

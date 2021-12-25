@@ -1,0 +1,46 @@
+<div class="content-page">
+    <mat-card>
+        <mat-card-header>
+            <mat-toolbar class="toolbar">
+                <span>IP Subnet Calculator（IP子网计算）</span>
+                <span class="toolbar-spacer"></span>
+            </mat-toolbar>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-tab-group>
+                <mat-tab label="IP">
+                    <div class="option-row">
+                        <mat-form-field style="margin-left:10px; width: 200px">
+                            <input matInput type="text" [(ngModel)]="optIp" name="optIp" placeholder="Ip Address">
+                        </mat-form-field>
+                        <mat-form-field style="margin-left:10px; width: 200px">
+                            <input matInput type="text" [(ngModel)]="optSubnetMask" name="optSubnetMask" placeholder="Subnet Mask">
+                        </mat-form-field>
+                        <button mat-button class="option-row-button" (click)="getIpSubnet()">Calculate</button>
+
+                    </div>
+                    <div>
+                        <mat-form-field class="app_form_field">
+                            <textarea matInput [(ngModel)]="txtText2" name="txtText2"></textarea>
+                        </mat-form-field>
+                    </div>
+                </mat-tab>
+                <mat-tab label="Cidr">
+                    <div class="option-row">
+                        <mat-form-field style="margin-left:10px; width: 200px">
+                            <input matInput type="text" [(ngModel)]="optCidr" name="optCidr" placeholder="Cidr">
+                        </mat-form-field>                   
+                        <button mat-button class="option-row-button" (click)="getCidrSubnet()">Calculate</button>
+
+                    </div>
+                    <div>
+                        <mat-form-field class="app_form_field">
+                            <textarea matInput [(ngModel)]="txtText4" name="txtText4"></textarea>
+                        </mat-form-field>
+                    </div>
+                </mat-tab>
+            </mat-tab-group>
+
+        </mat-card-content>
+    </mat-card>
+</div>

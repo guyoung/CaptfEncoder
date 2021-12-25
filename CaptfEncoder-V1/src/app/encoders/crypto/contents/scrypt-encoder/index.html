@@ -1,0 +1,95 @@
+<div class="content-page">
+  <mat-card>
+    <mat-card-header>
+      <mat-toolbar class="toolbar">
+        <span>Scrypt</span> <span class="toolbar-spacer"></span>
+        <mat-button-toggle-group
+          [(ngModel)]="flagForButtonToggle"
+          (change)="handleText()"
+        >
+          <mat-button-toggle
+            value="ENCODE"
+            class="toolbar-button-toggle"
+            color="primary"
+          >
+            Encode
+          </mat-button-toggle>
+        </mat-button-toggle-group>
+      </mat-toolbar>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="option-row">
+          <mat-form-field style="width: 120px">
+              <input
+                matInput
+                type="text"
+                [(ngModel)]="optSalt"
+                (ngModelChange)="handleText()"
+                name="optSalt"
+                placeholder="Salt"
+              />
+            </mat-form-field>
+        <mat-form-field style="width: 100px; margin-left:20px">
+          <input
+            matInput
+            type="number"
+            [(ngModel)]="optIterations"
+            (ngModelChange)="handleText()"
+            name="optIterations"
+            placeholder="Iterations(N)"           
+          />
+        </mat-form-field>
+        <mat-form-field style="width: 100px; margin-left:20px">
+            <input
+              matInput
+              type="number"
+              [(ngModel)]="optMemoryFactor"
+              (ngModelChange)="handleText()"
+              name="optMemoryFactor"
+              placeholder="Memory factor(r)"           
+            />
+          </mat-form-field>
+          <mat-form-field style="width: 100px; margin-left:20px">
+              <input
+                matInput
+                type="number"
+                [(ngModel)]="optParallelizationFactor"
+                (ngModelChange)="handleText()"
+                name="optParallelizationFactor"
+                placeholder="Parallelization factor (p)"           
+              />
+            </mat-form-field>
+            <mat-form-field style="width: 100px; margin-left:20px">
+                <input
+                  matInput
+                  type="number"
+                  [(ngModel)]="optKeyLength"
+                  (ngModelChange)="handleText()"
+                  name="optKeyLength"
+                  placeholder="Key length"           
+                />
+              </mat-form-field>
+      </div>
+      <div class="tow-cols">
+        <div>
+          <app-text-editor
+            class="app-text-editor"
+            #txtText1
+            (onValueChanged)="handleText()"
+            value=""
+          ></app-text-editor>
+        </div>
+        <div>
+          <app-text-editor
+            class="app-text-editor"
+            #txtText2
+            syncMenu="true"
+            (onValueSynced)="syncText()"
+            [(saveAsBinFileMenu)]="binFile"
+            value=""
+          ></app-text-editor>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

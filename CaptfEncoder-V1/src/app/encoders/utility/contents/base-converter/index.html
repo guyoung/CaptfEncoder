@@ -1,0 +1,34 @@
+<div class="content-page">
+    <mat-card>
+        <mat-card-header>
+            <mat-toolbar class="toolbar">
+                <span>Base Converter（进制转换）</span>
+                <span class="toolbar-spacer"></span>
+            </mat-toolbar>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="option-row">
+                <mat-form-field style="width: 100px;">
+                    <input matInput type="number" [(ngModel)]="optFrom" (ngModelChange)="handleText()" name="optFrom"
+                        placeholder="From" min="2" max="36">
+                </mat-form-field>
+                <mat-form-field style="width: 100px; margin-left: 20px">
+                    <input matInput type="number" [(ngModel)]="optTo" (ngModelChange)="handleText()" name="optTo"
+                        placeholder="To" min="2" max="36">
+                </mat-form-field>
+            </div>
+            <div class="tow-cols">
+                <div>
+                    <mat-form-field class="app_form_field">
+                        <textarea matInput [(ngModel)]="txtText1" (ngModelChange)="handleText()" name="txtText1"></textarea>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="app_form_field">
+                        <textarea matInput [(ngModel)]="txtText2" name="txtText2" readonly></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

@@ -1,0 +1,33 @@
+<div class="content-page">
+    <mat-card>
+        <mat-card-header>
+            <mat-toolbar class="toolbar">
+                <span>JSFuck</span>
+                <span class="toolbar-spacer"></span>
+                <button mat-raised-button class="toolbar-button" (click)="Encode()" color="primary">Encode</button>
+                <button mat-raised-button class="toolbar-button" (click)="Decode()" color="accent">Decode</button>
+            </mat-toolbar>
+        </mat-card-header>
+        <mat-card-content>
+
+            <div class="option-row">
+                <mat-checkbox [(ngModel)]="optEval" name="optEval">Eval Source</mat-checkbox>
+                <mat-checkbox [(ngModel)]="optScope" name="optScope" style="margin-left: 10px">Run In Parent Scope</mat-checkbox>
+
+            </div>
+            <div class="tow-cols">
+                <div>
+                    <mat-form-field class="app_form_field">
+                        <textarea matInput name="txtText1" #txtText1 ></textarea>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="app_form_field">
+                        <textarea matInput name="txtText2" #txtText2 ></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+</div>

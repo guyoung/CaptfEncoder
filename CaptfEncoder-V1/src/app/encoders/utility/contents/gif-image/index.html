@@ -1,0 +1,28 @@
+<div class="content-page">
+    <mat-card>
+        <mat-card-header>
+            <mat-toolbar class="toolbar">
+                <span>Gif Image</span>
+                <span class="toolbar-spacer"></span>
+            </mat-toolbar>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="option-row">
+                <button mat-button class="option-row-button" (click)="SelectImageFile()" [disabled]="working">Select
+                    Image File</button>
+            </div>
+            <div>
+                <mat-grid-list cols="4" rowHeight="1:1">
+                    <mat-grid-tile *ngFor="let item of imgData; let idx = index" rowHeight="2:1">
+                        <img mat-card-image class="img" [src]="item" (click)="openImage(item)">
+                    </mat-grid-tile>
+                </mat-grid-list>
+            </div>
+            <div>
+                <mat-form-field class="app_form_field">
+                    <textarea matInput [(ngModel)]="txtText2" name="txtText2"></textarea>
+                </mat-form-field>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

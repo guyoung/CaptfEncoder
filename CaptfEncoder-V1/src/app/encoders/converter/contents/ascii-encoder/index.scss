@@ -1,0 +1,22 @@
+.content-page {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.app_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.app_form > * {
+  width: 100%;
+}
+
+.app_form_field {
+  padding: 5px;
+}
+
+.app_form_field textarea {
+  min-height: 40px;
+}

@@ -1,0 +1,33 @@
+<div class="content-page">
+    <mat-card>
+        <mat-card-header>
+            <mat-toolbar class="toolbar">
+                <span>Hash</span>
+                <span class="toolbar-spacer"></span>
+            </mat-toolbar>
+        </mat-card-header>
+        <mat-card-content>
+            <form class="app_form">
+                <mat-form-field class="app_form_field">
+                    <textarea matInput [(ngModel)]="txtText" name="txtText" placeholder="Text" (keyup)="handleText()"></textarea>
+                </mat-form-field>
+                <mat-form-field class="app_form_field">
+                    <textarea matInput [(ngModel)]="txtMD5_32" name="txtMD5_32" placeholder="MD5-32"></textarea>
+                </mat-form-field>
+                <mat-form-field class="app_form_field">
+                    <textarea matInput [(ngModel)]="txtMD5_16" name="txtMD5_16" placeholder="MD5-16"></textarea>
+                </mat-form-field>
+                <mat-form-field class="app_form_field">
+                    <textarea matInput [(ngModel)]="txtSHA_1" name="txtSHA_1" placeholder="SHA-1"></textarea>
+                </mat-form-field>
+                <mat-form-field class="app_form_field">
+                    <textarea matInput [(ngModel)]="txtSHA_256" name="txtSHA_256" placeholder="SHA-256"></textarea>
+                </mat-form-field>
+                <mat-form-field class="app_form_field">
+                        <textarea matInput [(ngModel)]="txtSHA_512" name="txtSHA_512" placeholder="SHA-512"></textarea>
+                    </mat-form-field>
+            </form>
+        </mat-card-content>
+    </mat-card>
+
+</div>

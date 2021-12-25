@@ -1,0 +1,31 @@
+<div class="content-page">
+    <mat-card>
+        <mat-card-header>
+            <mat-toolbar class="toolbar">
+                <span>Base64</span>
+                <span class="toolbar-spacer"></span>
+                <button mat-raised-button class="toolbar-button" (click)="Encode()" color="primary">Encode</button>
+                <button mat-raised-button class="toolbar-button" (click)="Decode()" color="accent">Decode</button>
+            </mat-toolbar>
+        </mat-card-header>
+        <mat-card-content>
+
+            <div class="option-row">
+             
+            </div>
+            <div class="tow-cols">
+                <div>
+                    <mat-form-field class="app_form_field">
+                        <textarea matInput [(ngModel)]="txtText1" name="txtText1"></textarea>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="app_form_field">
+                        <textarea matInput [(ngModel)]="txtText2" name="txtText2"></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+</div>

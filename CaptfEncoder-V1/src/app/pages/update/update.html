@@ -1,0 +1,29 @@
+<div class="update-page">
+    <mat-card>
+        <mat-card-header>
+            <mat-toolbar class="toolbar">
+                <span>更新</span>
+                <span class="toolbar-spacer"></span>
+            </mat-toolbar>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="row1">
+                <div class="left">
+                    <div class="logo">
+                    </div>
+                </div>                
+                <div class="right">                 
+                    <div class="product-name"><span>CaptfEncoder</span></div>
+                    <div class="product-description"><span>跨平台网络安全工具套件</span></div>
+                    <div class="product-version"><span>Current&nbsp;Version：</span><span *ngIf="localInfo">{{localInfo.productVersions[0].version}}</span></div>
+                    <div class="product-version"><span>Latest&nbsp;&nbsp;Version：</span><span *ngIf="remoteInfo">{{remoteInfo.productVersions[0].version}}&nbsp;&nbsp;&nbsp;&nbsp;</span><span *ngIf="needUpdate"><a href="#" (click)="openDownload()">Download</a></span></div>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="weapp">
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+</div>

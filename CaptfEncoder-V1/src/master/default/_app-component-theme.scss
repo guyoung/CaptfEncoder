@@ -1,0 +1,61 @@
+@mixin app-component-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+  $is-dark-theme: map-get($theme, is-dark);
+  $nav-background-opacity: if($is-dark-theme, 0.2, 0.03);
+  $nav-background-focus-opacity: if($is-dark-theme, 0.25, 0.08);
+
+  .navbar {
+    background: mat-color($primary);
+    color: mat-color($primary, default-contrast);
+  }
+
+  
+  .sidenav-nav-content {
+    background: rgba(0, 0, 0, $nav-background-opacity);
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.26);
+    }
+
+    .docs-nav-content-btn {
+      color: rgba(mat-color($foreground, text), 0.5);
+
+      &:focus {
+        // override the default background
+        background: rgba(0, 0, 0, $nav-background-focus-opacity);
+      }
+    }
+
+    hr {
+      border: none;
+      border-top: solid 1px rgba(mat-color($foreground, secondary-text), 0.1);
+    }
+
+    a {
+      color: mat-color($foreground, secondary-text);
+
+      &.sidenav-sidenav-item-selected,
+      &:hover {
+        color: mat-color($primary);
+      }
+    }
+  }
+
+  .sidenav-content {
+    .mat-button-toggle {
+      background-color: mat-color($accent);
+      color: mat-color($accent, default-contrast);
+   
+    }
+
+    .mat-button-toggle-checked {
+      background-color: mat-color($primary);
+      color: mat-color($primary, default-contrast);
+    }
+  }
+
+}

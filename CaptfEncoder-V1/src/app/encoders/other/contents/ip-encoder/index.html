@@ -1,0 +1,39 @@
+<div class="content-page">
+    <mat-card>
+        <mat-card-header>
+            <mat-toolbar class="toolbar">
+                <span>IP Encoding</span>
+                <span class="toolbar-spacer"></span>
+                <button mat-raised-button class="toolbar-button" (click)="Encode()" color="primary">Encode</button>
+                <button mat-raised-button class="toolbar-button" (click)="Decode()" color="accent">Decode</button>
+            </mat-toolbar>
+        </mat-card-header>
+        <mat-card-content>
+
+            <div class="option-row">
+                <mat-form-field style="width: 100px; margin-left:20px">
+                    <mat-select [(ngModel)]="optFormat" name="optFormat" placeholder="Format">
+                        <mat-option value="2">二进制</mat-option>
+                        <mat-option value="8">八进制</mat-option>
+                        <mat-option value="10">十进制</mat-option>  
+                        <mat-option value="16">十六进制</mat-option>                         
+                    </mat-select>
+                </mat-form-field>
+
+            </div>
+            <div class="tow-cols">
+                <div>
+                    <mat-form-field class="app_form_field">
+                        <textarea matInput name="txtText1" #txtText1 value="127.0.0.1" ></textarea>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="app_form_field">
+                        <textarea matInput name="txtText2" #txtText2 ></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+</div>

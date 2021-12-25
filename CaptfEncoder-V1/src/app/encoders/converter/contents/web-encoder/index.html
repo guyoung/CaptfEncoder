@@ -1,0 +1,36 @@
+<div class="content-page">
+    <mat-card>
+        <mat-card-header>
+            <mat-toolbar class="toolbar">
+                <span>Web Encoding</span>
+                <span class="toolbar-spacer"></span>
+            </mat-toolbar>
+        </mat-card-header>
+        <mat-card-content>
+            <form class="app_form">
+                <mat-form-field class="app_form_field">
+                    <textarea matInput [(ngModel)]="txtText" name="txtText" placeholder="Text" (keyup)="handleText()"></textarea>
+                </mat-form-field>
+                <mat-form-field class="app_form_field">
+                    <textarea matInput [(ngModel)]="txtHex" name="txtHex" placeholder="Hex" (keyup)="handleHex()"></textarea>
+                </mat-form-field>
+                <mat-form-field class="app_form_field">
+                        <textarea matInput [(ngModel)]="txtUnicode" name="txtUnicode" placeholder="Unicode" (keyup)="handleUnicode()"></textarea>
+                    </mat-form-field>
+                <mat-form-field class="app_form_field">
+                    <textarea matInput [(ngModel)]="txtBase64" name="txtBase64" placeholder="Base64" (keyup)="handleBase64()"></textarea>
+                </mat-form-field>
+                <mat-form-field class="app_form_field">
+                    <textarea matInput [(ngModel)]="txtUrl" name="txtUrl" placeholder="Url" (keyup)="handleUrl()"></textarea>
+                </mat-form-field>
+                <mat-form-field class="app_form_field">
+                    <textarea matInput [(ngModel)]="txtHtml" name="txtHtml" placeholder="Html Entity" (keyup)="handleHtml()"></textarea>
+                </mat-form-field>
+                <mat-form-field class="app_form_field">
+                    <textarea matInput [(ngModel)]="txtSql" name="txtSql" placeholder="Sql" (keyup)="handleSql()"></textarea>
+                </mat-form-field>
+            </form>
+        </mat-card-content>
+    </mat-card>
+
+</div>

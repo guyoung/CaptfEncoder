@@ -1,0 +1,25 @@
+<div style="width: 61.8%;height:0; text-align:right;">
+  <span style="width: 25px; height:0;" #menuTrigger="matMenuTrigger" [matMenuTriggerFor]="menu">&nbsp;</span>
+</div>
+<mat-form-field>
+  <textarea matInput [(ngModel)]="val" (ngModelChange)="onChange()" (contextmenu)="menuTrigger.openMenu()" (dragover)="onDragOver($event)" (dragleave)="onDragLeave($event)" (drop)="onDrop($event)"></textarea>
+</mat-form-field>
+
+<mat-menu #menu="matMenu" class="app-text-editor-menu">
+  <button mat-menu-item (click)="cacel()" *ngIf="oldval">取消</button>
+  <button mat-menu-item (click)="sync()" *ngIf="syncMenu">同步</button>
+  <button mat-menu-item (click)="clear()" *ngIf="clearMenu">清除</button>
+  <button mat-menu-item (click)="copy()" *ngIf="copyMenu">复制</button>  
+  <button mat-menu-item (click)="paste()" *ngIf="pasteMenu">粘贴</button>
+  <mat-divider></mat-divider>
+  <button mat-menu-item (click)="upperCase()" *ngIf="textMenu">大写</button>
+  <button mat-menu-item (click)="lowerCase()" *ngIf="textMenu">小写</button>
+  <button mat-menu-item (click)="clearSpace()" *ngIf="textMenu">删除空格</button>
+  <button mat-menu-item (click)="clearLinefeed()" *ngIf="textMenu">删除回车换行</button>
+  <mat-divider></mat-divider>
+  <button mat-menu-item (click)="openFile()" *ngIf="openFileMenu">打开文件</button>
+  <button mat-menu-item (click)="saveAsFile('text')" *ngIf="saveAsFileMenu">保存为文件</button>
+  <button mat-menu-item (click)="saveAsFile('binary')" *ngIf="saveAsBinFileMenu">保存为二进制文件</button>
+
+
+</mat-menu>

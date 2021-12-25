@@ -1,0 +1,35 @@
+<div class="content-page">
+    <mat-card>
+        <mat-card-header>
+            <mat-toolbar class="toolbar">
+                <span>Nslookup</span>
+                <span class="toolbar-spacer"></span>              
+            </mat-toolbar>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="option-row">
+                <mat-form-field style="margin-left:10px; width: 200px">
+                    <input matInput type="text" [(ngModel)]="optDomain" name="optDomain" placeholder="Domain">
+                </mat-form-field>
+                <mat-form-field style="margin-left:10px; width: 200px">
+                    <input matInput type="text" [(ngModel)]="optNameServer" name="optNameServer" placeholder="NameServer">
+                </mat-form-field>
+                <mat-form-field style="width: 80px; margin-left:20px">
+                    <mat-select [(ngModel)]="optType" name="optType" placeholder="Type">
+                        <mat-option value="a">A</mat-option>
+                        <mat-option value="ptr">PTR</mat-option>
+                        <mat-option value="ns">NS</mat-option>
+                        <mat-option value="mx">MX</mat-option>
+                        <mat-option value="txt">TXT</mat-option>                        
+                    </mat-select>
+                </mat-form-field>
+                <button mat-button class="option-row-button" (click)="lookup()" [disabled]="working">Lookup</button>            
+            </div>
+            <div>
+                <mat-form-field class="app_form_field">
+                    <textarea matInput [(ngModel)]="txtText2" name="txtText2"></textarea>
+                </mat-form-field>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

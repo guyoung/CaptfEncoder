@@ -1,0 +1,63 @@
+<div class="content-page">
+    <mat-card>
+        <mat-card-header>
+            <mat-toolbar class="toolbar">
+                <span>Base64 Image Encoding</span>
+                <span class="toolbar-spacer"></span>
+                <mat-button-toggle-group [(ngModel)]="flagForButtonToggle">
+                    <mat-button-toggle value="ENCODE" class="toolbar-button-toggle" color="primary">
+                        Encode
+                    </mat-button-toggle>
+                    <mat-button-toggle value="DECODE" class="toolbar-button-toggle" color="accent">
+                        Decode
+                    </mat-button-toggle>
+                </mat-button-toggle-group>
+            </mat-toolbar>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="option-row">
+            </div>
+            <div *ngIf="flagForButtonToggle=='ENCODE'" class="tow-cols">
+                <div class="col1">
+                    <div>
+                        <button mat-button class="option-row-button" (click)="SelectFile()" [disabled]="working">Select
+                            File</button>
+                    </div>
+                    <div class="img-container">
+                        <img [src]="imgSrc1" class="img" *ngIf="imgSrc1">
+                    </div>
+                </div>
+                <div class="col2">
+                    <div>
+                        <button mat-button class="option-row-button" (click)="SaveFile()" style="margin-left: 20px">Save
+                            as..</button>
+                    </div>
+                    <mat-form-field class="app_form_field">
+                        <textarea matInput [(ngModel)]="txtText1" name="txtText1"></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div *ngIf="flagForButtonToggle=='DECODE'" class="tow-cols">
+                <div>
+                    <div>
+                        <button mat-button class="option-row-button" (click)="SelectFile()" [disabled]="working">Select
+                            File</button>
+                    </div>
+                    <mat-form-field class="app_form_field">
+                        <textarea matInput [(ngModel)]="txtText2" name="txtText2"></textarea>
+                    </mat-form-field>
+
+                </div>
+                <div>
+                    <div>
+                        <button mat-button class="option-row-button" (click)="SaveFile()" style="margin-left: 20px">Save
+                            as..</button>
+                    </div>
+                    <div class="img-container">
+                        <img [src]="imgSrc2" class="img" *ngIf="imgSrc2">
+                    </div>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

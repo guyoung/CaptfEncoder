@@ -1,0 +1,25 @@
+<div class="content-page">
+    <mat-card>
+        <mat-card-header>
+            <mat-toolbar class="toolbar">
+                <span>Ophcrack（NTLM Decrypt）</span>
+                <span class="toolbar-spacer"></span>              
+            </mat-toolbar>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="option-row">
+                <mat-form-field style="margin-left:10px; width: 320px">
+                    <input matInput type="text" [(ngModel)]="optQueryText" name="optQueryText" placeholder="NTHash">
+                </mat-form-field>
+                <button mat-button class="option-row-button" (click)="query()" [disabled]="working">Query</button>
+              
+            </div>
+            <div>
+                <mat-form-field class="app_form_field">
+                    <textarea matInput [(ngModel)]="txtText2" name="txtText2"></textarea>
+                </mat-form-field>
+            </div>
+            <div (click)="openLink('https://www.objectif-securite.ch/en/ophcrack.php')">https://www.objectif-securite.ch/en/ophcrack.php</div>
+        </mat-card-content>
+    </mat-card>
+</div>

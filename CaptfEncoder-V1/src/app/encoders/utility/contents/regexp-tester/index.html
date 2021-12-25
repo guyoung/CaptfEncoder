@@ -1,0 +1,56 @@
+<div class="content-page">
+    <mat-card>
+        <mat-card-header>
+            <mat-toolbar class="toolbar">
+                <span>RegExp Tester（正则表达式）</span>
+                <span class="toolbar-spacer"></span>
+            </mat-toolbar>
+        </mat-card-header>
+        <mat-card-content>
+            <div>
+                <div class="option-row">
+                    <mat-form-field style="width:200px">
+                        <mat-select [(ngModel)]="optDefined" (ngModelChange)="handleDefined()" name="optDefined" placeholder="Defined">
+                            <mat-option value="(?:(?:\d|[01]?\d\d|2[0-4]\d|25[0-5])\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d|\d)(?:\/\d{1,2})?">IPv4 address</mat-option>
+                            <mat-option value="((?=.*::)(?!.*::.+::)(::)?([\dA-Fa-f]{1,4}:(:|\b)|){5}|([\dA-Fa-f]{1,4}:){6})((([\dA-Fa-f]{1,4}((?!\3)::|:\b|(?![\dA-Fa-f])))|(?!\2\3)){2}|(((2[0-4]|1\d|[1-9])?\d|25[0-5])\.?\b){4})">IPv6 address</mat-option>
+                            <mat-option value="\b(\w[-.\w]*)@([-\w]+(?:\.[-\w]+)*)\.([A-Za-z]{2,4})\b">Email address</mat-option>
+                            <mat-option value="([A-Za-z]+://)([-\w]+(?:\.\w[-\w]*)+)(:\d+)?(/[^.!,?&quot;<>\[\]{}\s\x7F-\xFF]*(?:[.!,?]+[^.!,?&quot;<>\[\]{}\s\x7F-\xFF]+)*)?">URL</mat-option>
+                            <mat-option value="\b((?=[a-z0-9-]{1,63}\.)(xn--)?[a-z0-9]+(-[a-z0-9]+)*\.)+[a-z]{2,63}\b">Domain</mat-option>
+                            <mat-option value="([A-Za-z]):\\((?:[A-Za-z\d][A-Za-z\d\- \x27_\(\)~]{0,61}\\?)*[A-Za-z\d][A-Za-z\d\- \x27_\(\)]{0,61})(\.[A-Za-z\d]{1,6})?">Windows file path</mat-option>
+                            <mat-option value="(?:/[A-Za-z\d.][A-Za-z\d\-.]{0,61})+">UNIX file path</mat-option>
+                            <mat-option value="[A-Fa-f\d]{2}(?:[:-][A-Fa-f\d]{2}){5}">MAC address</mat-option>
+                            <mat-option value="((?:19|20)\d\d)[- /.](0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])">Date (yyyy-mm-dd)</mat-option>
+                            <mat-option value="(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.]((?:19|20)\d\d)">Date (dd/mm/yyyy)</mat-option>
+                            <mat-option value="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.]((?:19|20)\d\d)">Date (mm/dd/yyyy)</mat-option>
+                            <mat-option value="[A-Za-z\d/\-:.,_$%\x27&quot;()<>= !\[\]{}@]{4,}">Strings</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                   
+                    <mat-checkbox [(ngModel)]="optFalg_i" name="optFalg_i"  (ngModelChange)="handleText()"  style="margin-left:10px;">ignoreCase</mat-checkbox>
+                    <mat-checkbox [(ngModel)]="optFalg_m" name="optFalg_m"  (ngModelChange)="handleText()"  style="margin-left:10px;">multiline</mat-checkbox>
+                    <mat-checkbox [(ngModel)]="optFalg_u" name="optFalg_u"  (ngModelChange)="handleText()"  style="margin-left:10px;">unicode</mat-checkbox>
+                    <mat-checkbox [(ngModel)]="optFalg_y" name="optFalg_y"  (ngModelChange)="handleText()"  style="margin-left:10px;">sticky</mat-checkbox>
+
+                </div>
+                <div class="option-row">
+                    <mat-form-field style="margin-left:10px; width: 600px">
+                        <textarea matInput type="text" [(ngModel)]="optRegExp" (ngModelChange)="handleText()" name="optRegExp" placeholder="RegExp"></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="tow-cols">
+                <div>
+                    <mat-form-field class="app_form_field">
+                        <textarea matInput [(ngModel)]="txtText1"  (ngModelChange)="handleText()"  name="txtText1"></textarea>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="app_form_field">
+                        <textarea matInput [(ngModel)]="txtText2" name="txtText2"></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

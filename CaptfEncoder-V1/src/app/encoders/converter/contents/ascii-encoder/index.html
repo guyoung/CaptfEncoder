@@ -1,0 +1,30 @@
+<div class="content-page">
+    <mat-card>
+        <mat-card-header>
+            <mat-toolbar class="toolbar">
+                <span>Ascii Encoding</span>
+                <span class="toolbar-spacer"></span>
+            </mat-toolbar>
+        </mat-card-header>
+        <mat-card-content>
+            <form class="app_form">
+                <mat-form-field class="app_form_field">
+                    <textarea matInput [(ngModel)]="txtText" name="txtText" placeholder="Text" (keyup)="handleText()"></textarea>
+                </mat-form-field>
+                <mat-form-field class="app_form_field">
+                    <textarea matInput [(ngModel)]="txtBin" name="txtBin" placeholder="Bin" (keyup)="handleBin()"></textarea>
+                </mat-form-field>
+                <mat-form-field class="app_form_field">
+                    <textarea matInput [(ngModel)]="txtOct" name="txtOct" placeholder="Oct" (keyup)="handleOct()"></textarea>
+                </mat-form-field>
+                <mat-form-field class="app_form_field">
+                    <textarea matInput [(ngModel)]="txtDec" name="txtDec" placeholder="Dec" (keyup)="handleDec()"></textarea>
+                </mat-form-field>
+                <mat-form-field class="app_form_field">
+                    <textarea matInput [(ngModel)]="txtHex" name="txtHex" placeholder="Hex" (keyup)="handleHex()"></textarea>
+                </mat-form-field>
+            </form>
+        </mat-card-content>
+    </mat-card>
+
+</div>

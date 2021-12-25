@@ -1,0 +1,41 @@
+<div class="content-page">
+    <mat-card>
+        <mat-card-header>
+            <mat-toolbar class="toolbar">
+                <span>MD5、MD2、MD4、RIPEMD</span>
+                <span class="toolbar-spacer"></span>
+                <mat-button-toggle-group [(ngModel)]="flagForButtonToggle" (change)="handleText()">
+                    <mat-button-toggle value="ENCODE" class="toolbar-button-toggle" color="primary">
+                        Encode
+                    </mat-button-toggle>                 
+                </mat-button-toggle-group>
+            </mat-toolbar>
+        </mat-card-header>
+        <mat-card-content>
+
+            <div class="option-row">
+                <mat-form-field style="width: 120px">
+                    <mat-select [(ngModel)]="optPattern" (ngModelChange)="handleText()" name="optPattern" placeholder="Pattern">
+                        <mat-option value="MD2">MD2</mat-option>
+                        <mat-option value="MD4">MD4</mat-option>
+                        <mat-option value="MD5-16">MD5 16位</mat-option>
+                        <mat-option value="MD5-32">MD5 32位</mat-option>
+                        <mat-option value="RIPEMD-128">RIPEMD 128</mat-option>
+                        <mat-option value="RIPEMD-160">RIPEMD 160</mat-option>
+                        <mat-option value="RIPEMD-256">RIPEMD 256</mat-option>
+                        <mat-option value="RIPEMD-320">RIPEMD 320</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="tow-cols">
+                <div>
+                    <app-text-editor class="app-text-editor" #txtText1 (onValueChanged)="handleText()" value=""></app-text-editor>
+                </div>
+                <div>
+                    <app-text-editor class="app-text-editor" #txtText2 syncMenu="true" (onValueSynced)="syncText()" [(saveAsBinFileMenu)]="binFile" value=""></app-text-editor>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+</div>

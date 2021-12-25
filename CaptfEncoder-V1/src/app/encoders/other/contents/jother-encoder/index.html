@@ -1,0 +1,34 @@
+<div class="content-page">
+    <mat-card>
+        <mat-card-header>
+            <mat-toolbar class="toolbar">
+                <span>Jother</span>
+                <span class="toolbar-spacer"></span>
+                <button mat-raised-button class="toolbar-button" (click)="Encode()" color="primary">Encode</button>
+                <button mat-raised-button class="toolbar-button" (click)="Decode()" color="accent">Decode</button>
+            </mat-toolbar>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="option-row">
+                <mat-form-field style="width: 120px">
+                    <mat-select [(ngModel)]="optPattern" name="optPattern" placeholder="Pattern">
+                        <mat-option value="STRING">编码为字符串</mat-option>
+                        <mat-option value="SCRIPT">编码为函数</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="tow-cols">
+                <div>
+                    <mat-form-field class="app_form_field">
+                        <textarea matInput name="txtText1" #txtText1></textarea>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="app_form_field">
+                        <textarea matInput name="txtText2" #txtText1></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

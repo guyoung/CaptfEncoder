@@ -1,0 +1,40 @@
+<div class="content-page">
+    <mat-card>
+        <mat-card-header>
+            <mat-toolbar class="toolbar">
+                <span>Four-Square Cipher（四方密码）</span>
+                <span class="toolbar-spacer"></span>
+                <mat-button-toggle-group [(ngModel)]="flagForButtonToggle" (change)="handleText()">
+                    <mat-button-toggle value="ENCODE" class="toolbar-button-toggle" color="primary">
+                    Encode
+                    </mat-button-toggle>
+                    <mat-button-toggle value="DECODE" class="toolbar-button-toggle" color="accent">
+                    Decode
+                    </mat-button-toggle>
+                </mat-button-toggle-group>
+            </mat-toolbar>
+        </mat-card-header>
+        <mat-card-content>
+
+            <div class="option-row">
+                <mat-form-field style="width: 200px">
+                    <input matInput type="text" [(ngModel)]="optKeySquare1" (ngModelChange)="handleText()" name="optKeySquare1" placeholder="Key square 1">
+                </mat-form-field>
+                <button mat-button class="option-row-button" (click)="generateRandomKey1()">Generate Random Key 1</button>
+                <mat-form-field style="width: 200px">
+                    <input matInput type="text" [(ngModel)]="optKeySquare2" (ngModelChange)="handleText()" name="optKeySquare2" placeholder="Key square 2">
+                </mat-form-field>
+                <button mat-button class="option-row-button" (click)="generateRandomKey2()">Generate Random Key 2</button>
+
+            </div>
+            <div class="tow-cols">
+                <div>
+                    <app-text-editor class="app-text-editor" #txtText1 (onValueChanged)="handleText()" value=""></app-text-editor>
+                </div>
+                <div>
+                    <app-text-editor class="app-text-editor" #txtText2 syncMenu="true" (onValueSynced)="syncText()" value=""></app-text-editor>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

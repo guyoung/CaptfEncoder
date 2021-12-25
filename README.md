@@ -14,11 +14,11 @@
 
 ---
 
-Captfencoder is a rapid  cross platform network security tool suite, providing network security related code conversion, classical cryptography, cryptography, asymmetric encryption, miscellaneous tools, and aggregating all kinds of online tools.
+Captfencoder is a rapid cross platform network security tool suite, providing network security related code conversion, classical cryptography, cryptography, asymmetric encryption, miscellaneous tools, and aggregating all kinds of online tools.
 
 ![CaptfEncoder Screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-v3-screenshot-1.png)
 
-CaptfEncoder V3 develop by Rust, executable file that are smaller (around 6M for and 10M,for other operating systems), faster, better performance, and more comprehensive.  
+CaptfEncoder V3 develop by Rust, executable file that are smaller (Windows around 6M,Other operating systems around 10M), faster, better performance, and more comprehensive.  
 
 ## Support operating system
 
@@ -134,6 +134,11 @@ Centos 7 screenshot
    * CIDR calculator
    * Ping
    * Port scan
+
+## Old version
+
+ * CaptfEncoder V1(Open source) <https://github.com/guyoung/CaptfEncoder/tree/master/CaptfEncoder-V1>
+ * CaptfEncoder V2 <https://github.com/guyoung/CaptfEncoder/tree/master/CaptfEncoder-V2>
 
 
 ## Project website

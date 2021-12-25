@@ -1,0 +1,39 @@
+ <div class="content-page">
+    <mat-card>
+        <mat-card-header>
+            <mat-toolbar class="toolbar">
+                <span>SHA1、SHA256、SHA512、SHA224、SHA384、SHA3</span>
+                <span class="toolbar-spacer"></span>
+                <mat-button-toggle-group [(ngModel)]="flagForButtonToggle" (change)="handleText()">
+                    <mat-button-toggle value="ENCODE" class="toolbar-button-toggle" color="primary">
+                        Encode
+                    </mat-button-toggle>                 
+                </mat-button-toggle-group>
+            </mat-toolbar>
+        </mat-card-header>
+        <mat-card-content>
+
+            <div class="option-row">
+                <mat-form-field style="width: 120px">
+                    <mat-select [(ngModel)]="optPattern" (ngModelChange)="handleText()" name="optPattern" placeholder="Pattern">
+                        <mat-option value="SHA-1">SHA1</mat-option>
+                        <mat-option value="SHA-256">SHA256</mat-option>
+                        <mat-option value="SHA-512">SHA512</mat-option>
+                        <mat-option value="SHA-224">SHA224</mat-option>
+                        <mat-option value="SHA-384">SHA384</mat-option>
+                        <mat-option value="SHA-3">SHA3</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="tow-cols">
+                <div>
+                    <app-text-editor class="app-text-editor" #txtText1 (onValueChanged)="handleText()" value=""></app-text-editor>
+                </div>
+                <div>
+                    <app-text-editor class="app-text-editor" #txtText2 syncMenu="true" (onValueSynced)="syncText()" [(saveAsBinFileMenu)]="binFile" value=""></app-text-editor>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+</div>

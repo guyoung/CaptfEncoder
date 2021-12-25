@@ -1,0 +1,37 @@
+.about-page {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mat-card {
+  height: 100%;
+}
+
+.toolbar {
+  height: 40px;
+}
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+.toolbar-button {
+  margin: 0px 5px !important;
+}
+
+
+
+.mat-card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 !important;
+}
+
+.row1 {   
+    width: 400px;
+    height: 360px;
+    display: block;
+    background-image: url(style/assets/donate.png);
+	background-size: cover;
+}

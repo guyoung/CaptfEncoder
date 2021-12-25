@@ -1,0 +1,24 @@
+$font-adjuster-menu-padding: 8px;
+$font-adjuster-accent-stripe-size: 6px;
+
+
+.font-adjuster-menu {
+  .mat-menu-content {
+    padding: $font-adjuster-menu-padding;
+  }
+
+  [mat-menu-item] {
+    flex: 0 0 auto;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .mat-slider-vertical {
+    width: 100%;
+    height: 240px;
+  }
+
+  .mat-slider-vertical .mat-slider-wrapper {
+    left: 48px;
+  }
+}

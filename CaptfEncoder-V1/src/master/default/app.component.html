@@ -1,0 +1,95 @@
+<nav class="navbar" [class.mat-elevation-z6]="showShadow">
+  <button mat-button class="navbar-sidenav-toggle" (click)="toggleSidenav()">
+    <i class="material-icons">menu</i>
+  </button>
+  <h1 class="name">
+    CaptfEncoder
+  </h1>
+  <h2  class="version">
+    v1.3.0
+  </h2>
+
+  <div class="flex-spacer"></div>
+
+  <app-theme-picker></app-theme-picker>
+  <app-font-adjuster></app-font-adjuster>
+  <button mat-icon-button (click)="checkUpdate()" matTooltip="检查更新...">
+    <mat-icon>update</mat-icon>
+  </button>
+  <button mat-icon-button (click)="openDonate()"  matTooltip="赞赏..">
+    <mat-icon class="fa fa-thumbs-up"></mat-icon>
+  </button>
+  <button mat-icon-button  (click)="openSite()" matTooltip="访问软件官方网站！">
+    <mat-icon class="fa fa-github-alt"></mat-icon>
+  </button>
+  <button mat-icon-button  (click)="openWeixin()" matTooltip="关注微信公众号，获取软件最新消息！">
+    <mat-icon class="fa fa-weixin"></mat-icon>
+  </button>
+  
+  <button mat-icon-button [matMenuTriggerFor]="moreMenu"  matTooltip="Help" *ngIf="false">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #moreMenu="matMenu" x-position="before">
+    
+  </mat-menu>
+  
+</nav>
+
+<div class="main">
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav class="sidenav" [opened]="false" mode="side">
+      <div class="sidenav-nav">
+
+        <div class="sidenav-nav-content">
+          <div class="sidenav-nav-search">
+            <mat-form-field  class="sidenav-nav-search-form">
+              <input type="text" placeholder="Search" matInput [formControl]="searchControl" [matAutocomplete]="auto">
+              
+              <mat-autocomplete #auto="matAutocomplete"  (optionSelected)="addTabByContent2($event)">
+                  <mat-option *ngFor="let content of filteredContents | async" [value]="content.label">
+                      {{content.label}}
+                    </mat-option>
+                </mat-autocomplete>
+            </mat-form-field>
+          </div>
+          <nav *ngFor="let catalog of catalogs; let last = last;">
+            <button cdkAccordionItem #panel="cdkAccordionItem" (click)="panel.toggle()" expanded="true" class="docs-nav-content-btn"
+              [attr.aria-label]="catalog.name + ', section toggle'" [attr.aria-controls]="'panel-' + catalog.name"
+              [attr.aria-expanded]="panel.expanded">
+              {{catalog.label}}
+              <mat-icon>{{panel.expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'}}</mat-icon>
+            </button>
+            <ul [@bodyExpansion]="panel.expanded ? 'expanded' : 'collapsed'" id="panel-{{catalog.name}}">
+              <li *ngFor="let content of catalog.contents" (click)="addTabByContent(content)">
+                <span>{{content.label}} </span>
+              </li>
+            </ul>
+            <hr *ngIf="!last" />
+          </nav>
+        </div>
+      </div>
+    </mat-sidenav>
+
+    <div class="sidenav-content">
+      <mat-tab-group *ngIf="tabs.length > 0" [selectedIndex]="tabSelectedIndex">
+        <li *ngFor="let tab of tabs; let idx = index">
+          <mat-tab>
+            <ng-template mat-tab-label>
+              <section layout="row">
+                {{tab.label}}
+
+                <i *ngIf="tab.closeable" (click)="removeTab(tab, idx)" class="material-icons">highlight_off</i>
+              </section>
+            </ng-template>
+
+
+            <ng-container mat-tab-body *ngComponentOutlet="tab.component;injector: tab.injector; "></ng-container>
+            <!--<ng-template *ngIf="tab.ctype=='component'"  mat-tab-body [cdkPortalOutlet]="tab.component"></ng-template>-->
+
+          </mat-tab>
+        </li>
+      </mat-tab-group>
+
+    </div>
+  </mat-sidenav-container>
+</div>

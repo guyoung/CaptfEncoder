@@ -16,7 +16,7 @@
 
 CaptfEncoder 是一款跨平台网络安全工具套件，提供网络安全相关编码转换、古典密码、密码学、公钥加密、聚合查询、杂项等多种实用工具。
 
-CaptfEncoder V3 版本使用Rust开发，可执行程序体积小（Windows 6M左右，其他操作系统10M左右），速度更快、性能更优、功能更全。 
+CaptfEncoder V3 版本使用Rust开发，可执行程序体积小（Windows 6M左右，其他操作系统10M左右），速度更快、性能更优、功能更强。 
 
 
 ![CaptfEncoder screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-v3-screenshot-1.png)
@@ -135,6 +135,11 @@ Centos 7 运行截图
    * 网络 CIDR 计算
    * Ping
    * 端口扫描    
+
+## 旧版回顾
+
+ * CaptfEncoder V1(已开源) <https://github.com/guyoung/CaptfEncoder/tree/master/CaptfEncoder-V1>
+ * CaptfEncoder V2 <https://github.com/guyoung/CaptfEncoder/tree/master/CaptfEncoder-V2>
 
 
 ## 项目网站

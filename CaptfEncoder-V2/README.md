@@ -1,16 +1,8 @@
-<div align="center">
 
-[![CaptfEncoder Logo](https://github.com/guyoung/CaptfEncoder/raw/master/CaptfEncoder-V2/images/captfencoder-log-1.png)](https://github.com/guyoung/CaptfEncoder)
-
-<h1 align="center">CaptfEncoder</h1>
-
-[![GitHub release](https://img.shields.io/github/release/guyoung/CaptfEncoder.svg)](https://github.com/guyoung/CaptfEncoder/releases/latest)
-
+CaptfEncoder V2
+================================
 
 [English](https://github.com/guyoung/CaptfEncoder/blob/master/CaptfEncoder-V2/README.md) | [中文](https://github.com/guyoung/CaptfEncoder/blob/master/CaptfEncoder-V2/README-zh.md)
-
-
-</div>
 
 ---
 

@@ -1,18 +1,7 @@
-<div align="center">
+CaptfEncoder V2
+================================
 
-[![CaptfEncoder Logo](https://github.com/guyoung/CaptfEncoder/raw/master/CaptfEncoder-V2/images/captfencoder-log-1.png)](https://github.com/guyoung/CaptfEncoder)
-
-<h1 align="center">CaptfEncoder</h1>
-
-[![GitHub release](https://img.shields.io/github/release/guyoung/CaptfEncoder.svg)](https://github.com/guyoung/CaptfEncoder/releases/latest)
-
-
-[English](https://github.com/guyoung/CaptfEncoder/blob/master/README.md) | [中文](https://github.com/guyoung/CaptfEncoder/blob/master/README-zh.md)
-
-
-</div>
-
----
+[English](https://github.com/guyoung/CaptfEncoder/blob/master/CaptfEncoder-V2/README.md) | [中文](https://github.com/guyoung/CaptfEncoder/blob/master/CaptfEncoder-V2/README-zh.md)
 
 CaptfEncoder 是一款可扩展跨平台网络安全工具套件，提供网络安全相关编码转换、古典密码、密码学、非对称加密、特殊编码、杂项等工具，并聚合各类在线工具。
 

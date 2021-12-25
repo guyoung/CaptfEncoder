@@ -1,0 +1,33 @@
+.content-page {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tow-cols {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.tow-cols div {
+  width: 50%;
+  height: 100%;
+  padding: 0px 10px;
+}
+
+.toolbar {
+  height: 48px;
+}
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+.toolbar-button {
+  margin: 0px 5px !important;
+}
+
+.option-row {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px 0 10px;
+}
