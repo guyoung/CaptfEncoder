@@ -1,14 +1,14 @@
 {
   "name": "captfencoder",
-  "description": "Captfencoder is an optimize cross platform network security toolkit",
+  "description": "Captfencoder is a rapid cross platform network security toolkit",
   "productName": "CaptfEncoder",
-  "productDescription": "Captfencoder is an optimize cross platform network security toolkit",
+  "productDescription": "Captfencoder is a rapid cross platform network security toolkit",
   "productVersions": [
     {
-      "version": "3.0.1",
-      "versionNumber": 30001,
-      "builddate": "2021-12-20",
-      "description": "CaptfEncoder V3.0.1 released"
+      "version": "3.1.0",
+      "versionNumber": 30010,
+      "builddate": "2022-1-2",
+      "description": "CaptfEncoder V3.1.0 released"
     }
   ]
 }

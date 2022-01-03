@@ -18,7 +18,11 @@ Captfencoder is a rapid cross platform network security tool suite, providing ne
 
 ![CaptfEncoder Screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-v3-screenshot-1.png)
 
-CaptfEncoder V3 develop by Rust, executable file that are smaller (Windows around 6M,Other operating systems around 10M), faster, better performance, and more comprehensive.  
+CaptfEncoder V3 develop by Rust, Executable programs are smaller, faster, better performing, and more powerful.  
+
+CaptfEncoder V3  suport script extension.
+
+![CaptfEncoder screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-v3-scripts-creenshot-1.png)
 
 ## Support operating system
 
@@ -53,12 +57,18 @@ Centos 7 screenshot
    * Base64 encoding
    * Base16 encoding
    * Base32 encoding
-   * Base series(Base58,Base62,Base62,Base85,Base91)
+   * Base series(Base58,Base62,Base62,Base85,Base91,Base92)
    * Url encoding 
    * Html entity encoding
    * Shellcode encoding
    * Unicode encoding 
    * Morse code
+   * Punycode encoding
+   * Quoted-printable encoding
+   * Tap code encoding
+   * Uuencode encoding
+   * Brainfuck encoding
+
 
 
  * Classical cipher

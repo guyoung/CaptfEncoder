@@ -16,10 +16,14 @@
 
 CaptfEncoder 是一款跨平台网络安全工具套件，提供网络安全相关编码转换、古典密码、密码学、公钥加密、聚合查询、杂项等多种实用工具。
 
-CaptfEncoder V3 版本使用Rust开发，可执行程序体积小（Windows 6M左右，其他操作系统10M左右），速度更快、性能更优、功能更强。 
+CaptfEncoder V3 版本使用Rust开发，可执行程序体积小，速度更快、性能更优、功能更强。 
 
 
 ![CaptfEncoder screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-v3-screenshot-1.png)
+
+CaptfEncoder V3 版本支持脚本扩展。
+
+![CaptfEncoder screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-v3-scripts-creenshot-1.png)
 
 ## 支持操作系统
 
@@ -59,12 +63,18 @@ Centos 7 运行截图
    * Base64 编码
    * Base16 编码
    * Base32 编码
-   * Base系列编码(Base58,Base62,Base62,Base85,Base91)
+   * Base系列编码(Base58,Base62,Base62,Base85,Base91,Base92)
    * Url 编码  
    * Html entity 编码
    * Shellcode 编码 
    * Unicode 编码   
-   * 莫尔斯电码 
+   * 莫尔斯电码
+   * Punycode 编码
+   * Quoted-printable 编码
+   * Tap code 编码
+   * Uuencode 编码
+   * Brainfuck 编码
+
 
  * 古典密码
    * ADFGX 密码
