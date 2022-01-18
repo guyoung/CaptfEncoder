@@ -113,7 +113,7 @@ Centos 7 screenshot
    * Bcrypt
    * Scrypt
 
- * Public key cryptography
+ * Asymmetric
    * RSA generate key
    * RSA encrypt
 

@@ -119,7 +119,7 @@ Centos 7 运行截图
    * Bcrypt
    * Scrypt
 
- * 公钥加密
+ * 非对称加密
    * RSA 生成密钥
    * RSA 加解密 
  

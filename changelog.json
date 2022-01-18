@@ -1,5 +1,16 @@
 [
   {
+    "version": "3.1.2",
+    "versionNumber": 30012,
+    "builddate": "2022-1-18",
+    "description": "CaptfEncoder V3.1.2 released",
+    "changes": [
+      "[Update] baconian",
+      "[Update] Script extension",
+      "[Update] GUI"
+    ]
+  },
+  {
     "version": "3.1.0",
     "versionNumber": 30010,
     "builddate": "2022-1-2",
