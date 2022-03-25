@@ -14,7 +14,7 @@
   "dependencies": {   
   },
   "devDependencies": {
-    "electron": "^6"
+    "electron": "^13"
   },
   "build": {
     "appId": "com.guyoung.captfencoder",
