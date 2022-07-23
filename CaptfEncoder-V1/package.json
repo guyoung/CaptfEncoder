@@ -40,7 +40,7 @@
     "docx": "^5.0.0-rc5",
     "dtrace-provider": "^0.8.8",
     "egoroof-blowfish": "^2.2.0",
-    "file-type": "^12.0.0",
+    "file-type": "^16.5.4",
     "hammerjs": "^2.0.8",
     "he": "^1.2.0",
     "ipaddr.js": "^1.9.0",
