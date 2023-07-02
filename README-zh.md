@@ -7,7 +7,7 @@
 [![GitHub release](https://img.shields.io/github/release/guyoung/CaptfEncoder.svg)](https://github.com/guyoung/CaptfEncoder/releases/latest)
 
 
-[English](https://github.com/guyoung/CaptfEncoder/blob/master/README.md) | [中文](https://github.com/guyoung/CaptfEncoder/blob/master/README-zh.md) | [V1](https://github.com/guyoung/CaptfEncoder/blob/master/V1/README-zh.md) | [V2](https://github.com/guyoung/CaptfEncoder/blob/master/V2/README-zh.md)
+[English](https://github.com/guyoung/CaptfEncoder/blob/master/README.md) | [中文](https://github.com/guyoung/CaptfEncoder/blob/master/README-zh.md) | [V1](https://github.com/guyoung/CaptfEncoder/tree/master/CaptfEncoder-V1) | [V2](https://github.com/guyoung/CaptfEncoder/tree/master/CaptfEncoder-V2)
 
 
 
