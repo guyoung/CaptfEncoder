@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.classical.adfgvx",
+  "description": "ADFGVX cipher",
+  "description_lang": {
+    "zh": "ADFGVX 密码"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

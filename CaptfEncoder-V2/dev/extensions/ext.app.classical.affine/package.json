@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.classical.affine",
+  "description": "Affine cipher",
+  "description_lang": {
+    "zh": "Affine（仿射密码）"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

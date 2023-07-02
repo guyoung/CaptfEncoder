@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.crypto.bcrypt",
+  "description": "Bcrypt",
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

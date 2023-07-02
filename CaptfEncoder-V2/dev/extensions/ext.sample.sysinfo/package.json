@@ -1,0 +1,9 @@
+{
+  "name": "ext.sample.sysinfo",
+  "description": "系统信息",
+  "version": "1.0.0",
+  "author": "",
+  "url": "",
+  "dependencies": {
+  }
+}

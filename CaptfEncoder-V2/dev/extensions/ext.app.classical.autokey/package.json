@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.classical.autokey",
+  "description": "Autokey cipher",
+  "description_lang": {
+    "zh": "Autokey（自动密钥密码）"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

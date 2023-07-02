@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.crypto.sm4",
+  "description": "SM4",
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

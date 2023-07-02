@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.misc.image-gif-extractor",
+  "description": "GIF frame extractor",
+  "description_lang": {
+    "zh": "GIF 动画帧提取"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

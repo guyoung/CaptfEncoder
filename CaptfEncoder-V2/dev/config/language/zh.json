@@ -1,0 +1,89 @@
+{
+    "renderer": {
+        "window": {            
+            "title": "CaptfEncoder 可扩展跨平台网络安全工具套件"
+        },
+        
+        "appbar": {            
+            "menu": {
+                "theme": "主题",
+                "language": "语言",
+                "extension": "扩展",
+                "support_site": "官方网站",
+                "new_issuse": "提交问题",
+                "check_update": "检查更新...",
+                "about": "关于"
+            },
+            "search": {
+                "placeholder": "搜索"
+            }
+           
+        },
+
+        "tab": {            
+            "menu": {
+                "open_in_new_window": "新窗口打开",
+                "close": "关闭",
+                "close_other": "关闭其他",
+                "close_all": "关闭所有"
+            }
+        },
+
+        "snackbar": {
+            "button": {
+                "close": "关闭"
+            }
+        },
+        "dialog": {
+            "about": {
+                "title": "关于",
+                "desc": "可扩展跨平台网络安全工具套件",
+                "version": "版本",
+                "build_date": "发布日期"
+            },
+            "check_update": {
+                "title": "检查更新",
+                "current_version": "当前版本",
+                "download": "下载",
+                "New version": "新版本：",
+                "no_updates": "没有可用的更新！"
+            },
+            "wechat": {
+                "title": "微信公众号"
+            }
+        },
+        "picker": {
+            "theme": {
+                "title": "主题",
+                "dark_mode": "暗黑模式"
+            }
+        }
+    },
+    "command": {
+        "file":{
+            "image_files": "所有图片文件",
+            "all_files": "所有文件"
+        }
+    },
+    "extension": {        
+        "editor": {
+            "label": {
+                "input": "输入：",
+                "output": "输出："
+            },
+            "menu": {
+                "sync": "同步",
+                "clear": "清除",
+                "copy": "复制",
+                "paste": "粘贴",
+                "upper_case": "转换为大写",
+                "lower_case": "转换为小写",
+                "clear_space": "清除空格",
+                "clear_line_feed": "清除回车换行",
+                "open_file": "打开文件",
+                "save_as_text_file": "保存为文本文件",
+                "save_as_binary_file": "保存为二进制文件"
+            }
+        }
+    }
+}

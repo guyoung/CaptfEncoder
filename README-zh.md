@@ -7,14 +7,15 @@
 [![GitHub release](https://img.shields.io/github/release/guyoung/CaptfEncoder.svg)](https://github.com/guyoung/CaptfEncoder/releases/latest)
 
 
-[English](https://github.com/guyoung/CaptfEncoder/blob/master/README.md) | [中文](https://github.com/guyoung/CaptfEncoder/blob/master/README-zh.md)
+[English](https://github.com/guyoung/CaptfEncoder/blob/master/README.md) | [中文](https://github.com/guyoung/CaptfEncoder/blob/master/README-zh.md) | [V1](https://github.com/guyoung/CaptfEncoder/blob/master/V1/README-zh.md) | [V2](https://github.com/guyoung/CaptfEncoder/blob/master/V2/README-zh.md)
+
 
 
 </div>
 
 ---
 
-CaptfEncoder 是一款跨平台网络安全工具套件，提供网络安全相关编码转换、古典密码、密码学、公钥加密、聚合查询、杂项等多种实用工具。
+CaptfEncoder 是一款开源跨平台网络安全工具套件，提供网络安全相关编码转换、古典密码、密码学、公钥加密、聚合查询、杂项等多种实用工具。
 
 CaptfEncoder V3 版本使用Rust开发，可执行程序体积小，速度更快、性能更优、功能更强。 
 

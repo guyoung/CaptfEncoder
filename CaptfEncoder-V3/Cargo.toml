@@ -1,0 +1,19 @@
+[workspace]
+members = [    
+    "main",
+    "encoding",
+    "query",
+    "misc",
+    
+]
+
+[profile.release]
+opt-level="z"
+lto = true
+codegen-units = 1
+panic= "abort"
+debug = false
+rpath = false
+debug-assertions = false
+
+[patch.crates-io]

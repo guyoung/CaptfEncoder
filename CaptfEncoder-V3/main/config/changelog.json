@@ -1,0 +1,37 @@
+[
+  {
+    "version": "3.1.2",
+    "versionNumber": 30012,
+    "builddate": "2022-1-18",
+    "description": "CaptfEncoder V3.1.2 released",
+    "changes": [
+      "[Update] baconian",
+      "[Update] Script extension",
+      "[Update] GUI"
+    ]
+  },
+  {
+    "version": "3.1.0",
+    "versionNumber": 30010,
+    "builddate": "2022-1-2",
+    "description": "CaptfEncoder V3.1.0 released",
+    "changes": [
+      "[ADD] Script extension",
+      "[ADD] Base92",
+      "[ADD] Punycode",
+      "[ADD] Quoted-printable",
+      "[ADD] Tap code",
+      "[ADD] Uuencode",
+      "[ADD] Brainfuck",
+      "[Update] GUI"
+    ]
+  },
+ 
+  {
+    "version": "3.0.1",
+    "versionNumber": 30001,
+    "builddate": "2021-12-20",
+    "description": "CaptfEncoder V3.0.1 released",
+    "changes": []
+  }
+]

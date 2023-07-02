@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.converter.hex",
+  "description": "HEX encoding",
+  "description_lang": {
+    "zh": "HEX 编码"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

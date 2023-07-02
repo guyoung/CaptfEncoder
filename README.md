@@ -7,14 +7,14 @@
 [![GitHub release](https://img.shields.io/github/release/guyoung/CaptfEncoder.svg)](https://github.com/guyoung/CaptfEncoder/releases/latest)
 
 
-[English](https://github.com/guyoung/CaptfEncoder/blob/master/README.md) | [中文](https://github.com/guyoung/CaptfEncoder/blob/master/README-zh.md)
+[English](https://github.com/guyoung/CaptfEncoder/blob/master/README.md) | [中文](https://github.com/guyoung/CaptfEncoder/blob/master/README-zh.md) | [V1](https://github.com/guyoung/CaptfEncoder/blob/master/V1/README.md) | [V2](https://github.com/guyoung/CaptfEncoder/blob/master/V2/README.md)
 
 
 </div>
 
 ---
 
-Captfencoder is a rapid cross platform network security tool suite, providing network security related code conversion, classical cryptography, cryptography, asymmetric encryption, miscellaneous tools, and aggregating all kinds of online tools.
+Captfencoder is a opensource rapid cross platform network security tool suite, providing network security related code conversion, classical cryptography, cryptography, asymmetric encryption, miscellaneous tools, and aggregating all kinds of online tools.
 
 ![CaptfEncoder Screenshot](https://github.com/guyoung/CaptfEncoder/raw/master/images/captfencoder-v3-screenshot-1.png)
 

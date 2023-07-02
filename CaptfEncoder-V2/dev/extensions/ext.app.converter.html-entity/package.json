@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.converter.html-entity",
+  "description": "Html entity encoding",
+  "description_lang": {
+    "zh": "Html entity 编码"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

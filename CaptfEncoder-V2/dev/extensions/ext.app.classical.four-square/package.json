@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.classical.four-square",
+  "description": "Four-Square cipher",
+  "description_lang": {
+    "zh": "Four-Square（四方密码）"
+  },
+   "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

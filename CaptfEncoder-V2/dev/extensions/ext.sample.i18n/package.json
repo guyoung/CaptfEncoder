@@ -1,0 +1,9 @@
+{
+  "name": "ext.sample.i8n",
+  "description": "Internationalization",
+  "version": "1.0.0",
+  "author": "",
+  "url": "",
+  "dependencies": {
+  }
+}

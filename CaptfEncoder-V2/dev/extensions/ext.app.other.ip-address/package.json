@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.other.ip-address",
+  "description": "IP address encoding",
+  "description_lang": {
+    "zh": "IP 地址编码"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

@@ -1,0 +1,45 @@
+[package]
+name = "captfencoder_misc"
+version = "1.0.0"
+authors = ["guyoung"]
+edition = "2021"
+
+
+[lib]
+
+
+[dependencies]
+
+rust-crypto = "0.2"
+crc32fast = "1.2"
+
+ipnet = "2.3"
+pnet_packet = "0.28"
+socket2 = { version = "0.4", features = ["all"]}
+
+image = "0.23"
+gif = "0.11"
+qrcode = "0.12"
+bardecoder = "0.3"
+kamadak-exif = "0.5"
+base64 = "0.13"
+mime = "0.3"
+rustc-serialize = "0.3"
+
+dirs = "4.0"
+zip = "0.5"
+
+uuid = "0.8"
+
+
+rayon = "1.5"
+nom = "7.1"
+num-complex = "0.4"
+rand = "0.8"
+anyhow = "1"
+thiserror = "1"
+
+unicode-segmentation = "1.8"
+regex = "1.5"
+
+

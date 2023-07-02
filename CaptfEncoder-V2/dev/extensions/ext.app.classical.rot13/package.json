@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.classical.rot13",
+  "description": "ROT13 cipher",
+  "description_lang": {
+    "zh": "ROT13 密码"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

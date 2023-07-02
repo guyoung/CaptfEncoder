@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.classical.running-key",
+  "description": "Running Key cipher",
+  "description_lang": {
+    "zh": "Running Key（滚动密钥密码）"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

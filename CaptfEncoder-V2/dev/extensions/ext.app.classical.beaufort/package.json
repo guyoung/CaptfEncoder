@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.classical.beaufort",
+  "description": "Beaufort cipher",
+  "description_lang": {
+    "zh": "Beaufort（博福特密码）"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

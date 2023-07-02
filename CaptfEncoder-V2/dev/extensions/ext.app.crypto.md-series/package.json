@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.crypto.md-series",
+  "description": "MD series",
+  "description_lang": {
+    "zh": "MD 系列"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

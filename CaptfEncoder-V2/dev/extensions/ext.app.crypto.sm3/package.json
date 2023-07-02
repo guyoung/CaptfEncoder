@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.crypto.sm3",
+  "description": "SM3",
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

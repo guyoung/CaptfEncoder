@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.crypto.triple-des",
+  "description": "TripleDES",
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

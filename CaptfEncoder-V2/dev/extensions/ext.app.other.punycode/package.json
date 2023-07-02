@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.other.punycode",
+  "description": "Punycode encoding",
+  "description_lang": {
+    "zh": "Punycode 编码"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

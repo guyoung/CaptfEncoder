@@ -1,0 +1,11 @@
+{
+	"name": "CaptfEncoder-configuration",
+	"extension": {},
+	"ui": {
+		"theme": {
+			"name": "Theme_1",
+			"dark": ""
+		}
+	},
+	"locale": "en"
+}

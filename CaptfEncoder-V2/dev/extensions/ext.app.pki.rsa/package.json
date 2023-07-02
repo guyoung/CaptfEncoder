@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.pki.rsa",
+  "description": "RSA crypto",
+  "description_lang": {
+    "zh": "RSA 加密"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.converter.url",
+  "description": "Url encoding",
+  "description_lang": {
+    "zh": "Url 编码"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

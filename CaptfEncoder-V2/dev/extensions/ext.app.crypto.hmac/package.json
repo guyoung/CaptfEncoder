@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.crypto.hmac",
+  "description": "HMAC",
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.converter.base64",
+  "description": "Base64 encoding",
+  "description_lang": {
+    "zh": "Base64 编码"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

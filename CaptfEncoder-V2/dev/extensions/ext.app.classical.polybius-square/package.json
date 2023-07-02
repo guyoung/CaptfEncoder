@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.classical.polybius-square",
+  "description": "Polybius Square cipher",
+  "description_lang": {
+    "zh": "Polybius Square（波利比奥斯方阵密码）"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.crypto.aes",
+  "description": "AES",
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

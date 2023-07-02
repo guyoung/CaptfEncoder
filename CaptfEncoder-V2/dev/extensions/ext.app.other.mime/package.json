@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.other.mime",
+  "description": "MIME",
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

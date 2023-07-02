@@ -1,38 +1,24 @@
 {
   "name": "captfencoder",
   "version": "2.0.0",
-  "description": "CaptfEncoder 可扩展跨平台网络安全工具套件",
-  "main": "./main/index.js",
-  "author": "",
-  "license": "",
+  "description": "CaptfEncoder",
+  "main": "index.js",
   "scripts": {
-    "postinstall": "cd extensions && npm install",
-    "start": "electron ."
+    "pack-win": "electron-builder --win portable --projectDir prod",
+    "pack-win32": "electron-builder --win portable --ia32  --projectDir prod",
+    "pack-linux": "electron-builder --linux --projectDir prod",
+    "pack-mac": "electron-builder --mac --x64  --projectDir prod ",
+    "pack-mac2": "electron-packager ./prod app --platform=darwin --arch=x64 --icon=./icons/app_ico --electron-version=12.0.2 --out pkgs --overwrite"
   },
+  "author": "",
+  "url": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {},
   "devDependencies": {
-    "electron": "^12.0.2"
-  },
-  "build": {
-    "appId": "com.guyoung.captfencoder",
-    "productName": "CaptfEncoder",     
-    "asar": true,
-    "directories": {
-      "output": "../release"
-    },
-    "files": [
-      "main/",
-      "renderer/"
-    ],
-    "win": {
-      "icon": "icons/app_ico.ico"
-    },
-    "mac": {
-      "category": "public.app-category.developer-tools",
-      "icon": "icons/app_ico.icns"
-    },
-    "linux": {
-      "icon": "icons/",
-      "maintainer": "guyoung"
-    }
+    "electron": "^12.0.4",
+    "electron-builder": "^22.10.5"
   }
 }

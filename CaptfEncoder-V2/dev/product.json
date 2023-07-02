@@ -1,0 +1,14 @@
+{
+  "name": "captfencoder",
+  "description": "CaptfEncoder 跨平台网络安全工具套件",
+  "productName": "CaptfEncoder",
+  "productDescription": "跨平台网络安全工具套件",
+  "productVersions": [
+    {
+      "version": "2.0.1",
+      "versionNumber": 20001,
+      "builddate": "2021-04-14",
+      "description": "CaptfEncoder V2.0.1 发布"
+    }
+  ]
+}

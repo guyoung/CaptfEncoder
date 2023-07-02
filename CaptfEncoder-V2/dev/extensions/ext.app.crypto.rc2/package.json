@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.crypto.rc2",
+  "description": "RC2",
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

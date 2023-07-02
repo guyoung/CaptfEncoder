@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.other.jother",
+  "description": "Jother encoding",
+  "description_lang": {
+    "zh": "Jother 编码"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

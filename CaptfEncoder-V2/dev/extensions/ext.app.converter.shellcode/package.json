@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.converter.shellcode",
+  "description": "Shellcode encoding",
+  "description_lang": {
+    "zh": "Shellcode 编码"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

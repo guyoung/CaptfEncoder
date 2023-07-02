@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.classical.playfair",
+  "description": "Playfair cipher",
+  "description_lang": {
+    "zh": "Playfair（普莱菲尔密码）"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

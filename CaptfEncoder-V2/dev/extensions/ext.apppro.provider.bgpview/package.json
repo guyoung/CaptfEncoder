@@ -1,0 +1,9 @@
+{
+  "name": "ext.apppro.provider.bgpview",
+  "description": "BGPView",
+   "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

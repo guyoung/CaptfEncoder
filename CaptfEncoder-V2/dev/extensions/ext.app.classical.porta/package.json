@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.classical.porta",
+  "description": "Porta cipher",
+  "description_lang": {
+    "zh": "Porta 密码"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

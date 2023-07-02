@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.classical.bifid",
+  "description": "Bifid cipher",
+  "description_lang": {
+    "zh": "Bifid（双密码）"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

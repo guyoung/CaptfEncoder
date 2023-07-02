@@ -1,0 +1,28 @@
+{
+  "name": "captfencoder-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "author": "",
+  "license": "",
+  "scripts": {
+    "build.dev": "cross-env NODE_ENV=development node build/build.js",
+    "build.prod": "cross-env NODE_ENV=production node build/build.js"
+  },
+  "dependencies": {
+    "ajv": "^7.0.0",
+    "axios": "^0.21.1",
+    "electron-log": "^4.3.2",
+    "electron-store": "^7.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/node": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "^5.3.1",
+    "ora": "^5.4.0",
+    "rimraf": "^3.0.2",
+    "webpack": "^5.28.0"
+  }
+}

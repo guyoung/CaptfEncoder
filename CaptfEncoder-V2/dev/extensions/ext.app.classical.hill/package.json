@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.classical.hill",
+  "description": "Hill cipher",
+  "description_lang": {
+    "zh": "Hill（希尔密码）"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.classical.straddle-checkerboard",
+  "description": "Straddle Checkerboard cipher",
+  "description_lang": {
+    "zh": "Straddle Checkerboard（跨棋盘密码）"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

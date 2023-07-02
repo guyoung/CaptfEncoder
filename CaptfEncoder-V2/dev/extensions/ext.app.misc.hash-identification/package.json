@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.misc.hash-identification",
+  "description": "Hash identification",
+  "description_lang": {
+    "zh": "Hash 类型识别"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

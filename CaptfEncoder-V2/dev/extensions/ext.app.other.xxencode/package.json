@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.other.xxencode",
+  "description": "XXencode encoding",
+  "description_lang": {
+    "zh": "XXencode 编码"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

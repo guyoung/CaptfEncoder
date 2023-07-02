@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.crypto.scrypt",
+  "description": "Scrypt",
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.other.image-base64",
+  "description": "Image base64 encoding",
+  "description_lang": {
+    "zh": "图片Base64编码"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

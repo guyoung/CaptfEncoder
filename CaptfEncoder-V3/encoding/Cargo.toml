@@ -1,0 +1,83 @@
+[package]
+name = "captfencoder_encoding"
+version = "1.0.0"
+authors = ["guyoung"]
+edition = "2021"
+
+
+[lib]
+
+
+
+[dependencies]
+base64 = "0.13"
+base16 = "0.2"
+base91 = "0.1"
+data-encoding = "2.3"
+hex = "0.4"
+urlencoding = "2.1"
+html-escape = "0.2"
+quoted_printable = "0.4"
+regex = "1.5"
+
+
+
+# https://github.com/DaGenix/rust-crypto/
+rust-crypto = "0.2"
+
+# https://github.com/RustCrypto/hashes
+md-5 = "0.9"
+md2 = "0.9"
+md4 = "0.9"
+ripemd160 = "0.9"
+ripemd256 = "0.1"
+ripemd320 = "0.9"
+sha-1 = "0.9"
+sha2 = "0.9"
+sha3 = "0.9"
+sm3 = "0.3"
+whirlpool = "0.9"
+
+# https://github.com/RustCrypto/MACs
+hmac = "0.11"
+
+# https://github.com/RustCrypto/password-hashes
+
+bcrypt-pbkdf = "0.7"
+scrypt = "0.8"
+
+# https://github.com/RustCrypto/block-ciphers
+aes = "0.7"
+des = "0.7"
+blowfish = "0.8"
+rc2 = "0.7"
+sm4 = "0.4"
+block-modes = "0.8"
+
+# https://github.com/RustCrypto/stream-ciphers
+
+rabbit = "0.3"
+
+
+# https://github.com/RustCrypto/utils
+hex-literal = "0.3"
+
+# https://github.com/mtio/ripemd128
+ripemd128 = "0.1"
+
+# https://github.com/RustCrypto/RSA
+rsa = "0.5"
+
+num = "0.4"
+num-traits = "0.2"
+libc = "0.2"
+
+
+rustc-serialize = "0.3"
+rulinalg = "0.4"
+lazy_static = "1.4"
+lipsum = "0.8"
+maplit = "1.0"
+rand = "0.8"
+anyhow = "1"
+enum_primitive = "0.1"

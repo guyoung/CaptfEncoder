@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.converter.base-series",
+  "description": "Base series encoding",
+  "description_lang": {
+    "zh": "Base 系列编码"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ext.sample.uppercase",
+  "description": "转换为大写",
+  "version": "1.0.0",
+  "author": "",
+  "url": "",
+  "dependencies": {
+  }
+}

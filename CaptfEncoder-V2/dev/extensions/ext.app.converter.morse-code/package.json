@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.converter.morse-code",
+  "description": "Morse code",
+  "description_lang": {
+    "zh": "摩尔斯电码"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

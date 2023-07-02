@@ -1,0 +1,9 @@
+{
+  "name": "ext.apppro.provider.dnsdumpster",
+  "description": "DNSdumpster",
+   "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

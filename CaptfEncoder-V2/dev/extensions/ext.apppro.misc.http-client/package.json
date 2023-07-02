@@ -1,0 +1,9 @@
+{
+  "name": "ext.apppro.misc.http-client",
+  "description": "Http client",
+   "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

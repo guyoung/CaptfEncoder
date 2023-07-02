@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.provider.whois",
+  "description": "Whois",
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

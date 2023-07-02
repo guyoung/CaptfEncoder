@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.misc.file-type",
+  "description": "File type",
+  "description_lang": {
+    "zh": "文件类型"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

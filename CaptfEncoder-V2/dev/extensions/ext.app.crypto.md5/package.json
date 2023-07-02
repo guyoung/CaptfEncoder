@@ -1,0 +1,9 @@
+{
+  "name": "ext.app.crypto.md5",
+  "description": "MD5",
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}

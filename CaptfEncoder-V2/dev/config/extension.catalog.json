@@ -1,0 +1,74 @@
+[
+  {
+    "key": "ext.app.converter",
+    "text": "Converter",
+    "text_lang": {
+      "zh": "编码转换"
+    },
+    "desc": "Converter"
+  },
+  {
+    "key": "ext.app.classical",
+    "text": "Classical cipher",
+    "text_lang": {
+      "zh": "古典加密"
+    },
+    "desc": "Classical cipher"
+  },
+  {
+    "key": "ext.app.crypto",
+    "text": "Cryptology",
+    "text_lang": {
+      "zh": "密码学"
+    },
+    "desc": "Cryptology"
+  },
+  {
+    "key": "ext.app.pki",
+    "text": "Public key cryptography",
+    "text_lang": {
+      "zh": "公钥密码"
+    },
+    "desc": "Public key cryptography"
+  },
+  {
+    "key": "ext.app.other",
+    "text": "Other encoding",
+    "text_lang": {
+      "zh": "其他编码"
+    },
+    "desc": "Other encoding"
+  },
+  {
+    "key": "ext.app.misc",
+    "text": "Misc",
+    "text_lang": {
+      "zh": "杂项"
+    },
+    "desc": "Misc"
+  },
+  {
+    "key": "ext.app.provider",
+    "text": "Others(online)",
+    "text_lang": {
+      "zh": "第三方工具（需联网）"
+    },
+    "desc": "Others(online)"
+  },
+  {
+    "key": "ext.apppro.provider",
+    "text": "Others(online)",
+    "text_lang": {
+      "zh": "第三方工具（需联网）"
+    },
+    "desc": "Others(online)"
+  },
+  {
+    "key": "ext.apppro.misc",
+    "text": "Misc",
+    "text_lang": {
+      "zh": "杂项"
+    },
+    "desc": "Misc"
+  }
+]

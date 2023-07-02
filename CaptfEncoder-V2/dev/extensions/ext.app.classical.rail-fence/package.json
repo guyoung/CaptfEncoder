@@ -1,0 +1,12 @@
+{
+  "name": "ext.app.classical.rail-fence",
+  "description": "Rail-fence cipher",
+  "description_lang": {
+    "zh": "栅栏密码"
+  },
+  "version": "1.0.0",
+  "author": "guyoung",
+  "url": "",
+  "dependencies": {
+  }
+}
