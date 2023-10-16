@@ -65,7 +65,7 @@ impl WgtAboutDialog {
         frame.set_label_size(28);
         let mut frame = Frame::new(5, 100, 350, 40, "");
         frame.set_align(Align::Inside | Align::Left);
-        frame.set_label("A rapid cross platform network security toolkit");
+        frame.set_label("A opensource rapid cross platform network security toolkit");
         frame.set_label_size(15);
         let _frame = Frame::new(5, 140, 350, 20, "");
         let mut frame = Frame::new(5, 160, 350, 25, "");

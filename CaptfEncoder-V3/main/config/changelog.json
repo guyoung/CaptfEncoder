@@ -1,5 +1,14 @@
 [
   {
+    "version": "3.3.0",
+    "versionNumber": 30030,
+    "builddate": "2023-7-1",
+    "description": "CaptfEncoder V3.3.0 released",
+    "changes": [
+      
+    ]
+  },
+  {
     "version": "3.1.2",
     "versionNumber": 30012,
     "builddate": "2022-1-18",
