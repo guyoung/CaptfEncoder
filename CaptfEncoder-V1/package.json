@@ -52,7 +52,7 @@
     "jsonexport": "^2.4.1",
     "jsqr": "^1.2.0",
     "mime-types": "^2.1.24",
-    "moment-timezone": "^0.5.25",
+    "moment-timezone": "^0.5.35",
     "nslookup": "^1.1.1",
     "officegen": "^0.6.3",
     "omggif": "^1.0.9",
